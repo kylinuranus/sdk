@@ -1,0 +1,32 @@
+{
+    "0": {
+        "title": "安吉星好友",
+        "image": "icon_share_friend_34x34",
+        "funcId": 0
+    },
+    "1": {
+        "title": "安吉星群组",
+        "image": "icon_share_group_34x34",
+        "funcId": 1
+    },
+    "2": {
+        "title": "微信好友",
+        "image": "icon_share_weixin_34x34",
+        "funcId": 2
+    },
+    "3": {
+        "image": "icon_share_friend-circle_34x34",
+        "title": "朋友圈",
+        "funcId": 3
+    },
+    "4": {
+        "title": "生成长图",
+        "image": "icon_share_generate-pictures_34x34",
+        "funcId": 4
+    },
+    "5": {
+        "title": "举报",
+        "image": "icon_share_report_34x34",
+        "funcId": 5
+    }
+}

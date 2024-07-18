@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SOSLBSListCardView">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="Trip_LBS_List_Add_Device" translatesAutoresizingMaskIntoConstraints="NO" id="FGd-H9-bCL">
+                    <rect key="frame" x="45" y="37" width="60" height="60"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="添加新设备" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRM-yL-t03">
+                    <rect key="frame" x="42" y="105" width="66.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.30588235294117649" green="0.31372549019607843" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ov-PZ-90w">
+                    <rect key="frame" x="32" y="27" width="86.5" height="104"/>
+                    <connections>
+                        <action selector="functionButtonTapped" destination="iN0-l3-epB" eventType="touchUpInside" id="MSF-Pi-om3"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WiR-Zr-KJE">
+                    <rect key="frame" x="57" y="18" width="36" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <color key="textColor" red="0.15686274510000001" green="0.16078431369999999" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2011 年 1 月 12 日创建" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygz-R2-3Jz">
+                    <rect key="frame" x="18" y="86" width="114" height="14"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.64313725490196072" green="0.64313725490196072" blue="0.64313725490196072" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWi-QE-NSp">
+                    <rect key="frame" x="33" y="116" width="84" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="84" id="XAs-wS-pj9"/>
+                        <constraint firstAttribute="height" constant="28" id="zal-tp-DyV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="实时定位">
+                        <color key="titleColor" red="0.40784313725490196" green="0.58823529411764708" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.40784313725490196" green="0.58823529411764708" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="getLocationnButtonTapped" destination="iN0-l3-epB" eventType="touchUpInside" id="Cm1-ES-D6C"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BRM-yL-t03" firstAttribute="top" secondItem="FGd-H9-bCL" secondAttribute="bottom" constant="8" id="35L-Q8-U2g"/>
+                <constraint firstItem="4Ov-PZ-90w" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FGd-H9-bCL" secondAttribute="trailing" constant="10" id="5Bg-Oj-i9z"/>
+                <constraint firstItem="4Ov-PZ-90w" firstAttribute="bottom" secondItem="BRM-yL-t03" secondAttribute="bottom" constant="10" id="AsZ-eL-UE7"/>
+                <constraint firstItem="BRM-yL-t03" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4Ov-PZ-90w" secondAttribute="leading" constant="10" id="GDq-AQ-G6X"/>
+                <constraint firstItem="4Ov-PZ-90w" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BRM-yL-t03" secondAttribute="trailing" constant="10" id="GdS-XQ-EZp"/>
+                <constraint firstItem="NWi-QE-NSp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="33" id="KUq-CJ-QRz"/>
+                <constraint firstItem="NWi-QE-NSp" firstAttribute="centerX" secondItem="FGd-H9-bCL" secondAttribute="centerX" id="MPF-Pq-5qZ"/>
+                <constraint firstItem="Ygz-R2-3Jz" firstAttribute="centerX" secondItem="FGd-H9-bCL" secondAttribute="centerX" id="YvP-cC-HBu"/>
+                <constraint firstItem="WiR-Zr-KJE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="18" id="bqP-iy-eCl"/>
+                <constraint firstItem="NWi-QE-NSp" firstAttribute="top" secondItem="Ygz-R2-3Jz" secondAttribute="bottom" constant="16" id="d7f-Ax-YWw"/>
+                <constraint firstItem="WiR-Zr-KJE" firstAttribute="centerX" secondItem="FGd-H9-bCL" secondAttribute="centerX" id="e5Z-e2-A3o"/>
+                <constraint firstItem="FGd-H9-bCL" firstAttribute="top" secondItem="4Ov-PZ-90w" secondAttribute="top" constant="10" id="gdq-Q7-G0F"/>
+                <constraint firstAttribute="bottom" secondItem="NWi-QE-NSp" secondAttribute="bottom" constant="16" id="kpj-Ep-nyS"/>
+                <constraint firstItem="FGd-H9-bCL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4Ov-PZ-90w" secondAttribute="leading" constant="10" id="mh8-Qd-HTu"/>
+                <constraint firstItem="BRM-yL-t03" firstAttribute="centerX" secondItem="FGd-H9-bCL" secondAttribute="centerX" id="qyK-0c-Io6"/>
+                <constraint firstItem="WiR-Zr-KJE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="19" id="r3G-gQ-ybc"/>
+                <constraint firstItem="FGd-H9-bCL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="37" id="zzw-dk-f4P"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                    <real key="value" value="4"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="detailLabel" destination="BRM-yL-t03" id="ppj-Uo-tB4"/>
+                <outlet property="funcButton" destination="4Ov-PZ-90w" id="Hjn-mE-6a6"/>
+                <outlet property="getLocationButton" destination="NWi-QE-NSp" id="b48-8E-KQR"/>
+                <outlet property="iconImgView" destination="FGd-H9-bCL" id="dlj-pj-jsv"/>
+                <outlet property="timeLabel" destination="Ygz-R2-3Jz" id="VbO-9l-dJ3"/>
+                <outlet property="titleLabel" destination="WiR-Zr-KJE" id="qtJ-Oh-FSL"/>
+            </connections>
+            <point key="canvasLocation" x="52.799999999999997" y="-6.746626686656672"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Trip_LBS_List_Add_Device" width="60" height="60"/>
+    </resources>
+</document>

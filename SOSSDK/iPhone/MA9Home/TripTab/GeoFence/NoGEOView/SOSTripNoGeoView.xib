@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SOSTripNoGeoView">
+            <rect key="frame" x="0.0" y="0.0" width="416" height="752"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wg8-zw-IEp">
+                    <rect key="frame" x="78" y="226" width="260" height="300"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Trip_GeoFence_NO_GEO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3h-kW-PaW">
+                            <rect key="frame" x="86" y="30" width="88" height="88"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="现在就添加电子围栏" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diZ-7U-066">
+                            <rect key="frame" x="56.5" y="133" width="147" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="jdy-RT-bni"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <color key="textColor" red="0.15686274510000001" green="0.16078431369999999" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="划定一个区域，当您的爱车或者安星定位设备越过边界，您会在第一时间收到通知。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NpX-Qt-JWS">
+                            <rect key="frame" x="30" y="163" width="200" height="51"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="200" id="WI3-Yr-fsE"/>
+                                <constraint firstAttribute="height" constant="51" id="ogu-8L-Gyz"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.50980392159999999" green="0.51372549020000002" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GGv-ew-bQA">
+                            <rect key="frame" x="0.0" y="251.5" width="260" height="0.5"/>
+                            <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="xI8-Tn-UHb"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eyD-Gq-Xun">
+                            <rect key="frame" x="130" y="252" width="0.5" height="48"/>
+                            <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="0.5" id="FSF-2m-rVs"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3v-kG-09o">
+                            <rect key="frame" x="0.0" y="252" width="130" height="48"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelButtonTapped" destination="iN0-l3-epB" eventType="touchUpInside" id="REx-a6-4A1"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Vw-yx-kuM">
+                            <rect key="frame" x="130" y="252" width="130" height="48"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="去添加">
+                                <color key="titleColor" red="0.40784313729999999" green="0.58823529409999997" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <connections>
+                                <action selector="addButtonTapped" destination="iN0-l3-epB" eventType="touchUpInside" id="lha-X3-TtD"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Z3h-kW-PaW" firstAttribute="top" secondItem="wg8-zw-IEp" secondAttribute="top" constant="30" id="2Dc-pH-cpx"/>
+                        <constraint firstItem="4Vw-yx-kuM" firstAttribute="top" secondItem="GGv-ew-bQA" secondAttribute="bottom" id="3Kk-0Z-caV"/>
+                        <constraint firstItem="GGv-ew-bQA" firstAttribute="leading" secondItem="wg8-zw-IEp" secondAttribute="leading" id="4Gm-De-7Ec"/>
+                        <constraint firstAttribute="trailing" secondItem="GGv-ew-bQA" secondAttribute="trailing" id="5RQ-9Z-F7D"/>
+                        <constraint firstItem="eyD-Gq-Xun" firstAttribute="leading" secondItem="K3v-kG-09o" secondAttribute="trailing" id="60j-rQ-0PU"/>
+                        <constraint firstItem="K3v-kG-09o" firstAttribute="leading" secondItem="wg8-zw-IEp" secondAttribute="leading" id="7g8-20-dqO"/>
+                        <constraint firstAttribute="width" constant="260" id="Bhn-Se-PlC"/>
+                        <constraint firstItem="diZ-7U-066" firstAttribute="top" secondItem="Z3h-kW-PaW" secondAttribute="bottom" constant="15" id="CUx-so-EBp"/>
+                        <constraint firstItem="K3v-kG-09o" firstAttribute="top" secondItem="GGv-ew-bQA" secondAttribute="bottom" id="Fdh-23-pd2"/>
+                        <constraint firstItem="eyD-Gq-Xun" firstAttribute="top" secondItem="GGv-ew-bQA" secondAttribute="bottom" id="G7s-Ha-GuS"/>
+                        <constraint firstAttribute="bottom" secondItem="GGv-ew-bQA" secondAttribute="bottom" constant="48" id="IAG-Pb-QVv"/>
+                        <constraint firstItem="NpX-Qt-JWS" firstAttribute="top" secondItem="diZ-7U-066" secondAttribute="bottom" constant="8" id="J4R-UO-93d"/>
+                        <constraint firstItem="diZ-7U-066" firstAttribute="centerX" secondItem="wg8-zw-IEp" secondAttribute="centerX" id="UEn-us-wMj"/>
+                        <constraint firstAttribute="bottom" secondItem="4Vw-yx-kuM" secondAttribute="bottom" id="UQd-QD-ewf"/>
+                        <constraint firstItem="NpX-Qt-JWS" firstAttribute="centerX" secondItem="wg8-zw-IEp" secondAttribute="centerX" id="aP0-wg-jaC"/>
+                        <constraint firstAttribute="trailing" secondItem="4Vw-yx-kuM" secondAttribute="trailing" id="bBU-2k-w45"/>
+                        <constraint firstAttribute="bottom" secondItem="eyD-Gq-Xun" secondAttribute="bottom" id="c4R-C0-hSG"/>
+                        <constraint firstAttribute="height" constant="300" id="c6s-rz-8KJ"/>
+                        <constraint firstItem="4Vw-yx-kuM" firstAttribute="leading" secondItem="K3v-kG-09o" secondAttribute="trailing" id="cZz-Wj-LjC"/>
+                        <constraint firstAttribute="bottom" secondItem="K3v-kG-09o" secondAttribute="bottom" id="fTf-Y2-LI2"/>
+                        <constraint firstItem="Z3h-kW-PaW" firstAttribute="centerX" secondItem="wg8-zw-IEp" secondAttribute="centerX" id="hSG-nf-klT"/>
+                        <constraint firstItem="eyD-Gq-Xun" firstAttribute="centerX" secondItem="wg8-zw-IEp" secondAttribute="centerX" id="xH8-ll-JI7"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.4452857448630137" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="wg8-zw-IEp" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="c4E-Ce-a11"/>
+                <constraint firstItem="wg8-zw-IEp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fT0-eU-0DR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="contentBGView" destination="wg8-zw-IEp" id="M26-TM-BJe"/>
+            </connections>
+            <point key="canvasLocation" x="49.275362318840585" y="-12.723214285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Trip_GeoFence_NO_GEO" width="88" height="88"/>
+    </resources>
+</document>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SOSIAPGuideView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iapGuidePlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="qVc-cg-wQs">
+                    <rect key="frame" x="22" y="153.5" width="330" height="360"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="360" id="cZQ-YM-VKj"/>
+                        <constraint firstAttribute="width" constant="330" id="kHo-Y8-sLd"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WP-Vd-aPm">
+                    <rect key="frame" x="22" y="153" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="QB7-C2-ZdC"/>
+                        <constraint firstAttribute="width" constant="50" id="oFO-Fb-xIq"/>
+                    </constraints>
+                    <state key="normal" image="iapGuideCancelButton"/>
+                    <connections>
+                        <action selector="buttonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="hs5-8Z-WsQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.79762414383561642" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qVc-cg-wQs" firstAttribute="leading" secondItem="4WP-Vd-aPm" secondAttribute="leading" id="3B3-hs-WIl"/>
+                <constraint firstItem="qVc-cg-wQs" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="KXv-9T-qkk"/>
+                <constraint firstItem="qVc-cg-wQs" firstAttribute="top" secondItem="4WP-Vd-aPm" secondAttribute="top" id="KsA-Yt-ECi"/>
+                <constraint firstItem="qVc-cg-wQs" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="flb-Vz-Ig0"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="96.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iapGuideCancelButton" width="25" height="25"/>
+        <image name="iapGuidePlaceholder" width="330" height="360"/>
+    </resources>
+</document>

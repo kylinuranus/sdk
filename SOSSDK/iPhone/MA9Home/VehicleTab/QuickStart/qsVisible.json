@@ -1,0 +1,727 @@
+[
+  [
+    {
+      "1": {
+        "title": "远程启动",
+        "resource": {
+          "unReleated": true
+        },
+        "generation": {
+          "unReleated": true
+        },
+        "role": {
+          "unReleated": true
+        },
+        "image": "Icon／60x60／operation-area／car_control_icon_cancel-remote_def_60x60",
+        "action": "remoteStartAction",
+        "specialVisiableCondition": "supportRemote",
+        "needLogin": true,
+        "opeType": 2
+      }
+    },
+    {
+      "2": {
+        "title": "取消启动",
+        "resource": {
+          "unReleated": true
+        },
+        "generation": {
+          "unReleated": true
+        },
+        "role": {
+          "unReleated": true
+        },
+        "image": "Icon／60x60／operation-area／car_control_icon_cancel-remote_def_60x60(1)",
+        "action": "cancelStartAction",
+        "specialVisiableCondition": "supportRemote",
+        "needLogin": true,
+        "opeType": 3
+      }
+    },
+    {
+      "3": {
+        "title": "车门解锁",
+        "resource": {
+          "unReleated": true
+        },
+        "generation": {
+          "unReleated": true
+        },
+        "role": {
+          "unReleated": true
+        },
+        "image": "Icon／60x60／operation-area／car_control_icon_remote-locking_loading_60x60",
+        "action": "unLockDoorAction",
+        "needLogin": true,
+        "opeType": 1
+      }
+    },
+    {
+      "4": {
+        "title": "车门上锁",
+        "resource": {
+          "unReleated": true
+        },
+        "generation": {
+          "unReleated": true
+        },
+        "role": {
+          "unReleated": true
+        },
+        "image": "Icon／60x60／operation-area／car_control_icon_remote-unlocking_def_60x60",
+        "action": "lockDoorAction",
+        "needLogin": true,
+        "opeType": 0
+      }
+    },
+    {
+      "5": {
+        "title": "天窗开启",
+        "resource": {
+          "unReleated": true
+        },
+        "generation": {
+          "G9": false,
+          "ICM": false,
+          "ICM2": true,
+          "G10": false
+        },
+        "role": {
+          "unReleated": false,
+          "owner": true,
+          "driver": true,
+          "proxy": true,
+          "visitor": false,
+          "unlogged": false
+        },
+        "image": "Icon／60x60／operation-area／car_control_icon_cancel-remote_def_60x60(1)-1",
+        "specialVisiableCondition": "supportopenSunroof",
+        "action": "openSunroofAction",
+        "needLogin": true,
+        "opeType": 7
+      }
+    },
+    {
+      "6": {
+        "title": "天窗关闭",
+        "resource": {
+          "unReleated": true
+        },
+        "generation": {
+          "G9": false,
+          "ICM": false,
+          "ICM2": true,
+          "G10": false
+        },
+        "role": {
+          "unReleated": false,
+          "owner": true,
+          "driver": true,
+          "proxy": true,
+          "visitor": false,
+          "unlogged": false
+        },
+        "image": "Icon／60x60／operation-area／car_control_icon_cancel-remote_def_60x60-1",
+        "specialVisiableCondition": "supportcloseSunroof",
+        "action": "closeSunroofAction",
+        "needLogin": true,
+        "opeType": 8
+      }
+    },
+    {
+      "7": {
+        "title": "车窗开启",
+        "resource": {
+          "unReleated": true
+        },
+        "generation": {
+          "G9": false,
+          "ICM": false,
+          "ICM2": true,
+          "G10": false
+        },
+        "role": {
+          "unReleated": false,
+          "owner": true,
+          "driver": true,
+          "proxy": true,
+          "visitor": false,
+          "unlogged": false
+        },
+        "image": "Icon／60x60／operation-area／car_control_icon_remote-unlocking_def_60x60-1",
+        "specialVisiableCondition": "supportopenWindow",
+        "action": "openWindowAction",
+        "needLogin": true,
+        "opeType": 9
+      }
+    },
+    {
+      "8": {
+        "title": "车窗关闭",
+        "resource": {
+          "unReleated": true
+        },
+        "generation": {
+          "G9": false,
+          "ICM": false,
+          "ICM2": true,
+          "G10": false
+        },
+        "role": {
+          "unReleated": false,
+          "owner": true,
+          "driver": true,
+          "proxy": true,
+          "visitor": false,
+          "unlogged": false
+        },
+        "image": "Icon／60x60／operation-area／car_control_icon_flash-whistle_def_60x60-1",
+        "specialVisiableCondition": "supportcloseWindow",
+        "action": "closeWindowAction",
+        "needLogin": true,
+        "opeType": 10
+      }
+    },
+    {
+      "9": {
+        "title": "后备箱开启",
+        "resource": {
+          "unReleated": true
+        },
+        "generation": {
+          "G9": false,
+          "ICM": false,
+          "ICM2": true,
+          "G10": false
+        },
+        "role": {
+          "unReleated": false,
+          "owner": true,
+          "driver": true,
+          "proxy": true,
+          "visitor": false,
+          "unlogged": false
+        },
+        "image": "Icon／60x60／operation-area／car_control_icon_remote-locking_loading_60x60-1",
+        "specialVisiableCondition": "supportopenTrunk",
+        "action": "openTrunkAction",
+        "needLogin": true,
+        "opeType": 11
+      }
+    },
+    {
+      "10": {
+        "title": "空调操控",
+        "resource": {
+          "unReleated": true
+        },
+        "generation": {
+          "G9": false,
+          "ICM": false,
+          "ICM2": true,
+          "G10": false
+        },
+        "role": {
+          "unReleated": false,
+          "owner": true,
+          "driver": true,
+          "proxy": true,
+          "visitor": false,
+          "unlogged": false
+        },
+        "image": "Icon／60x60／operation-area／car_control_icon_air-conditioning_def_60x60",
+        "specialVisiableCondition": "supportHVACSetting",
+        "action": "HVACSettingAction",
+        "needLogin": true
+      }
+    },
+    {
+      "11": {
+        "title": "闪灯鸣笛",
+        "resource": {
+          "unReleated": true
+        },
+        "generation": {
+          "unReleated": true
+        },
+        "role": {
+          "unReleated": true
+        },
+        "image": "Icon／60x60／operation-area／car_control_icon_flash-whistle_def_60x60",
+        "action": "lightAndHornAction",
+        "needLogin": true,
+        "opeType": 6
+      }
+    },
+    {
+      "12": {
+        "title": "蓝牙钥匙共享",
+        "resource": {
+          "unReleated": true
+        },
+        "generation": {
+          "unReleated": true
+        },
+        "role": {
+          "unReleated": false,
+          "owner": true,
+          "driver": true,
+          "proxy": true,
+          "visitor": false,
+          "unlogged": true
+        },
+        "image": "vehicle_operation_control_bleshare",
+        "action": "BLEShareAction",
+        "specialVisiableCondition": "supportBLE",
+        "needLogin": false
+      }
+    },
+    {
+      "13": {
+        "title": "蓝牙钥匙包",
+        "resource": {
+          "unReleated": true
+        },
+        "generation": {
+          "unReleated": true
+        },
+        "role": {
+          "unReleated": true
+        },
+        "image": "vehicle_operation_control_icon_ble",
+        "action": "BLEPackageAction",
+        "needLogin": true
+      }
+    }
+  ],
+  [
+    {
+      "15": {
+        "title": "一键到家",
+        "resource": {
+          "unReleated": true
+        },
+        "generation": {
+          "unReleated": true
+        },
+        "role": {
+          "unReleated": true
+        },
+        "image": "vehicle_operation_icon_go-home_def_60x60",
+        "action": "oneKeyToHomeAction",
+        "needLogin": true
+      }
+    },
+    {
+      "16": {
+        "title": "一键到公司",
+        "resource": {
+          "unReleated": true
+        },
+        "generation": {
+          "unReleated": true
+        },
+        "role": {
+          "unReleated": true
+        },
+        "image": "vehicle_operation_control_icon_gocom",
+        "action": "oneKeyToComAction",
+        "needLogin": true
+      }
+    },
+    {
+      "17": {
+        "title": "即刻出发",
+        "resource": {
+          "unReleated": true
+        },
+        "generation": {
+          "unReleated": true
+        },
+        "role": {
+          "unReleated": true
+        },
+        "image": "vehicle_operation_control_icon_gonow",
+        "action": "leaveNowAction",
+        "needLogin": false
+      }
+    },
+    {
+      "18": {
+        "title": "附近加油站",
+        "resource": {
+          "PHEV": true,
+          "BEV": false,
+          "FV": true
+        },
+        "generation": {
+          "unReleated": true
+        },
+        "role": {
+          "unReleated": true
+        },
+        "image": "vehicle_operation_control_icon_fluestation",
+        "action": "flueStationAction",
+        "needLogin": false
+      }
+    },
+    {
+      "22": {
+        "title": "附近充电站",
+        "resource": {
+          "PHEV": true,
+          "BEV": true,
+          "FV": false
+        },
+        "generation": {
+          "unReleated": true
+        },
+        "role": {
+          "unReleated": false,
+          "owner": true,
+          "driver": true,
+          "proxy": true,
+          "visitor": false,
+          "unlogged": false
+        },
+        "image": "EditOperation_cheer",
+        "action": "chargeStationAction",
+        "needLogin": false
+      }
+    },
+    {
+      "23": {
+        "title": "安星定位",
+        "resource": {
+          "unReleated": true
+        },
+        "generation": {
+          "unReleated": true
+        },
+        "role": {
+          "unReleated": true
+        },
+        "image": "EditOperation_icon_map",
+        "action": "onstarLocationAction",
+        "needLogin": true
+      }
+    }
+  ],
+  [
+    {
+      "27": {
+        "title": "星友圈",
+        "resource": {
+          "unReleated": true
+        },
+        "generation": {
+          "unReleated": true
+        },
+        "role": {
+          "unReleated": true
+        },
+        "image": "vehicle_operation_car_control_icon_social",
+        "action": "onstarFriendAction",
+        "needLogin": true
+      }
+    },
+    {
+      "26": {
+        "title": "星论坛消息",
+        "resource": {
+          "unReleated": true
+        },
+        "generation": {
+          "unReleated": true
+        },
+        "role": {
+          "unReleated": true
+        },
+        "image": "vehicle_operation_control_forum",
+        "action": "forumAction",
+        "needLogin": true
+      }
+    }
+  ],
+  [
+    {
+      "28": {
+        "title": "车况检测报告",
+        "resource": {
+          "unReleated": true
+        },
+        "generation": {
+          "unReleated": true
+        },
+        "role": {
+          "unReleated": false,
+          "owner": true,
+          "driver": true,
+          "proxy": true,
+          "visitor": false,
+          "unlogged": false
+        },
+        "image": "EditOperation_vehicle_TestReport",
+        "action": "vehicleDetectionReportAction",
+        "needLogin": true
+      }
+    },
+    {
+      "29": {
+        "title": "车载Wi-Fi",
+        "resource": {
+          "unReleated": true
+        },
+        "generation": {
+          "G9": false,
+          "ICM": false,
+          "ICM2": true,
+          "G10": true
+        },
+        "role": {
+          "unReleated": false,
+          "owner": true,
+          "driver": true,
+          "proxy": true,
+          "visitor": false,
+          "unlogged": false
+        },
+        "image": "EditOperation_wifiManagement",
+        "specialVisiableCondition": "supportWIFI",
+        "action": "wifiAction",
+        "needLogin": true
+      }
+    },
+    {
+      "30": {
+        "title": "车辆操作历史",
+        "resource": {
+          "unReleated": true
+        },
+        "generation": {
+          "unReleated": true
+        },
+        "role": {
+          "unReleated": false,
+          "owner": true,
+          "driver": false,
+          "proxy": false,
+          "visitor": true,
+          "unlogged": true
+        },
+        "image": "EditOperation_vehicle_operation_history",
+        "action": "operationHistoryAction",
+        "needLogin": true
+      }
+    },
+    {
+      "32": {
+        "title": "充电模式",
+        "resource": {
+          "unReleated": false,
+          "PHEV": true,
+          "FV": false,
+          "BEV": false
+        },
+        "generation": {
+          "unReleated": true
+        },
+        "role": {
+          "unReleated": false,
+          "owner": true,
+          "driver": true,
+          "proxy": true,
+          "visitor": false,
+          "unlogged": false
+        },
+        "image": "EditOperation_Set_charge_mode",
+        "action": "chargeModeAction",
+        "needLogin": true
+      }
+    }
+  ],
+  [
+    {
+      "33": {
+        "title": "购买套餐包",
+        "resource": {
+          "unReleated": true
+        },
+        "generation": {
+          "unReleated": true
+        },
+        "role": {
+          "unReleated": true
+        },
+        "image": "BuyPackage",
+        "action": "buypackageAction",
+        "needLogin": true
+      }
+    },
+    {
+      "34": {
+        "title": "智联映射",
+        "resource": {
+          "unReleated": true
+        },
+        "generation": {
+          "unReleated": true
+        },
+        "role": {
+          "unReleated": true
+        },
+        "image": "vehicle_operation_icon_reflect",
+        "action": "onstarReflectAction",
+        "needLogin": true
+      }
+    },
+    {
+      "36": {
+        "title": "预约经销商",
+        "resource": {
+          "unReleated": true
+        },
+        "generation": {
+          "unReleated": true
+        },
+        "role": {
+          "unReleated": false,
+          "owner": true,
+          "driver": true,
+          "proxy": true,
+          "visitor": false,
+          "unlogged": false
+        },
+        "image": "EditOperation_dealer_reservation",
+        "action": "dealerRevAction",
+        "needLogin": true
+      }
+    },
+    {
+      "37": {
+        "title": "智能后视镜",
+        "resource": {
+          "unReleated": true
+        },
+        "generation": {
+          "unReleated": true
+        },
+        "role": {
+          "unReleated": true
+        },
+        "image": "vehicle_operation_icon_backmirror",
+        "action": "backMirrorAction",
+        "needLogin": true
+      }
+    },
+    {
+      "38": {
+        "title": "安悦扫码充电",
+        "resource": {
+          "PHEV": true,
+          "BEV": true,
+          "FV": false
+        },
+        "generation": {
+          "unReleated": true
+        },
+        "role": {
+          "unReleated": false,
+          "owner": true,
+          "driver": true,
+          "proxy": true,
+          "visitor": false,
+          "unlogged": false
+        },
+        "image": "vehicle_operation_icon_anyue",
+        "action": "anyueChageAction",
+        "needLogin": true
+      }
+    },
+    {
+      "39": {
+        "title": "险贷检提醒",
+        "resource": {
+          "unReleated": true
+        },
+        "generation": {
+          "unReleated": true
+        },
+        "role": {
+          "unReleated": false,
+          "owner": true,
+          "driver": false,
+          "proxy": false,
+          "visitor": true,
+          "unlogged": true
+        },
+        "image": "vehicle_operation_icon_datenotify",
+        "action": "dateNotifyAction",
+        "needLogin": true
+      }
+    },
+    {
+      "40": {
+        "title": "爱车评估",
+        "resource": {
+          "unReleated": true
+        },
+        "generation": {
+          "unReleated": true
+        },
+        "role": {
+          "unReleated": false,
+          "owner": true,
+          "driver": true,
+          "proxy": true,
+          "visitor": true,
+          "unlogged": true
+        },
+        "image": "vehicle_operation_icon_evaluate",
+        "action": "vehicleEvaluateAction",
+        "needLogin": true
+      }
+    },
+    {
+      "42": {
+        "title": "安吉星商城",
+        "resource": {
+          "unReleated": true
+        },
+        "generation": {
+          "unReleated": true
+        },
+        "role": {
+          "unReleated": true
+        },
+        "image": "Icon_quickStart_onstarShop",
+        "action": "onstarShop",
+        "needLogin": false
+      }
+    }
+  ],
+  [
+    {
+      "41": {
+        "title": "车联课堂",
+        "resource": {
+          "unReleated": true
+        },
+        "generation": {
+          "unReleated": true
+        },
+        "role": {
+          "unReleated": false,
+          "owner": true,
+          "driver": true,
+          "proxy": true,
+          "visitor": false,
+          "unlogged": true
+        },
+        "image": "Icon_Me_Car_Class_DarkBlue",
+        "action": "carClass",
+        "needLogin": true
+      }
+    }
+  ]
+]

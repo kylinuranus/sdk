@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<<<<<<< .mine
+<dict>
+	<key>aps-environment</key>
+	<string>development</string>
+</dict>
+=======
+<<<<<<< .mine
+<dict>
+	<key>aps-environment</key>
+	<string>development</string>
+	<key>com.apple.developer.associated-domains</key>
+	<array/>
+</dict>
+=======
+<dict/>
+>>>>>>> .r110152
+>>>>>>> .r110123
+</plist>

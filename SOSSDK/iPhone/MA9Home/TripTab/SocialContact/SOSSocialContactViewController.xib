@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SOSSocialContactViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Loading／loading_404_340x280" translatesAutoresizingMaskIntoConstraints="NO" id="hOq-6c-Rf3">
+                    <rect key="frame" x="-10" y="154" width="340" height="220"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Guide／Startup／guide_startup_android_part_2" translatesAutoresizingMaskIntoConstraints="NO" id="g6O-cv-nNi">
+                    <rect key="frame" x="0.0" y="368" width="320" height="200"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEU-XN-j8P">
+                    <rect key="frame" x="0.0" y="399" width="320" height="38.5"/>
+                    <string key="text">发送确认函，您的位置会实时分享给好友
+到好友提供的位置去接TA吧！</string>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" red="0.30588235294117649" green="0.31372549019607843" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvr-JR-OJG">
+                    <rect key="frame" x="65" y="501" width="190" height="37"/>
+                    <color key="backgroundColor" red="0.40784313729999999" green="0.58823529409999997" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="I1t-6m-mvp"/>
+                        <constraint firstAttribute="width" constant="190" id="d3a-4j-1Px"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <state key="normal" title="发送确认函"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="hexBgColor" value="#6896ED"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="SendButtonTaped:" destination="-1" eventType="touchUpInside" id="KKR-dZ-G8K"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="g6O-cv-nNi" secondAttribute="trailing" id="9ih-Pt-0qH"/>
+                <constraint firstItem="wvr-JR-OJG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="J4X-fs-kV2"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="wvr-JR-OJG" secondAttribute="bottom" constant="30" id="KHD-6B-CXx"/>
+                <constraint firstAttribute="bottom" secondItem="g6O-cv-nNi" secondAttribute="bottom" id="RJE-QH-wrT"/>
+                <constraint firstItem="tEU-XN-j8P" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="UvB-uB-Qi0"/>
+                <constraint firstItem="g6O-cv-nNi" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="bA8-Xf-v7I"/>
+                <constraint firstAttribute="centerY" secondItem="hOq-6c-Rf3" secondAttribute="centerY" constant="20" id="dp5-ss-nLj"/>
+                <constraint firstItem="tEU-XN-j8P" firstAttribute="top" secondItem="hOq-6c-Rf3" secondAttribute="bottom" constant="25" id="dqW-RJ-yLF"/>
+                <constraint firstItem="tEU-XN-j8P" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pI4-sc-APO"/>
+                <constraint firstItem="hOq-6c-Rf3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yA7-94-0TY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="178" y="61"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Guide／Startup／guide_startup_android_part_2" width="375" height="200"/>
+        <image name="Loading／loading_404_340x280" width="340" height="220"/>
+    </resources>
+</document>

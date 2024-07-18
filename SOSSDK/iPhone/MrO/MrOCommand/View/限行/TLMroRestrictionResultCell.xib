@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TLMroRestrictionResultCell" rowHeight="222" id="KGk-i7-Jjw" customClass="TLMroRestrictionResultCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="228"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="227.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FJh-EU-Bkr">
+                        <rect key="frame" x="20" y="8" width="280" height="204.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LFS-hy-S8i" customClass="TLMroRestrictionDateView">
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="TR9-U4-55S"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wIs-1B-hh0">
+                                <rect key="frame" x="0.0" y="55" width="280" height="144.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wIs-1B-hh0" firstAttribute="top" secondItem="LFS-hy-S8i" secondAttribute="bottom" constant="5" id="4Go-j4-YbG"/>
+                            <constraint firstItem="wIs-1B-hh0" firstAttribute="leading" secondItem="FJh-EU-Bkr" secondAttribute="leading" id="buk-rK-5OG"/>
+                            <constraint firstAttribute="trailing" secondItem="wIs-1B-hh0" secondAttribute="trailing" id="daA-aU-dIz"/>
+                            <constraint firstItem="LFS-hy-S8i" firstAttribute="leading" secondItem="FJh-EU-Bkr" secondAttribute="leading" id="hE1-QK-DaU"/>
+                            <constraint firstItem="LFS-hy-S8i" firstAttribute="top" secondItem="FJh-EU-Bkr" secondAttribute="top" id="noL-z3-8ey"/>
+                            <constraint firstAttribute="trailing" secondItem="LFS-hy-S8i" secondAttribute="trailing" id="u0w-kv-zrn"/>
+                            <constraint firstAttribute="bottom" secondItem="wIs-1B-hh0" secondAttribute="bottom" constant="5" id="v2b-RM-27V"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="FJh-EU-Bkr" secondAttribute="bottom" constant="15" id="8CY-pn-rw1"/>
+                    <constraint firstItem="FJh-EU-Bkr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="S2w-Q7-xgF"/>
+                    <constraint firstAttribute="trailing" secondItem="FJh-EU-Bkr" secondAttribute="trailing" constant="20" id="Ut3-oh-Q4a"/>
+                    <constraint firstItem="FJh-EU-Bkr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="rjK-QW-nN0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="containerView" destination="wIs-1B-hh0" id="0TB-kT-RVM"/>
+                <outlet property="dateView" destination="LFS-hy-S8i" id="YQg-Fc-GZb"/>
+                <outlet property="rootContainerView" destination="FJh-EU-Bkr" id="Sp2-P7-VkI"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="143"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PingFang.ttc">
+            <string>PingFangSC-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SOSStatusLoadingView">
+            <rect key="frame" x="0.0" y="0.0" width="426" height="157"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7tg-M6-0gr">
+                    <rect key="frame" x="131" y="0.0" width="164.5" height="157"/>
+                    <subviews>
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_arrow_rotate_white" translatesAutoresizingMaskIntoConstraints="NO" id="pVE-zQ-Phn">
+                            <rect key="frame" x="5" y="66" width="25" height="25"/>
+                        </imageView>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在为您连接中..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APH-zc-9yI">
+                            <rect key="frame" x="34.5" y="67" width="125" height="23"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="APH-zc-9yI" firstAttribute="leading" secondItem="pVE-zQ-Phn" secondAttribute="trailing" constant="5" id="Cn2-4A-bbk"/>
+                        <constraint firstItem="APH-zc-9yI" firstAttribute="centerX" secondItem="7tg-M6-0gr" secondAttribute="centerX" constant="14.75" id="SiQ-wk-R3v"/>
+                        <constraint firstItem="pVE-zQ-Phn" firstAttribute="centerY" secondItem="7tg-M6-0gr" secondAttribute="centerY" id="b8m-IN-iP7"/>
+                        <constraint firstItem="pVE-zQ-Phn" firstAttribute="leading" secondItem="7tg-M6-0gr" secondAttribute="leading" constant="5" id="dtk-Q1-lHR"/>
+                        <constraint firstAttribute="trailing" secondItem="APH-zc-9yI" secondAttribute="trailing" constant="5" id="wA9-iC-gr7"/>
+                        <constraint firstItem="APH-zc-9yI" firstAttribute="centerY" secondItem="7tg-M6-0gr" secondAttribute="centerY" id="wrE-Mn-kal"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zec-rj-mkz">
+                    <rect key="frame" x="0.0" y="10" width="426" height="137"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="7tg-M6-0gr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="642-Xu-meS"/>
+                <constraint firstAttribute="bottom" secondItem="7tg-M6-0gr" secondAttribute="bottom" id="LoG-I0-kOC"/>
+                <constraint firstAttribute="trailing" secondItem="Zec-rj-mkz" secondAttribute="trailing" id="QY5-Fg-sgs"/>
+                <constraint firstItem="Zec-rj-mkz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gdx-Yh-HiE"/>
+                <constraint firstAttribute="bottom" secondItem="Zec-rj-mkz" secondAttribute="bottom" constant="10" id="lAc-yy-Jzj"/>
+                <constraint firstItem="Zec-rj-mkz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="mQA-5T-RLy"/>
+                <constraint firstItem="7tg-M6-0gr" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wsM-xF-qT2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="detailIconLB" destination="Zec-rj-mkz" id="fep-pI-Mre"/>
+                <outlet property="detailLabelLeadingTrailingConstrain" destination="gdx-Yh-HiE" id="zPg-8A-LJZ"/>
+                <outlet property="detailLabelTrailingConstrain" destination="QY5-Fg-sgs" id="mWC-SK-B5V"/>
+                <outlet property="icon" destination="pVE-zQ-Phn" id="0HR-aI-OrU"/>
+                <outlet property="infoLB" destination="APH-zc-9yI" id="BR8-fK-kgE"/>
+            </connections>
+            <point key="canvasLocation" x="0.0" y="105.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_arrow_rotate_white" width="25" height="25"/>
+    </resources>
+</document>

@@ -1,0 +1,38 @@
+{
+       "activityEndTime": "2020-02-01 00:00:00",
+       "activityStartTime": "2020-01-23 00:00:00",
+       "themeColorPack": {
+              "bottomBarGradientBean": {
+                     "angle": "270",
+                     "endColor": "#E2E6F4",
+                     "startColor": "#FFFFFF",
+                     "type": "linear"
+              },
+              "themeColorBean": {
+                    "meNonePackageFontColor": "#6483C9",
+                    "mePackagePageFontColor": "#9D8169",
+                     "bottomBarFontColor": "#6F717C",
+                     "tripCenterFontColor": "#FFFFFF",
+                     "tripSideFontColor": "#4E5059",
+                     "tabMeTopRightPointColor": "#DF0000",
+                     "vehicleHexagonFontColor": "#C3CEEC"
+              },
+              "tripBarGradientBean": {
+                     "angle": "270",
+                     "endColor": "#FFFFFF",
+                     "startColor": "#FFFFFF",
+                     "type": "linear"
+              },
+              "tripCenterGradientBean": {
+                     "angle": "180",
+                     "endColor": "#6896ed",
+                     "startColor": "#6896ed",
+                     "type": "linear"
+              },
+              "vehicleProgressBean": {
+                     "vehicleProgressFirstColor": "#304D8F",
+                     "vehicleProgressSecondColor": "#51FFF9"
+              }
+       },
+       "themeZipFileUrl": "https://www.baidu.com/s?wd\u003d今日新鲜事\u0026tn\u003dSE_Pclogo_6ysd4c7a\u0026sa\u003dire_dl_gh_logo\u0026rsv_dl\u003digh_logo_pc"
+}

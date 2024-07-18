@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PingFang.ttc">
+            <string>PingFangSC-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="NavigateSearchHistoryCell" rowHeight="85" id="KGk-i7-Jjw" customClass="NavigateSearchHistoryCell">
+            <rect key="frame" x="0.0" y="0.0" width="341" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="341" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Search_Associate_Icon" translatesAutoresizingMaskIntoConstraints="NO" id="3mS-ch-lI5">
+                        <rect key="frame" x="16" y="18" width="22" height="22"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" horizontalCompressionResistancePriority="249" text="title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utM-OR-WrI">
+                        <rect key="frame" x="46" y="20" width="26" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.15686274510000001" green="0.16078431369999999" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5i-7D-6ib">
+                        <rect key="frame" x="269" y="26" width="56" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="56" id="QFa-hu-iVc"/>
+                            <constraint firstAttribute="height" constant="28" id="tLP-ca-d4I"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="12"/>
+                        <state key="normal" title="去这里">
+                            <color key="titleColor" red="0.40784313729999999" green="0.58823529409999997" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="borderHexColor" value="6896ED"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="routeButtonTapped" destination="KGk-i7-Jjw" eventType="touchUpInside" id="euJ-Yw-PBH"/>
+                        </connections>
+                    </button>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COM-3a-vh2">
+                        <rect key="frame" x="155" y="33" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tep-Ke-0eV">
+                        <rect key="frame" x="46" y="44" width="49.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbe-CW-ybs">
+                        <rect key="frame" x="289" y="21.5" width="37" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="37" id="CWY-Hx-SO7"/>
+                            <constraint firstAttribute="width" secondItem="qbe-CW-ybs" secondAttribute="height" multiplier="1:1" id="WyR-7r-gLp"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="Trip_User_Location_Card_Collection_Hilighted"/>
+                        <state key="selected" backgroundImage="Trip_User_Location_Card_Collection"/>
+                        <state key="highlighted" backgroundImage="Trip_User_Location_Card_Collection"/>
+                        <connections>
+                            <action selector="collectionButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="oOM-BC-uk1"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.95294117647058818" green="0.96078431372549022" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="d5i-7D-6ib" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tep-Ke-0eV" secondAttribute="trailing" constant="10" id="2PS-hB-t2P"/>
+                    <constraint firstItem="3mS-ch-lI5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="61g-8V-246"/>
+                    <constraint firstAttribute="trailing" secondItem="qbe-CW-ybs" secondAttribute="trailing" constant="15" id="KOV-cb-R1P"/>
+                    <constraint firstItem="utM-OR-WrI" firstAttribute="leading" secondItem="3mS-ch-lI5" secondAttribute="trailing" constant="8" id="LNs-dM-ohM"/>
+                    <constraint firstItem="COM-3a-vh2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="MYF-Bf-U3j"/>
+                    <constraint firstItem="COM-3a-vh2" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Tlf-Y1-Ko7"/>
+                    <constraint firstItem="d5i-7D-6ib" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="UEt-aF-84q"/>
+                    <constraint firstAttribute="trailing" secondItem="d5i-7D-6ib" secondAttribute="trailing" constant="16" id="eni-3O-11u"/>
+                    <constraint firstItem="d5i-7D-6ib" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="utM-OR-WrI" secondAttribute="trailing" constant="10" id="fD3-fg-aq9"/>
+                    <constraint firstItem="3mS-ch-lI5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="hrv-P9-1nn"/>
+                    <constraint firstAttribute="bottom" secondItem="tep-Ke-0eV" secondAttribute="bottom" constant="20" id="psK-4P-mGf"/>
+                    <constraint firstItem="qbe-CW-ybs" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ruU-M9-JBs"/>
+                    <constraint firstItem="utM-OR-WrI" firstAttribute="centerY" secondItem="3mS-ch-lI5" secondAttribute="centerY" id="uNB-EE-Uuu"/>
+                    <constraint firstItem="tep-Ke-0eV" firstAttribute="leading" secondItem="utM-OR-WrI" secondAttribute="leading" id="y5f-mh-weN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.95294117647058818" green="0.96078431372549022" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="centerLabel" destination="COM-3a-vh2" id="dtB-y8-Arx"/>
+                <outlet property="collectionnButton" destination="qbe-CW-ybs" id="SBk-dL-SbD"/>
+                <outlet property="detailLabel" destination="tep-Ke-0eV" id="xfd-E5-smD"/>
+                <outlet property="iconImgView" destination="3mS-ch-lI5" id="3qy-Ps-mBd"/>
+                <outlet property="sendToCarButton" destination="d5i-7D-6ib" id="d7K-bA-NWN"/>
+                <outlet property="titleLabel" destination="utM-OR-WrI" id="okp-KS-hW7"/>
+            </connections>
+            <point key="canvasLocation" x="-77.599999999999994" y="-97.151424287856074"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Search_Associate_Icon" width="22" height="22"/>
+        <image name="Trip_User_Location_Card_Collection" width="34" height="34"/>
+        <image name="Trip_User_Location_Card_Collection_Hilighted" width="22" height="22"/>
+    </resources>
+</document>

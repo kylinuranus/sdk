@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SOSDonateProjectView">
+            <rect key="frame" x="0.0" y="0.0" width="388" height="263"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khp-Py-TA5">
+                    <rect key="frame" x="0.0" y="0.0" width="388" height="263"/>
+                    <connections>
+                        <action selector="jumpToActivityDetailH5Page" destination="iN0-l3-epB" eventType="touchUpInside" id="fnf-np-2rZ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="贫困小学远程教室项目" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0V-wI-KiF">
+                    <rect key="frame" x="102.5" y="121" width="183.5" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="khp-Py-TA5" secondAttribute="trailing" id="Ail-Kh-yy3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="khp-Py-TA5" secondAttribute="bottom" id="Csc-yg-2dz"/>
+                <constraint firstItem="L0V-wI-KiF" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Z8v-eC-V7q"/>
+                <constraint firstItem="L0V-wI-KiF" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="hMV-ep-bor"/>
+                <constraint firstItem="khp-Py-TA5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="n5v-wT-lpi"/>
+                <constraint firstItem="khp-Py-TA5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ncJ-5q-BWh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bgButton" destination="khp-Py-TA5" id="E1a-fx-7hS"/>
+                <outlet property="titleLabel" destination="L0V-wI-KiF" id="JY8-9a-g6t"/>
+            </connections>
+            <point key="canvasLocation" x="31" y="-1.5"/>
+        </view>
+    </objects>
+</document>

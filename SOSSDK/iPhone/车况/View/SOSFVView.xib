@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SOSFVView">
+            <connections>
+                <outlet property="fuelPercent" destination="4f7-qE-xVw" id="2HN-cC-buW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="227"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tile／Car／tile_condition_electric_charged_375x150" translatesAutoresizingMaskIntoConstraints="NO" id="PjB-uP-zPL">
+                    <rect key="frame" x="0.0" y="57" width="375" height="150"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon／Other／icon_condition_oil_100-percent_375x150(6)" translatesAutoresizingMaskIntoConstraints="NO" id="4f7-qE-xVw">
+                    <rect key="frame" x="244" y="57" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="Awi-Xf-pXF"/>
+                        <constraint firstAttribute="width" constant="150" id="IMx-aG-sf7"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="燃油余量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bR-S6-FGs">
+                    <rect key="frame" x="290.5" y="155" width="57.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.30588235294117649" green="0.31372549019607843" blue="0.34901960784313724" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="4bR-S6-FGs" firstAttribute="bottom" secondItem="4f7-qE-xVw" secondAttribute="bottom" constant="-35" id="9eU-DT-iI3"/>
+                <constraint firstItem="4bR-S6-FGs" firstAttribute="centerX" secondItem="4f7-qE-xVw" secondAttribute="centerX" id="LER-X4-d06"/>
+                <constraint firstItem="PjB-uP-zPL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QA8-EQ-PJp"/>
+                <constraint firstAttribute="bottom" secondItem="4f7-qE-xVw" secondAttribute="bottom" constant="20" id="SKY-iI-j59"/>
+                <constraint firstAttribute="bottom" secondItem="PjB-uP-zPL" secondAttribute="bottom" constant="20" id="XoT-0j-VVq"/>
+                <constraint firstAttribute="trailing" secondItem="4f7-qE-xVw" secondAttribute="trailing" constant="20" id="q1d-5W-RKa"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="124.6376811594203" y="119.53125"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Icon／Other／icon_condition_oil_100-percent_375x150(6)" width="150" height="150"/>
+        <image name="Tile／Car／tile_condition_electric_charged_375x150" width="375" height="150"/>
+    </resources>
+</document>

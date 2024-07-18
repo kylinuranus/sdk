@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINNextLTPro-BoldCondensed.otf">
+            <string>DINNextLTPro-BoldCondensed</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SOSDataPackageCell" rowHeight="142" id="KGk-i7-Jjw" customClass="SOSDataPackageCell">
+            <rect key="frame" x="0.0" y="0.0" width="406" height="142"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="406" height="142"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="套餐_Group" translatesAutoresizingMaskIntoConstraints="NO" id="DOl-sn-v8F">
+                        <rect key="frame" x="10" y="10" width="386" height="122"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4i-5e-Cs7">
+                        <rect key="frame" x="201" y="56" width="44" height="60"/>
+                        <fontDescription key="fontDescription" name="DINNextLTPro-BoldCondensed" family="DIN Next LT Pro" pointSize="60"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="套餐_icon_4g" translatesAutoresizingMaskIntoConstraints="NO" id="2jO-LV-nx2">
+                        <rect key="frame" x="114" y="56" width="67" height="74"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="----" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9O-g1-crY">
+                        <rect key="frame" x="20" y="20" width="31" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开始时间 --" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ie-rf-o0J">
+                        <rect key="frame" x="20" y="40.5" width="53.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="10"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnh-zr-FX3">
+                        <rect key="frame" x="245" y="68" width="20.5" height="20"/>
+                        <fontDescription key="fontDescription" name="DINNextLTPro-BoldCondensed" family="DIN Next LT Pro" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="剩余流量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTX-6X-W0P">
+                        <rect key="frame" x="245" y="92" width="41" height="12"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="10"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="DOl-sn-v8F" secondAttribute="bottom" constant="10" id="0ZY-WA-WQZ"/>
+                    <constraint firstAttribute="trailing" secondItem="DOl-sn-v8F" secondAttribute="trailing" constant="10" id="6YL-YA-KGd"/>
+                    <constraint firstItem="K4i-5e-Cs7" firstAttribute="top" secondItem="2jO-LV-nx2" secondAttribute="top" id="DQV-kq-4qp"/>
+                    <constraint firstItem="pnh-zr-FX3" firstAttribute="leading" secondItem="K4i-5e-Cs7" secondAttribute="trailing" id="DcJ-V9-Nhn"/>
+                    <constraint firstItem="K4i-5e-Cs7" firstAttribute="bottom" secondItem="gTX-6X-W0P" secondAttribute="bottom" constant="12" id="EZd-yZ-IJ2"/>
+                    <constraint firstItem="pnh-zr-FX3" firstAttribute="top" secondItem="K4i-5e-Cs7" secondAttribute="top" constant="12" id="Gdi-hO-8rf"/>
+                    <constraint firstItem="K4i-5e-Cs7" firstAttribute="leading" secondItem="2jO-LV-nx2" secondAttribute="trailing" constant="20" id="J5O-JZ-5FZ"/>
+                    <constraint firstItem="K4i-5e-Cs7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="15" id="OBC-Mh-okp"/>
+                    <constraint firstItem="A9O-g1-crY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="QtB-GO-G8S"/>
+                    <constraint firstItem="K4i-5e-Cs7" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="20" id="WKT-Yo-TnW"/>
+                    <constraint firstItem="A9O-g1-crY" firstAttribute="top" secondItem="DOl-sn-v8F" secondAttribute="top" constant="10" id="omW-bi-jUi"/>
+                    <constraint firstItem="DOl-sn-v8F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="qxm-uk-74T"/>
+                    <constraint firstItem="DOl-sn-v8F" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="s80-1o-t77"/>
+                    <constraint firstItem="4ie-rf-o0J" firstAttribute="leading" secondItem="A9O-g1-crY" secondAttribute="leading" id="uOa-PQ-sB4"/>
+                    <constraint firstItem="gTX-6X-W0P" firstAttribute="leading" secondItem="K4i-5e-Cs7" secondAttribute="trailing" id="xLu-hs-bFs"/>
+                    <constraint firstItem="4ie-rf-o0J" firstAttribute="top" secondItem="A9O-g1-crY" secondAttribute="bottom" id="zW5-Bh-jzj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="BGImgView" destination="DOl-sn-v8F" id="105-VI-HJn"/>
+                <outlet property="dataUnitLabel" destination="pnh-zr-FX3" id="Qij-QZ-qmG"/>
+                <outlet property="numberLabel" destination="K4i-5e-Cs7" id="HFy-Uw-Pl2"/>
+                <outlet property="timeLabel" destination="4ie-rf-o0J" id="sNl-ru-AeR"/>
+                <outlet property="titleLabel" destination="A9O-g1-crY" id="wPl-BO-GC0"/>
+            </connections>
+            <point key="canvasLocation" x="83" y="103"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="套餐_Group" width="355" height="142.5"/>
+        <image name="套餐_icon_4g" width="67" height="74"/>
+    </resources>
+</document>

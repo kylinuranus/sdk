@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="LoginInsertTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="38"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="37.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" tag="1000" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="7V0-z5-clP">
+                        <rect key="frame" x="53" y="3" width="244" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="NYh-FD-Ndl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="zUO-nM-clx"/>
+                        </connections>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIn-77-nTV">
+                        <rect key="frame" x="53" y="3" width="224" height="36"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2am-tW-car">
+                        <rect key="frame" x="53" y="40" width="244" height="1"/>
+                        <color key="backgroundColor" red="0.3333333432674408" green="0.3333333432674408" blue="0.3333333432674408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="1JZ-4r-sW5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7V0-z5-clP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="4bK-n7-DY8"/>
+                    <constraint firstItem="VIn-77-nTV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="37" id="7OB-Mg-ycj"/>
+                    <constraint firstItem="2am-tW-car" firstAttribute="top" secondItem="VIn-77-nTV" secondAttribute="bottom" constant="1" id="Po6-hL-dWm"/>
+                    <constraint firstItem="7V0-z5-clP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="37" id="Vhh-4h-rXQ"/>
+                    <constraint firstItem="2am-tW-car" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="37" id="WUV-Ss-KK2"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="7V0-z5-clP" secondAttribute="trailing" constant="7" id="Wet-cn-gja"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="VIn-77-nTV" secondAttribute="trailing" constant="27" id="a8b-TA-Dwi"/>
+                    <constraint firstItem="VIn-77-nTV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="d4U-5w-X9N"/>
+                    <constraint firstItem="2am-tW-car" firstAttribute="top" secondItem="7V0-z5-clP" secondAttribute="bottom" constant="1" id="evp-1i-ir9"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="2am-tW-car" secondAttribute="bottom" constant="-8" id="jpb-gE-tVY"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="2am-tW-car" secondAttribute="trailing" constant="7" id="mpF-fq-vVj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellSepLine" destination="2am-tW-car" id="hca-xb-yqY"/>
+                <outlet property="oldUserNameTf" destination="7V0-z5-clP" id="hP4-lV-0fP"/>
+                <outlet property="originLine_x" destination="WUV-Ss-KK2" id="d9u-4r-tv9"/>
+                <outlet property="targetClick" destination="VIn-77-nTV" id="ILV-jC-h7Y"/>
+            </connections>
+            <point key="canvasLocation" x="101" y="235"/>
+        </tableViewCell>
+    </objects>
+</document>

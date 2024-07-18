@@ -1,0 +1,6 @@
+framework module ISVINReaderPreviewSDK {
+  umbrella header "ISVINReaderPreviewSDK.h"
+
+  export *
+  module * { export * }
+}

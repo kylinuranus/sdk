@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="res">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Pods/AMapNavi/AMapNaviKit.framework/AMap.bundle/res.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

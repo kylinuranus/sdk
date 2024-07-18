@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SOSOrderHistoryVC">
+            <connections>
+                <outlet property="contentTableView" destination="fBF-rl-TlG" id="QRH-xf-QUc"/>
+                <outlet property="noOrderBGView" destination="l9B-5p-ddl" id="l9F-md-qqZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fBF-rl-TlG">
+                    <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <inset key="scrollIndicatorInsets" minX="10" minY="0.0" maxX="-20" maxY="0.0"/>
+                    <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="AsS-1x-nQK"/>
+                        <outlet property="delegate" destination="-1" id="6r5-yv-WPw"/>
+                    </connections>
+                </tableView>
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l9B-5p-ddl">
+                    <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您还没有订单记录哦~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CuD-gU-mQH">
+                            <rect key="frame" x="108.66666666666669" y="357.33333333333331" width="157" height="19.333333333333314"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.79957726880000002" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="CuD-gU-mQH" firstAttribute="centerY" secondItem="l9B-5p-ddl" secondAttribute="centerY" id="Kgw-cU-bLZ"/>
+                        <constraint firstItem="CuD-gU-mQH" firstAttribute="centerX" secondItem="l9B-5p-ddl" secondAttribute="centerX" id="SI0-Kh-S6u"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.91021394729614258" green="0.92126786708831787" blue="0.93726038932800293" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="fBF-rl-TlG" firstAttribute="leading" secondItem="DXN-pH-RGb" secondAttribute="leading" id="H2W-6x-P20"/>
+                <constraint firstItem="l9B-5p-ddl" firstAttribute="leading" secondItem="fBF-rl-TlG" secondAttribute="leading" id="OcY-V5-Cmc"/>
+                <constraint firstItem="DXN-pH-RGb" firstAttribute="trailing" secondItem="fBF-rl-TlG" secondAttribute="trailing" id="SQ0-00-Lsx"/>
+                <constraint firstItem="DXN-pH-RGb" firstAttribute="bottom" secondItem="fBF-rl-TlG" secondAttribute="bottom" id="WdB-YD-SgZ"/>
+                <constraint firstItem="l9B-5p-ddl" firstAttribute="bottom" secondItem="DXN-pH-RGb" secondAttribute="bottom" id="dnp-HF-CKb"/>
+                <constraint firstItem="l9B-5p-ddl" firstAttribute="trailing" secondItem="fBF-rl-TlG" secondAttribute="trailing" id="eOM-TQ-GWY"/>
+                <constraint firstItem="l9B-5p-ddl" firstAttribute="top" secondItem="DXN-pH-RGb" secondAttribute="top" id="fxX-ds-aS9"/>
+                <constraint firstItem="DXN-pH-RGb" firstAttribute="top" secondItem="fBF-rl-TlG" secondAttribute="top" id="rMR-eP-ekH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="DXN-pH-RGb"/>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </view>
+    </objects>
+</document>

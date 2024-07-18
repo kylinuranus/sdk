@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SOSOilOrderListVC">
+            <connections>
+                <outlet property="NOOrderView" destination="Ab1-ls-MpM" id="6D4-E5-vCi"/>
+                <outlet property="tableView" destination="iKE-Mu-IBY" id="Vdg-is-OwW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="154" estimatedRowHeight="154" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="iKE-Mu-IBY">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="EoV-rK-eNM"/>
+                        <outlet property="delegate" destination="-1" id="aNd-SL-F7J"/>
+                    </connections>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ab1-ls-MpM">
+                    <rect key="frame" x="107" y="341" width="200" height="214.5"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OilOrder_NO_Order" translatesAutoresizingMaskIntoConstraints="NO" id="pFt-m8-9kt">
+                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无订单～" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsk-Sf-wGt">
+                            <rect key="frame" x="0.0" y="200" width="200" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.30588235289999999" green="0.31372549020000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="tsk-Sf-wGt" secondAttribute="bottom" id="1aK-MW-JH1"/>
+                        <constraint firstItem="tsk-Sf-wGt" firstAttribute="top" secondItem="pFt-m8-9kt" secondAttribute="bottom" id="Ds3-lm-FpS"/>
+                        <constraint firstItem="pFt-m8-9kt" firstAttribute="top" secondItem="Ab1-ls-MpM" secondAttribute="top" id="NaB-2H-6E3"/>
+                        <constraint firstItem="tsk-Sf-wGt" firstAttribute="leading" secondItem="Ab1-ls-MpM" secondAttribute="leading" id="NiD-qm-ZkP"/>
+                        <constraint firstAttribute="trailing" secondItem="tsk-Sf-wGt" secondAttribute="trailing" id="ljm-du-Dnd"/>
+                        <constraint firstItem="tsk-Sf-wGt" firstAttribute="top" secondItem="pFt-m8-9kt" secondAttribute="bottom" id="qvb-C2-ujm"/>
+                        <constraint firstItem="pFt-m8-9kt" firstAttribute="leading" secondItem="Ab1-ls-MpM" secondAttribute="leading" id="rO9-eQ-p6a"/>
+                        <constraint firstAttribute="trailing" secondItem="pFt-m8-9kt" secondAttribute="trailing" id="zvE-lA-mCS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ab1-ls-MpM" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Om9-dL-WYk"/>
+                <constraint firstItem="iKE-Mu-IBY" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Q8W-qR-zzL"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="iKE-Mu-IBY" secondAttribute="trailing" id="aqN-xX-8ed"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="iKE-Mu-IBY" secondAttribute="bottom" id="bgY-6C-3ck"/>
+                <constraint firstItem="Ab1-ls-MpM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eR7-Ic-sQe"/>
+                <constraint firstItem="iKE-Mu-IBY" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="wQg-hc-pyj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="OilOrder_NO_Order" width="200" height="200"/>
+    </resources>
+</document>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINNextLTPro-BoldCondensed.otf">
+            <string>DINNextLTPro-BoldCondensed</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SOSDataPackageUnOpenedCell" rowHeight="177" id="KGk-i7-Jjw" customClass="SOSDataPackageUnOpenedCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="177"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="177"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="套餐_Group_Gray" translatesAutoresizingMaskIntoConstraints="NO" id="50D-yK-f1a">
+                        <rect key="frame" x="10" y="10" width="300" height="157"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYd-iG-8I0">
+                        <rect key="frame" x="147.5" y="48.5" width="25" height="60"/>
+                        <fontDescription key="fontDescription" name="DINNextLTPro-BoldCondensed" family="DIN Next LT Pro" pointSize="60"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgk-qF-Ln1">
+                        <rect key="frame" x="172.5" y="60.5" width="20.5" height="20"/>
+                        <fontDescription key="fontDescription" name="DINNextLTPro-BoldCondensed" family="DIN Next LT Pro" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="套餐_icon_4g" translatesAutoresizingMaskIntoConstraints="NO" id="X9e-T6-jcb">
+                        <rect key="frame" x="60.5" y="51.5" width="67" height="74"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="流量7天包" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBK-dV-M8t">
+                        <rect key="frame" x="147.5" y="103.5" width="152.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="50D-yK-f1a" secondAttribute="bottom" constant="10" id="4Bc-l5-Xa5"/>
+                    <constraint firstItem="cgk-qF-Ln1" firstAttribute="leading" secondItem="hYd-iG-8I0" secondAttribute="trailing" id="8P2-ep-ums"/>
+                    <constraint firstItem="VBK-dV-M8t" firstAttribute="leading" secondItem="hYd-iG-8I0" secondAttribute="leading" id="FDD-aO-Ms5"/>
+                    <constraint firstAttribute="centerY" secondItem="hYd-iG-8I0" secondAttribute="centerY" constant="10" id="GSg-d3-Ixk"/>
+                    <constraint firstItem="hYd-iG-8I0" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Mp8-49-IJ2"/>
+                    <constraint firstItem="hYd-iG-8I0" firstAttribute="leading" secondItem="X9e-T6-jcb" secondAttribute="trailing" constant="20" id="NSu-MM-fxl"/>
+                    <constraint firstItem="VBK-dV-M8t" firstAttribute="top" secondItem="hYd-iG-8I0" secondAttribute="bottom" constant="-5" id="Oeq-Pb-yl2"/>
+                    <constraint firstAttribute="trailing" secondItem="VBK-dV-M8t" secondAttribute="trailing" constant="20" id="Onr-G7-dOb"/>
+                    <constraint firstItem="50D-yK-f1a" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="QiT-37-y3o"/>
+                    <constraint firstAttribute="trailing" secondItem="50D-yK-f1a" secondAttribute="trailing" constant="10" id="VYi-Rr-O7x"/>
+                    <constraint firstItem="cgk-qF-Ln1" firstAttribute="top" secondItem="hYd-iG-8I0" secondAttribute="top" constant="12" id="Y6M-KM-8zk"/>
+                    <constraint firstItem="50D-yK-f1a" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="gLl-f7-fUB"/>
+                    <constraint firstItem="X9e-T6-jcb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="lWf-dW-K8d"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="BGImgView" destination="50D-yK-f1a" id="fkl-b6-XKy"/>
+                <outlet property="dataUnitLabel" destination="cgk-qF-Ln1" id="kpO-Cb-VsD"/>
+                <outlet property="numberLabel" destination="hYd-iG-8I0" id="6Ah-b3-Onu"/>
+                <outlet property="titleLabel" destination="VBK-dV-M8t" id="c9s-Ye-8wT"/>
+            </connections>
+            <point key="canvasLocation" x="104" y="120.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="套餐_Group_Gray" width="355" height="150"/>
+        <image name="套餐_icon_4g" width="67" height="74"/>
+    </resources>
+</document>

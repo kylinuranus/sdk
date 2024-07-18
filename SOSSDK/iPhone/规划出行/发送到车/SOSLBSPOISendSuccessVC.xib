@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINNextLTPro-BoldCondensed.otf">
+            <string>DINNextLTPro-BoldCondensed</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SOSLBSPOISendSuccessVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KMa-ka-VwC">
+                    <rect key="frame" x="72" y="278" width="270" height="340"/>
+                    <subviews>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="icon_car_check_done" translatesAutoresizingMaskIntoConstraints="NO" id="NEy-aU-BkE">
+                            <rect key="frame" x="85" y="49.5" width="100" height="100"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="导航下发成功" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSg-ja-hrE">
+                            <rect key="frame" x="86" y="20" width="98" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="0.0" alpha="0.80252033389999999" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ra-xG-Kzj">
+                            <rect key="frame" x="32" y="159.5" width="206.5" height="31.5"/>
+                            <string key="text">由于对方位置可能有变化,
+请注意查看位置变化,更新导航下发.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.50551237309999997" green="0.50551237309999997" blue="0.50551237309999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="如需帮助,请拨打客服电话" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJZ-R7-p87">
+                            <rect key="frame" x="60" y="221" width="150" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.50551237309999997" green="0.50551237309999997" blue="0.50551237309999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJS-K6-gQY">
+                            <rect key="frame" x="66.5" y="232" width="137" height="40"/>
+                            <fontDescription key="fontDescription" name="DINNextLTPro-BoldCondensed" family="DIN Next LT Pro" pointSize="28"/>
+                            <state key="normal" title="400-820-1188"/>
+                            <connections>
+                                <action selector="phoneButtonTapped" destination="-1" eventType="touchUpInside" id="lWZ-TZ-KIF"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WsA-sp-lN2">
+                            <rect key="frame" x="0.0" y="290" width="270" height="50"/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="9ov-c2-L8W"/>
+                            </constraints>
+                            <state key="normal" title="知道了">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="knownButtonTapped" destination="-1" eventType="touchUpInside" id="oLO-T1-COn"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="WsA-sp-lN2" firstAttribute="leading" secondItem="KMa-ka-VwC" secondAttribute="leading" id="Ekj-PM-c3T"/>
+                        <constraint firstItem="XSg-ja-hrE" firstAttribute="top" secondItem="KMa-ka-VwC" secondAttribute="top" constant="20" id="Fzm-hc-EOe"/>
+                        <constraint firstItem="NEy-aU-BkE" firstAttribute="top" secondItem="XSg-ja-hrE" secondAttribute="bottom" constant="10" id="ILF-h0-Mrt"/>
+                        <constraint firstAttribute="width" constant="270" id="JrW-IP-Nkr"/>
+                        <constraint firstItem="nJZ-R7-p87" firstAttribute="top" secondItem="6ra-xG-Kzj" secondAttribute="bottom" constant="30" id="ROa-ZV-0Qk"/>
+                        <constraint firstAttribute="bottom" secondItem="WsA-sp-lN2" secondAttribute="bottom" id="SLL-sc-Cak"/>
+                        <constraint firstItem="XSg-ja-hrE" firstAttribute="centerX" secondItem="KMa-ka-VwC" secondAttribute="centerX" id="UJp-lg-sZK"/>
+                        <constraint firstAttribute="height" constant="340" id="VE8-Yc-mU7"/>
+                        <constraint firstItem="NEy-aU-BkE" firstAttribute="centerX" secondItem="KMa-ka-VwC" secondAttribute="centerX" id="VY7-5t-V86"/>
+                        <constraint firstItem="6ra-xG-Kzj" firstAttribute="centerX" secondItem="KMa-ka-VwC" secondAttribute="centerX" id="W2m-ux-rxw"/>
+                        <constraint firstAttribute="trailing" secondItem="WsA-sp-lN2" secondAttribute="trailing" id="dI4-b8-yR3"/>
+                        <constraint firstItem="6ra-xG-Kzj" firstAttribute="top" secondItem="NEy-aU-BkE" secondAttribute="bottom" constant="10" id="pXJ-v6-3YC"/>
+                        <constraint firstItem="PJS-K6-gQY" firstAttribute="centerX" secondItem="KMa-ka-VwC" secondAttribute="centerX" id="rKT-gP-F9u"/>
+                        <constraint firstItem="PJS-K6-gQY" firstAttribute="top" secondItem="nJZ-R7-p87" secondAttribute="bottom" constant="-5" id="ucs-Sg-N5Q"/>
+                        <constraint firstItem="nJZ-R7-p87" firstAttribute="centerX" secondItem="KMa-ka-VwC" secondAttribute="centerX" id="vRm-jE-Ids"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="KMa-ka-VwC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VMw-6u-wI8"/>
+                <constraint firstItem="KMa-ka-VwC" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="amx-o7-TNr"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="109"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_car_check_done" width="100" height="100"/>
+    </resources>
+</document>

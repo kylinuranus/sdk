@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SOSInsuranceFloatView">
+            <rect key="frame" x="0.0" y="0.0" width="232" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xdy-1U-f1j">
+                    <rect key="frame" x="0.0" y="0.0" width="24" height="30"/>
+                    <color key="backgroundColor" red="0.34509803921568627" green="0.73725490196078436" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="4H7-Pq-fsZ"/>
+                        <constraint firstAttribute="width" constant="24" id="8hx-qv-c5N"/>
+                    </constraints>
+                </view>
+                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="收缩蓝底" translatesAutoresizingMaskIntoConstraints="NO" id="5o3-Kw-bV2">
+                    <rect key="frame" x="0.0" y="0.0" width="232" height="30"/>
+                </imageView>
+                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="收缩蓝底" translatesAutoresizingMaskIntoConstraints="NO" id="LBC-wP-51E">
+                    <rect key="frame" x="0.0" y="0.0" width="232" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CrF-ft-EuT">
+                    <rect key="frame" x="15" y="4" width="183" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="hri-u8-QGN"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="击败">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="13" name=".PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="80%">
+                            <attributes>
+                                <color key="NSColor" red="0.95686274509803915" green="0.792156862745098" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="13" name=".PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="的用户，续约可享">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="13" name=".PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="7折">
+                            <attributes>
+                                <color key="NSColor" red="0.95686274509803915" green="0.792156862745098" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="13" name=".PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esV-R7-wNW">
+                    <rect key="frame" x="202" y="0.0" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="ARo-f3-TlU"/>
+                    </constraints>
+                    <state key="normal" image="保险箭头"/>
+                    <connections>
+                        <action selector="hideview:" destination="iN0-l3-epB" eventType="touchUpInside" id="iMj-tJ-uBv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.98157757520675659" green="0.18526827271163718" blue="0.35565220264536052" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="5o3-Kw-bV2" secondAttribute="trailing" id="1x6-IQ-qWT"/>
+                <constraint firstItem="5o3-Kw-bV2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3Lp-Wu-xl8"/>
+                <constraint firstAttribute="bottom" secondItem="5o3-Kw-bV2" secondAttribute="bottom" id="Dw9-4r-KLk"/>
+                <constraint firstItem="5o3-Kw-bV2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Go9-cU-1TS"/>
+                <constraint firstAttribute="bottom" secondItem="Xdy-1U-f1j" secondAttribute="bottom" id="I6i-o6-L99"/>
+                <constraint firstItem="CrF-ft-EuT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="Ko5-6X-cyT"/>
+                <constraint firstItem="Xdy-1U-f1j" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Z8t-O5-94P"/>
+                <constraint firstItem="CrF-ft-EuT" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="bZ0-eN-Sii"/>
+                <constraint firstItem="esV-R7-wNW" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="e1Y-Dj-4Hy"/>
+                <constraint firstItem="esV-R7-wNW" firstAttribute="leading" secondItem="CrF-ft-EuT" secondAttribute="trailing" constant="4" id="gPE-1I-r5W"/>
+                <constraint firstAttribute="trailing" secondItem="esV-R7-wNW" secondAttribute="trailing" id="gre-X3-VFO"/>
+                <constraint firstItem="esV-R7-wNW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hcc-Gk-L8W"/>
+                <constraint firstAttribute="bottom" secondItem="esV-R7-wNW" secondAttribute="bottom" id="rnO-fo-NcI"/>
+                <constraint firstItem="Xdy-1U-f1j" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rto-ge-JAA"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="longLayer" destination="5o3-Kw-bV2" id="dCi-ZT-js6"/>
+                <outlet property="longLayerFix" destination="LBC-wP-51E" id="sg0-QY-SiQ"/>
+                <outlet property="textLb" destination="CrF-ft-EuT" id="dqN-4M-f3W"/>
+            </connections>
+            <point key="canvasLocation" x="-107" y="-518"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="保险箭头" width="6" height="11"/>
+        <image name="收缩蓝底" width="232" height="30"/>
+    </resources>
+</document>

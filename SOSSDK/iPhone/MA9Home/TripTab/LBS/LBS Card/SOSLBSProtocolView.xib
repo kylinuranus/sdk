@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view hidden="YES" opaque="NO" contentMode="scaleToFill" id="iN0-l3-epB" customClass="SOSLBSProtocolView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M1t-Tp-w72">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vkc-or-XKE">
+                            <rect key="frame" x="77" y="220.5" width="260" height="455"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="安星定位用户服务协议" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXk-Mv-e6X">
+                                    <rect key="frame" x="48.5" y="37" width="163.5" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                    <color key="textColor" red="0.15686274509803921" green="0.16078431372549018" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juQ-aC-vbI">
+                                    <rect key="frame" x="130" y="407" width="130" height="48"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                    <state key="normal" title="同意">
+                                        <color key="titleColor" red="0.40784313725490196" green="0.58823529411764708" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.64313725489999995" green="0.64313725489999995" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="0.5"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="agreeProtocolButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="42J-Cx-tPu"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHJ-Kf-Yoq">
+                                    <rect key="frame" x="0.0" y="407" width="130.5" height="48"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="UYy-um-dIL"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                    <state key="normal" title="再想想">
+                                        <color key="titleColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.64313725489999995" green="0.64313725489999995" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="0.5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="agreeProtocolButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="DhN-ix-Ior"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="nHJ-Kf-Yoq" secondAttribute="bottom" id="5Ez-jV-yXo"/>
+                                <constraint firstItem="juQ-aC-vbI" firstAttribute="height" secondItem="nHJ-Kf-Yoq" secondAttribute="height" id="5bT-ig-pi7"/>
+                                <constraint firstItem="nHJ-Kf-Yoq" firstAttribute="trailing" secondItem="juQ-aC-vbI" secondAttribute="leading" constant="0.5" id="C2P-qU-awc"/>
+                                <constraint firstAttribute="height" constant="455" id="CJX-XU-MrH"/>
+                                <constraint firstItem="juQ-aC-vbI" firstAttribute="width" secondItem="nHJ-Kf-Yoq" secondAttribute="width" id="CLd-OP-bM2"/>
+                                <constraint firstAttribute="trailing" secondItem="juQ-aC-vbI" secondAttribute="trailing" id="GKX-pB-LA0"/>
+                                <constraint firstItem="nHJ-Kf-Yoq" firstAttribute="leading" secondItem="Vkc-or-XKE" secondAttribute="leading" id="O7S-gM-Qjf"/>
+                                <constraint firstAttribute="width" constant="260" id="eoE-eD-WB2"/>
+                                <constraint firstItem="oXk-Mv-e6X" firstAttribute="centerX" secondItem="Vkc-or-XKE" secondAttribute="centerX" id="gtE-wY-GvR"/>
+                                <constraint firstAttribute="bottom" secondItem="juQ-aC-vbI" secondAttribute="bottom" id="o7u-Bw-UEK"/>
+                                <constraint firstItem="oXk-Mv-e6X" firstAttribute="top" secondItem="Vkc-or-XKE" secondAttribute="top" constant="37" id="vOp-m6-3dr"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                                    <real key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.45000000000000001" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="Vkc-or-XKE" firstAttribute="centerX" secondItem="M1t-Tp-w72" secondAttribute="centerX" id="O3c-tg-7I0"/>
+                        <constraint firstItem="Vkc-or-XKE" firstAttribute="centerY" secondItem="M1t-Tp-w72" secondAttribute="centerY" id="etc-fd-sUq"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="M1t-Tp-w72" secondAttribute="trailing" id="Mow-Ce-58D"/>
+                <constraint firstAttribute="bottom" secondItem="M1t-Tp-w72" secondAttribute="bottom" id="PYZ-Xq-SQd"/>
+                <constraint firstItem="M1t-Tp-w72" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Wcx-r9-TwM"/>
+                <constraint firstItem="M1t-Tp-w72" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bvh-fy-yQb"/>
+            </constraints>
+            <connections>
+                <outlet property="agreeButton" destination="juQ-aC-vbI" id="mqZ-X2-AGK"/>
+                <outlet property="disAgreeButton" destination="nHJ-Kf-Yoq" id="Pim-Nx-CA1"/>
+                <outlet property="protocolBGView" destination="Vkc-or-XKE" id="LJL-tq-aKe"/>
+            </connections>
+            <point key="canvasLocation" x="53.623188405797109" y="48.883928571428569"/>
+        </view>
+    </objects>
+</document>

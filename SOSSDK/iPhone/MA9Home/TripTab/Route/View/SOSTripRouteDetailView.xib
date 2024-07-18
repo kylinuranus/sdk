@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SOSTripRouteDetailView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="204"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CYT-7f-Txj">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="204"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buG-F2-kHW">
+                            <rect key="frame" x="163.33333333333334" y="60" width="87.333333333333343" height="84"/>
+                            <connections>
+                                <action selector="reloadButtonTapped" destination="iN0-l3-epB" eventType="touchUpInside" id="UBb-SW-mU9"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Trip_LBS_List_Loading" translatesAutoresizingMaskIntoConstraints="NO" id="CoT-4a-kOZ">
+                            <rect key="frame" x="177" y="60" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="CoT-4a-kOZ" secondAttribute="height" multiplier="1:1" id="JFl-EX-EIy"/>
+                                <constraint firstAttribute="width" constant="60" id="ZNe-9w-SzV"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在计算路线.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QM0-Q9-4Xj">
+                            <rect key="frame" x="163.33333333333334" y="128" width="87.333333333333343" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.30588235294117649" green="0.31372549019607843" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="QM0-Q9-4Xj" firstAttribute="top" secondItem="CoT-4a-kOZ" secondAttribute="bottom" constant="8" id="ATw-0U-NQ0"/>
+                        <constraint firstItem="CoT-4a-kOZ" firstAttribute="leading" secondItem="buG-F2-kHW" secondAttribute="leading" priority="749" id="Dqg-cu-ckf"/>
+                        <constraint firstItem="QM0-Q9-4Xj" firstAttribute="leading" secondItem="buG-F2-kHW" secondAttribute="leading" id="LaP-n5-Doh"/>
+                        <constraint firstItem="QM0-Q9-4Xj" firstAttribute="bottom" secondItem="buG-F2-kHW" secondAttribute="bottom" id="VdN-1e-Ebn"/>
+                        <constraint firstItem="buG-F2-kHW" firstAttribute="centerY" secondItem="CYT-7f-Txj" secondAttribute="centerY" id="XxP-VP-aei"/>
+                        <constraint firstItem="CoT-4a-kOZ" firstAttribute="trailing" secondItem="buG-F2-kHW" secondAttribute="trailing" priority="749" id="YBo-ng-w02"/>
+                        <constraint firstItem="QM0-Q9-4Xj" firstAttribute="centerX" secondItem="buG-F2-kHW" secondAttribute="centerX" id="Z83-RL-6F3"/>
+                        <constraint firstItem="buG-F2-kHW" firstAttribute="centerX" secondItem="CYT-7f-Txj" secondAttribute="centerX" id="ZNs-D3-0bW"/>
+                        <constraint firstItem="CoT-4a-kOZ" firstAttribute="top" secondItem="buG-F2-kHW" secondAttribute="top" id="fYF-ik-7zc"/>
+                        <constraint firstItem="QM0-Q9-4Xj" firstAttribute="trailing" secondItem="buG-F2-kHW" secondAttribute="trailing" id="otj-S3-ZQE"/>
+                        <constraint firstItem="CoT-4a-kOZ" firstAttribute="centerX" secondItem="buG-F2-kHW" secondAttribute="centerX" id="yvT-Ik-2l5"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lb7-CA-WMC">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="204"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXu-RR-NmD">
+                            <rect key="frame" x="314" y="160" width="84" height="28"/>
+                            <color key="backgroundColor" red="0.40784313729999999" green="0.58823529409999997" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="84" id="D6G-PR-PUp"/>
+                                <constraint firstAttribute="height" constant="28" id="luD-EK-iOh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <state key="normal" title="开始导航"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                                    <real key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="beginGPS" destination="iN0-l3-epB" eventType="touchUpInside" id="ik7-Tv-Mgi"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X0e-YQ-1cj">
+                            <rect key="frame" x="14" y="14" width="386" height="136"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abK-3v-25d">
+                            <rect key="frame" x="224" y="160" width="84" height="28"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="iwS-4T-zHK"/>
+                                <constraint firstAttribute="width" constant="84" id="kFS-sN-awJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <state key="normal" title="车辆遥控">
+                                <color key="titleColor" red="0.40784313729999999" green="0.58823529409999997" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                                    <real key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.40784313729999999" green="0.58823529409999997" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="carRemoteButtonTapped" destination="iN0-l3-epB" eventType="touchUpInside" id="2DU-Kf-C6c"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="fXu-RR-NmD" secondAttribute="trailing" constant="16" id="2dh-30-0aK"/>
+                        <constraint firstItem="X0e-YQ-1cj" firstAttribute="centerX" secondItem="lb7-CA-WMC" secondAttribute="centerX" id="3dh-6E-ZgH"/>
+                        <constraint firstItem="X0e-YQ-1cj" firstAttribute="top" secondItem="lb7-CA-WMC" secondAttribute="top" constant="14" id="FeD-Um-UZ5"/>
+                        <constraint firstItem="fXu-RR-NmD" firstAttribute="top" secondItem="X0e-YQ-1cj" secondAttribute="bottom" constant="10" id="IP9-59-0CV"/>
+                        <constraint firstItem="fXu-RR-NmD" firstAttribute="leading" secondItem="abK-3v-25d" secondAttribute="trailing" constant="6" id="YkW-JV-zB9"/>
+                        <constraint firstAttribute="bottom" secondItem="fXu-RR-NmD" secondAttribute="bottom" constant="16" id="eHv-Au-uRu"/>
+                        <constraint firstItem="fXu-RR-NmD" firstAttribute="centerY" secondItem="abK-3v-25d" secondAttribute="centerY" id="mEK-9m-iXG"/>
+                        <constraint firstItem="X0e-YQ-1cj" firstAttribute="leading" secondItem="lb7-CA-WMC" secondAttribute="leading" constant="14" id="vb9-ND-TUb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="CYT-7f-Txj" secondAttribute="trailing" id="2uZ-5p-RCA"/>
+                <constraint firstAttribute="bottom" secondItem="lb7-CA-WMC" secondAttribute="bottom" id="CcO-70-iZX"/>
+                <constraint firstItem="lb7-CA-WMC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ne5-Lo-Y1d"/>
+                <constraint firstItem="lb7-CA-WMC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Rap-Qe-TDo"/>
+                <constraint firstAttribute="trailing" secondItem="lb7-CA-WMC" secondAttribute="trailing" id="d11-cO-4Jf"/>
+                <constraint firstItem="CYT-7f-Txj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kTP-D0-lpp"/>
+                <constraint firstAttribute="bottom" secondItem="CYT-7f-Txj" secondAttribute="bottom" id="pxx-6A-zr6"/>
+                <constraint firstItem="CYT-7f-Txj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tXC-Ln-Vdi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                    <real key="value" value="4"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="carRemoteButton" destination="abK-3v-25d" id="cPM-Oy-AOv"/>
+                <outlet property="detailTextLabel" destination="QM0-Q9-4Xj" id="qdK-jf-3VU"/>
+                <outlet property="navigateButton" destination="fXu-RR-NmD" id="zAg-QJ-Bve"/>
+                <outlet property="reloadButton" destination="buG-F2-kHW" id="qah-j5-yJY"/>
+                <outlet property="routeInfoBGView" destination="X0e-YQ-1cj" id="mHo-0k-XlF"/>
+                <outlet property="statusImgView" destination="CoT-4a-kOZ" id="Ddi-zI-Dyh"/>
+                <outlet property="successBGView" destination="lb7-CA-WMC" id="9KA-Qe-rRd"/>
+                <outlet property="unNormalBGView" destination="CYT-7f-Txj" id="uBD-4E-E7O"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="-246.19565217391306"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Trip_LBS_List_Loading" width="60" height="60"/>
+    </resources>
+</document>

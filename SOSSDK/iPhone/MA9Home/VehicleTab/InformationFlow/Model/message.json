@@ -1,0 +1,738 @@
+[
+    {
+        "action": {
+            "button": {
+                "clickFID": "CA0011",
+                "color": "#F18F19",
+                "link": "depart",
+                "name": "前往",
+                "param": "{\"name\":\"中国石化加油站\",\"address\":\"虹梅路2028号\",\"longitude\":\"121.396731\",\"latitude\":\"31.172263\",\"tel\":\"021-64850162\"}",
+                "type": "CLIENT"
+            },
+            "click": {
+                "clickFID": "CA0009",
+                "deleteFID": "CA0012",
+                "link": "carCondition",
+                "type": "CLIENT"
+            }
+        },
+        "attribute": {
+            "bid": "2",
+            "click": true,
+            "desc": "油量过低",
+            "idt": "1995-02-06 15:29:35",
+            "role": "OWNER,DRIVER,PROXY",
+            "slideDelete": true,
+            "sort": 1,
+            "styleId": "0",
+            "viewDelete": false
+        },
+        "content": {
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 13;color: #4E5059'><aFont color='#4E5059' size='13'>小O为您找到最近的加油站</aFont></span>"
+                },
+                {
+                    "pattern": "<span style='font-size: 16;color: #4E5059'><aFont color='#4E5059' size='16'>中国石化加油站</aFont></span>"
+                }
+            ]
+        },
+        "header": {
+            "icon": "http://idt7.onstar.com.cn/mweb/ma80/images/Archive/48x48/icon_tile_warning_yellow_48x48.png",
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 13;color: #DF7A00'><aFont color='#DF7A00' size='13'>油量偏低!</aFont></span>"
+                }
+            ]
+        }
+    },
+    {
+        "action": {
+            "button": {
+                "clickFID": "CA0011",
+                "color": "#6896ED",
+                "link": "packageBuy",
+                "name": "续费",
+                "type": "CLIENT"
+            },
+            "click": {
+                "clickFID": "CA0009",
+                "deleteFID": "CA0012",
+                "link": "packageDetail",
+                "type": "CLIENT"
+            },
+            "href": {
+                "clickFID": "CA0010",
+                "color": "#6896ED",
+                "link": "packageDetail",
+                "name": "了解详情",
+                "type": "CLIENT"
+            }
+        },
+        "attribute": {
+            "bid": "3",
+            "click": true,
+            "desc": "套餐即将到期，后续无包",
+            "idt": "1977-05-22 23:46:21",
+            "role": "OWNER,DRIVER,PROXY",
+            "slideDelete": true,
+            "sort": 2,
+            "styleId": "0",
+            "viewDelete": false
+        },
+        "content": {
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 13;color: #4E5059'><aFont color='#4E5059' size='13'>当前套餐剩余11天</aFont></span>"
+                },
+                {
+                    "pattern": "<span style='font-size: 16;color: #4E5059'><aFont color='#4E5059' size='16'>套餐过期后仅可使用基础功能</aFont></span>"
+                }
+            ]
+        },
+        "header": {
+            "icon": "http://idt7.onstar.com.cn/mweb/ma80/images/Archive/48x48/icon_tile_message_48x48.png",
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 13;color: #A4A4A4'><aFont color='#A4A4A4' size='13'>安吉星套餐即将到期</aFont></span>"
+                }
+            ]
+        }
+    },
+    {
+        "action": {
+            "button": {
+                "clickFID": "CA0011",
+                "color": "#6896ED",
+                "link": "cellularRecharge",
+                "name": "充值",
+                "type": "CLIENT"
+            },
+            "click": {
+                "clickFID": "CA0009",
+                "deleteFID": "CA0012",
+                "link": "cellularDetail",
+                "type": "CLIENT"
+            },
+            "href": {
+                "color": "#6896ED",
+                "link": "cellularDetail",
+                "name": "了解详情"
+            }
+        },
+        "attribute": {
+            "bid": "7",
+            "click": true,
+            "desc": "车载Wi-Fi流量流量套餐过期提醒",
+            "idt": "1987-07-04 10:48:51",
+            "role": "OWNER,DRIVER,PROXY",
+            "slideDelete": true,
+            "sort": 3,
+            "styleId": "0",
+            "viewDelete": false
+        },
+        "content": {
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 16;color: #4E5059'><aFont color='#4E5059' size='16'>车载Wi-Fi流量目前不可用</aFont></span>"
+                }
+            ]
+        },
+        "header": {
+            "icon": "http://idt7.onstar.com.cn/mweb/ma80/images/Archive/48x48/icon_tile_message_48x48.png",
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 13;color: #A4A4A4'><aFont color='#A4A4A4' size='13'>车载Wi-Fi流量套餐已过期</aFont></span>"
+                }
+            ]
+        }
+    },
+    {
+        "action": {
+            "button": {
+                "clickFID": "CA0011",
+                "color": "#6896ED",
+                "link": "cellularRecharge",
+                "name": "充值",
+                "type": "CLIENT"
+            },
+            "click": {
+                "clickFID": "CA0009",
+                "deleteFID": "CA0012",
+                "link": "cellularDetail",
+                "type": "CLIENT"
+            },
+            "href": {
+                "clickFID": "CA0010",
+                "color": "#6896ED",
+                "link": "cellularDetail",
+                "name": "了解详情",
+                "type": "CLIENT"
+            }
+        },
+        "attribute": {
+            "bid": "5",
+            "click": true,
+            "desc": "车载Wi-Fi流量流量到期提醒，后续无包",
+            "idt": "1996-01-22 16:15:14",
+            "role": "OWNER,DRIVER,PROXY",
+            "slideDelete": true,
+            "sort": 3,
+            "styleId": "0",
+            "viewDelete": false
+        },
+        "content": {
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 13;color: #4E5059'><aFont color='#4E5059' size='13'>您的车载Wi-Fi流量已不足30%</aFont></span>"
+                },
+                {
+                    "pattern": "<span style='font-size: 16;color: #4E5059'><aFont color='#4E5059' size='16'>当前剩余88GB</aFont></span>"
+                }
+            ]
+        },
+        "header": {
+            "icon": "http://idt7.onstar.com.cn/mweb/ma80/images/Archive/48x48/icon_tile_message_48x48.png",
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 13;color: #A4A4A4'><aFont color='#A4A4A4' size='13'>车载Wi-Fi流量预警</aFont></span>"
+                }
+            ]
+        }
+    },
+    {
+        "action": {
+            "button": {
+                "clickFID": "CA0011",
+                "color": "#6896ED",
+                "link": "cellularRecharge",
+                "name": "充值",
+                "type": "CLIENT"
+            },
+            "click": {
+                "clickFID": "CA0009",
+                "deleteFID": "CA0012",
+                "link": "cellularDetail",
+                "type": "CLIENT"
+            },
+            "href": {
+                "clickFID": "CA0010",
+                "color": "#6896ED",
+                "link": "cellularDetail",
+                "name": "了解详情",
+                "type": "CLIENT"
+            }
+        },
+        "attribute": {
+            "bid": "21",
+            "click": true,
+            "desc": "车载Wi-Fi流量流量到期提醒，后续无包",
+            "idt": "2016-06-25 09:24:37",
+            "role": "OWNER,DRIVER,PROXY",
+            "slideDelete": true,
+            "sort": 3,
+            "styleId": "0",
+            "viewDelete": false
+        },
+        "content": {
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 16;color: #4E5059'><aFont color='#4E5059' size='16'>剩余流量不多，请及时充值</aFont></span>"
+                }
+            ]
+        },
+        "header": {
+            "icon": "http://idt7.onstar.com.cn/mweb/ma80/images/Archive/48x48/icon_tile_message_48x48.png",
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 13;color: #A4A4A4'><aFont color='#A4A4A4' size='13'>车载Wi-Fi流量预警</aFont></span>"
+                }
+            ]
+        }
+    },
+    {
+        "attribute": {
+            "bid": "9",
+            "click": false,
+            "desc": "加班提醒",
+            "idt": "2016-03-29 16:19:07",
+            "role": "OWNER",
+            "slideDelete": true,
+            "sort": 4,
+            "styleId": "0",
+            "viewDelete": true
+        },
+        "content": {
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 13;color: #4E5059'><aFont color='#4E5059' size='13'>辛苦啦，周末好好放松一下吧！</aFont></span>"
+                }
+            ]
+        },
+        "header": {
+            "icon": "http://idt7.onstar.com.cn/mweb/ma80/images/Archive/48x48/icon_tile_care_48x48.png",
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 13;color: #A4A4A4'><aFont color='#A4A4A4' size='13'>这周有好几次，很晚才离开公司呢。</aFont></span>"
+                }
+            ]
+        }
+    },
+    {
+        "action": {
+            "button": {
+                "clickFID": "CA0011",
+                "color": "#6896ED",
+                "link": "http://idt7.onstar.com.cn/mweb/ma80/drivingScore/index.html#/steerReport?share=true ",
+                "name": "查看",
+                "type": "H5"
+            },
+            "click": {
+                "clickFID": "CA0009",
+                "deleteFID": "CA0012",
+                "link": "http://idt7.onstar.com.cn/mweb/ma80/drivingScore/index.html#/steerReport?share=true ",
+                "type": "H5"
+            }
+        },
+        "attribute": {
+            "bid": "10",
+            "click": true,
+            "desc": "驾驶行为报告",
+            "idt": "1979-09-04 03:21:03",
+            "role": "OWNER",
+            "slideDelete": true,
+            "sort": 4,
+            "styleId": "0",
+            "viewDelete": true
+        },
+        "content": {
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 13;color: #4E5059'><aFont color='#4E5059' size='13'>您的综合驾驶表现</aFont></span>"
+                },
+                {
+                    "pattern": "<span style='font-size: 16;color: #4E5059'><aFont color='#4E5059' size='16'>已超过<span style='font-size: 16;color: #6896ED'><aFont color='#6896ED' size='16'>82%</aFont></span></aFont>的用户</span>"
+                }
+            ]
+        },
+        "header": {
+            "icon": "http://idt7.onstar.com.cn/mweb/ma80/images/Archive/48x48/icon_tile_report_48x48.png",
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 13;color: #A4A4A4'><aFont color='#A4A4A4' size='13'>本月驾驶行为报告出炉啦！</aFont></span>"
+                }
+            ]
+        }
+    },
+    {
+        "action": {
+            "button": {
+                "clickFID": "CA0011",
+                "color": "#6896ED",
+                "link": "driveEvaluation",
+                "name": "查看",
+                "type": "CLIENT"
+            },
+            "click": {
+                "clickFID": "CA0009",
+                "deleteFID": "CA0012",
+                "link": "driveEvaluation",
+                "type": "CLIENT"
+            }
+        },
+        "attribute": {
+            "bid": "11",
+            "click": true,
+            "desc": "驾驶行为评分",
+            "idt": "1981-06-05 06:14:50",
+            "role": "OWNER",
+            "slideDelete": true,
+            "sort": 4,
+            "styleId": "0",
+            "viewDelete": true
+        },
+        "content": {
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 16;color: #4E5059'><aFont color='#4E5059' size='16'>最近30天驾驶评分<span style='font-size: 16;color: #6896ED'><aFont color='#6896ED' size='16'>19</aFont></span></aFont></span>"
+                },
+                {
+                    "pattern": "<span style='font-size: 13;color: #4E5059'><aFont color='#4E5059' size='13'>继续保持良好的驾驶习惯喔~</aFont></span>"
+                }
+            ]
+        },
+        "header": {
+            "icon": "http://idt7.onstar.com.cn/mweb/ma80/images/Archive/48x48/icon_tile_report_48x48.png",
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 13;color: #A4A4A4'><aFont color='#A4A4A4' size='13'>驾驶行为评分公布啦！</aFont></span>"
+                }
+            ]
+        }
+    },
+    {
+        "action": {
+            "button": {
+                "clickFID": "CA0011",
+                "color": "#6896ED",
+                "link": "http://idt7.onstar.com.cn/mweb/ma80/drivingScore/index.html#/neardrive?share=true",
+                "name": "详情",
+                "type": "H5"
+            },
+            "click": {
+                "clickFID": "CA0009",
+                "deleteFID": "CA0012",
+                "link": "http://idt7.onstar.com.cn/mweb/ma80/drivingScore/index.html#/neardrive?share=true",
+                "type": "H5"
+            }
+        },
+        "attribute": {
+            "bid": "8",
+            "click": true,
+            "desc": "行程 结束汇报",
+            "idt": "2000-05-26 00:14:52",
+            "role": "OWNER",
+            "slideDelete": true,
+            "sort": 4,
+            "styleId": "1",
+            "viewDelete": true
+        },
+        "content": {
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 16;color: #4E5059'><aFont color='#4E5059' size='16'>里程<span style='font-size: 16;color: #6896ED'><aFont color='#6896ED' size='16'>281</aFont></span>公里，耗时<span style='font-size: 16;color: #6896ED'><aFont color='#6896ED' size='16'>20</aFont></span>小时<span style='font-size: 16;color: #6896ED'><aFont color='#6896ED' size='16'>8</aFont></span></aFont><aFont color='#4E5059' size='16'>分钟</aFont></span>"
+                },
+                {
+                    "pattern": "<span style=\"font-size: 13;color: #4E5059\"><aFont color='#4E5059' size='13'>桂林路 {arrow} 宏每路</aFont></span>"
+                }
+            ]
+        },
+        "header": {
+            "icon": "http://idt7.onstar.com.cn/mweb/ma80/images/Archive/48x48/icon_tile_report_48x48.png",
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 13;color: #A4A4A4'><aFont color='#A4A4A4' size='13'>您刚刚完成了一次旅行</aFont></span>"
+                }
+            ]
+        },
+        "tail": {
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 11;color: #4E5059'><aFont color='#4E5059' size='11'> 急加速、急减速次数有点多，注意安全喔~</aFont></span>"
+                },
+                {
+                    "pattern": "<span style='font-size: 11;color: #4E5059'><aFont color='#4E5059' size='11'> 急加速、急减速次数有点多，注意安全喔~</aFont></span>"
+                },
+                {
+                    "pattern": "<span style='font-size: 11;color: #4E5059'><aFont color='#4E5059' size='11'> 急加速、急减速次数有点多，注意安全喔~</aFont></span>"
+                },
+                {
+                    "pattern": "<span style='font-size: 11;color: #4E5059'><aFont color='#4E5059' size='11'> 急加速、急减速次数有点多，注意安全喔~ 急加速、急减速次数有点多，注意安全喔~ 急加速、急减速次数有点多，注意安全喔~ 急加速、急减速次数有点多，注意安全喔~</aFont></span>"
+                },
+            ]
+        }
+    },
+    {
+        "action": {
+            "click": {
+                "clickFID": "CA0009",
+                "deleteFID": "CA0012",
+                "link": "IM",
+                "type": "CLIENT"
+            }
+        },
+        "attribute": {
+            "bid": "20",
+            "click": true,
+            "desc": "星友圈",
+            "role": "OWNER,DRIVER,PROXY",
+            "slideDelete": true,
+            "sort": 5,
+            "styleId": "2",
+            "viewDelete": false
+        },
+        "content": {
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 13;color: #4E5059'><aFont color='#4E5059' size='13'>有新的会话消息</aFont></span>"
+                }
+            ]
+        },
+        "header": {
+            "icon": "http://idt7.onstar.com.cn/mweb/ma80/images/Archive/48x48/icon_tile_dynamic_48x48.png",
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 13;color: #A4A4A4'><aFont color='#A4A4A4' size='13'>星友圈消息</aFont></span>"
+                }
+            ]
+        }
+    },
+    {
+        "action": {
+            "button": {
+                "clickFID": "CA0011",
+                "color": "#6896ED",
+                "link": "vehicleEvaluation",
+                "name": "查看",
+                "type": "CLIENT"
+            },
+            "click": {
+                "clickFID": "CA0009",
+                "deleteFID": "CA0012",
+                "link": "vehicleEvaluation",
+                "type": "CLIENT"
+            }
+        },
+        "attribute": {
+            "bid": "13",
+            "click": true,
+            "desc": "爱车评估",
+            "idt": "2017-12-16 20:45:31",
+            "role": "OWNER,DRIVER,PROXY",
+            "slideDelete": true,
+            "sort": 6,
+            "styleId": "0",
+            "viewDelete": false
+        },
+        "content": {
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 16;color: #4E5059'><aFont color='#4E5059' size='16'>您的爱车评估分数<span style='font-size: 16;color: #6896ED'><aFont color='#6896ED' size='16'>25</aFont></span></aFont></span>"
+                },
+                {
+                    "pattern": "<span style='font-size: 16;color: #4E5059'><aFont color='#4E5059' size='16'>超过了40%的用户~</aFont></span>"
+                }
+            ]
+        },
+        "header": {
+            "icon": "http://idt7.onstar.com.cn/mweb/ma80/images/Archive/48x48/icon_tile_report_48x48.png",
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 13;color: #A4A4A4'><aFont color='#A4A4A4' size='13'>您的爱车评估有更新！</aFont></span>"
+                }
+            ]
+        }
+    },
+    {
+        "action": {
+            "button": {
+                "clickFID": "CA0011",
+                "color": "#6896ED",
+                "link": "oilRank",
+                "name": "查看",
+                "type": "CLIENT"
+            },
+            "click": {
+                "clickFID": "CA0009",
+                "deleteFID": "CA0012",
+                "type": "CLIENT"
+            }
+        },
+        "attribute": {
+            "bid": "14",
+            "click": false,
+            "desc": "单日油耗奖牌",
+            "idt": "1996-12-04 09:21:08",
+            "role": "OWNER",
+            "slideDelete": true,
+            "sort": 7,
+            "styleId": "0",
+            "viewDelete": true
+        },
+        "content": {
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 13;color: #4E5059'><aFont color='#4E5059' size='13'>获得油耗勋章<span style='font-size: 16;color: #4E5059'><aFont color='#4E5059' size='16'>季军</aFont></span>"
+                }
+            ]
+        },
+        "header": {
+            "icon": "http://idt7.onstar.com.cn/mweb/ma80/images/Archive/48x48/icon_tile_message_48x48.png",
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 13;color: #A4A4A4'><aFont color='#A4A4A4' size='13'>恭喜！您获得了油耗奖牌</aFont></span>"
+                }
+            ]
+        }
+    },
+    {
+        "action": {
+            "button": {
+                "clickFID": "CA0011",
+                "color": "#6896ED",
+                "link": "oilRank",
+                "name": "查看",
+                "type": "CLIENT"
+            },
+            "click": {
+                "clickFID": "CA0009",
+                "deleteFID": "CA0012",
+                "type": "CLIENT"
+            }
+        },
+        "attribute": {
+            "bid": "15",
+            "click": false,
+            "desc": "油耗水平更新",
+            "idt": "2005-06-26 11:55:53",
+            "role": "OWNER",
+            "slideDelete": true,
+            "sort": 7,
+            "styleId": "0",
+            "viewDelete": true
+        },
+        "content": {
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 13;color: #4E5059'><aFont color='#4E5059' size='13'>您近期的综合油耗水平</aFont></span>"
+                },
+                {
+                    "pattern": "<span style='font-size: 16;color: #4E5059'><aFont color='#4E5059' size='16'> <span style='font-size: 16;color: #6896ED'><aFont color='#6896ED' size='16'>5L</aFont></span></aFont>/100km</span>"
+                }
+            ]
+        },
+        "header": {
+            "icon": "http://idt7.onstar.com.cn/mweb/ma80/images/Archive/48x48/icon_tile_report_48x48.png",
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 13;color: #A4A4A4'><aFont color='#A4A4A4' size='13'>您的油耗水平更新啦！</aFont></span>"
+                }
+            ]
+        }
+    },
+    {
+        "action": {
+            "button": {
+                "clickFID": "CA0011",
+                "color": "#6896ED",
+                "link": "https://idt7.onstar.com.cn/mweb/ma80/OnstarTravel/content.html?onstarCloseView=Yes&ctrlLoading=Y",
+                "name": "详情",
+                "type": "H5"
+            },
+            "click": {
+                "clickFID": "CA0009",
+                "deleteFID": "CA0012",
+                "link": "https://idt7.onstar.com.cn/mweb/ma80/OnstarTravel/content.html?onstarCloseView=Yes&ctrlLoading=Y",
+                "type": "H5"
+            }
+        },
+        "attribute": {
+            "bid": "17",
+            "click": true,
+            "desc": "星享之旅，到达对应等级",
+            "idt": "1973-06-15 14:29:16",
+            "role": "OWNER,DRIVER,PROXY",
+            "slideDelete": true,
+            "sort": 9,
+            "styleId": "0",
+            "viewDelete": true
+        },
+        "content": {
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 13;color: #4E5059'><aFont color='#4E5059' size='13'>您已到达任务阶段</aFont></span>"
+                },
+                {
+                    "pattern": "<span style='font-size: 16;color: #4E5059'><aFont color='#4E5059' size='16'>安星之旅</aFont></span>"
+                }
+            ]
+        },
+        "header": {
+            "icon": "http://idt7.onstar.com.cn/mweb/ma80/images/Archive/48x48/icon_tile_task_48x48.png",
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 13;color: #A4A4A4'><aFont color='#A4A4A4' size='13'>星享之旅星级提升</aFont></span>"
+                }
+            ]
+        }
+    },
+    {
+        "action": {
+            "button": {
+                "clickFID": "CA0011",
+                "color": "#6896ED",
+                "link": "https://idt7.onstar.com.cn/mweb/ma80/OnstarTravel/content.html?onstarCloseView=Yes&ctrlLoading=Y",
+                "name": "挑战",
+                "type": "H5"
+            },
+            "click": {
+                "clickFID": "CA0009",
+                "deleteFID": "CA0012",
+                "link": "https://idt7.onstar.com.cn/mweb/ma80/OnstarTravel/content.html?onstarCloseView=Yes&ctrlLoading=Y",
+                "type": "H5"
+            }
+        },
+        "attribute": {
+            "bid": "18",
+            "click": true,
+            "desc": "星享之旅，旅程任务",
+            "idt": "1979-04-06 20:22:56",
+            "role": "OWNER,DRIVER,PROXY",
+            "slideDelete": true,
+            "sort": 9,
+            "styleId": "0",
+            "viewDelete": true
+        },
+        "content": {
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 13;color: #4E5059'><aFont color='#4E5059' size='13'>您有任务挑战尚未完成</aFont></span>"
+                }
+            ]
+        },
+        "header": {
+            "icon": "http://idt7.onstar.com.cn/mweb/ma80/images/Archive/48x48/icon_tile_task_48x48.png",
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 13;color: #A4A4A4'><aFont color='#A4A4A4' size='13'>星享之旅提醒</aFont></span>"
+                }
+            ]
+        }
+    },
+    {
+        "action": {
+            "button": {
+                "clickFID": "CA0011",
+                "color": "#6896ED",
+                "link": "http://idt7.onstar.com.cn/mweb/ma80/OnstarTravel/content.html?flag=2",
+                "name": "领取奖励",
+                "type": "H5"
+            },
+            "click": {
+                "clickFID": "CA0009",
+                "deleteFID": "CA0012",
+                "link": "https://idt7.onstar.com.cn/mweb/ma80/OnstarTravel/content.html?onstarCloseView=Yes&ctrlLoading=Y&flag=2",
+                "type": "H5"
+            }
+        },
+        "attribute": {
+            "bid": "19",
+            "click": true,
+            "desc": "星享之旅，领取奖励",
+            "idt": "1972-10-16 15:11:42",
+            "role": "OWNER,DRIVER,PROXY",
+            "slideDelete": false,
+            "sort": 9,
+            "styleId": "0",
+            "viewDelete": true
+        },
+        "content": {
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 13;color: #4E5059'><aFont color='#4E5059' size='13'>恭喜！</aFont></span>"
+                },
+                {
+                    "pattern": "<span style='font-size: 16;color: #4E5059'><aFont color='#4E5059' size='16'>随星之旅任务挑战成功！</aFont></span>"
+                }
+            ]
+        },
+        "header": {
+            "icon": "http://idt7.onstar.com.cn/mweb/ma80/images/Archive/48x48/icon_tile_task_48x48.png",
+            "infos": [
+                {
+                    "pattern": "<span style='font-size: 13;color: #A4A4A4'><aFont color='#A4A4A4' size='13'>星享之旅旅程奖励</aFont></span>"
+                }
+            ]
+        }
+    }
+]

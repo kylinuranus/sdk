@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="389" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="Trip_LBS_List_NoDevice" translatesAutoresizingMaskIntoConstraints="NO" id="1QU-ie-b7t">
+                    <rect key="frame" x="19" y="0.0" width="351" height="160"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" tag="1234" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VE-cp-Hkk">
+                    <rect key="frame" x="90.5" y="18" width="208" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="ZWJ-Sf-4Xg"/>
+                    </constraints>
+                    <string key="text">安吉星“安星定位”服务， 
+让你对家人的爱时时在线！</string>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                    <color key="textColor" red="0.15686274510000001" green="0.16078431369999999" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="1235" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="随时随地获取老人、小孩、宠物、物品等准备位置，随身携带、 随手定位。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHY-JJ-6FH">
+                    <rect key="frame" x="37" y="78" width="315" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="fs9-mM-EmJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.50980392159999999" green="0.51372549020000002" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="1236" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vsq-cJ-6zr">
+                    <rect key="frame" x="138.5" y="116" width="112" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="IYs-pR-2ha"/>
+                        <constraint firstAttribute="width" constant="112" id="cXc-Ev-5vz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="绑定新设备">
+                        <color key="titleColor" red="0.40784313729999999" green="0.58823529409999997" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.40784313729999999" green="0.58823529409999997" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bHY-JJ-6FH" firstAttribute="top" secondItem="5VE-cp-Hkk" secondAttribute="bottom" constant="12" id="0Es-Dr-1cj"/>
+                <constraint firstItem="Vsq-cJ-6zr" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="RDe-vH-UZc"/>
+                <constraint firstAttribute="bottom" secondItem="Vsq-cJ-6zr" secondAttribute="bottom" constant="16" id="VK7-Sk-dSM"/>
+                <constraint firstItem="5VE-cp-Hkk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="aP0-ez-ZtN"/>
+                <constraint firstItem="bHY-JJ-6FH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ddx-G5-w0s"/>
+                <constraint firstItem="5VE-cp-Hkk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="18" id="eX1-y2-xEv"/>
+                <constraint firstItem="1QU-ie-b7t" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="qtf-Mk-0gj"/>
+                <constraint firstItem="1QU-ie-b7t" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="uU0-NB-ZRL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="149.59999999999999" y="-48.575712143928037"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Trip_LBS_List_NoDevice" width="351" height="160"/>
+    </resources>
+</document>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>accountChanged</key>
+	<string>NO</string>
+	<key>isFirstTimeLoad</key>
+	<string>YES</string>
+	<key>LockDoorsRequest</key>
+	<string></string>
+	<key>loginFaulse</key>
+	<string>YES</string>
+	<key>maskedusername</key>
+	<string></string>
+	<key>needRefresh</key>
+	<string>NO</string>
+	<key>pointerDegree</key>
+	<string></string>
+	<key>query_token</key>
+	<string></string>
+	<key>RemoteStartRequest</key>
+	<string></string>
+	<key>RemoteStopRequest</key>
+	<string></string>
+	<key>temp_account_no</key>
+	<string></string>
+	<key>temp_mag_appSessionKey</key>
+	<string></string>
+	<key>temp_mig_appSessionKey</key>
+	<string></string>
+	<key>temp_sp_token</key>
+	<string></string>
+	<key>temp_vehicle_name</key>
+	<string></string>
+	<key>temp_vehicle_vin</key>
+	<string></string>
+	<key>temp_vin</key>
+	<string></string>
+	<key>temp_vehicle_model</key>
+	<string></string>
+	<key>UnlockDoorsRequest</key>
+	<string></string>
+	<key>VehicleAlertRequest</key>
+	<string></string>
+	<key>vehicleChanged</key>
+	<string>NO</string>
+	<key>vinChanged</key>
+	<string>NO</string>
+	<key>accountVehicleChanged</key>
+	<string>NO</string>
+	<key>activeVIN</key>
+	<string></string>
+</dict>
+</plist>

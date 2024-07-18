@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="SOSQSCollectionReusableHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ap-Gh-mBz">
+                    <rect key="frame" x="0.0" y="23.5" width="4" height="16"/>
+                    <color key="backgroundColor" red="0.40784313725490196" green="0.58823529411764708" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="4" id="H4I-ys-9xs"/>
+                        <constraint firstAttribute="height" constant="16" id="fnY-WB-18I"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTl-2i-ega">
+                    <rect key="frame" x="12" y="0.0" width="296" height="63"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.40784313725490196" green="0.58823529411764708" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="yTl-2i-ega" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="A4D-ua-cLH"/>
+                <constraint firstAttribute="trailing" secondItem="yTl-2i-ega" secondAttribute="trailing" constant="12" id="bjx-uP-8EJ"/>
+                <constraint firstAttribute="bottom" secondItem="yTl-2i-ega" secondAttribute="bottom" id="bpZ-gX-TCn"/>
+                <constraint firstItem="6Ap-Gh-mBz" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="dJM-Uw-VEb"/>
+                <constraint firstItem="yTl-2i-ega" firstAttribute="leading" secondItem="6Ap-Gh-mBz" secondAttribute="trailing" constant="8" id="dx7-ld-OMG"/>
+                <constraint firstItem="6Ap-Gh-mBz" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="ge6-sc-t8c"/>
+            </constraints>
+            <connections>
+                <outlet property="titleLabel" destination="yTl-2i-ega" id="M12-yZ-hMa"/>
+            </connections>
+            <point key="canvasLocation" x="10" y="-15"/>
+        </collectionReusableView>
+    </objects>
+</document>

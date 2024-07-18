@@ -1,0 +1,70 @@
+//
+// Prefix header for all source files of the 'Onstar' target in the 'Onstar' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+    #import <MJExtension/MJExtension.h>
+    #import "Util.h"
+    #import "AppPreferences.h"
+    #import <MJRefresh/MJRefresh.h>
+    #import "UINavigationController+FDFullscreenPopGesture.h"
+    #import "UIView+FDCollapsibleConstraints.h"
+    #import <RMUniversalAlert/RMUniversalAlert.h>
+    #import "UIViewController+Information.h"
+    #import <YYKit/YYKit.h>
+    #import "ReactiveObjC.h"
+    #import "AppDelegate_iPhone.h"
+    #import "AppDelegate_iPhone+SOSService.h"
+    #import "SOSUtil.h"
+    #import "LoginManage.h"
+    #import "SOSBaseViewController.h"
+    #import "SOSIB_DESIGNABLE.h"
+    #import "SOSUtilConfig.h"
+    #import "SOSCheckRoleUtil.h"
+    #import "Masonry.h"
+    #import "UIView+iOS11.h"
+    #import "NSString+SQLInjection.h"
+    #import "NSBundle+SOSBundle.h"
+    #import "SOSDaapManager.h"
+    #import "UIAlertController+Window.h"
+    #import "UIColor+Common.h"
+    #import <Objection/Objection.h>
+    #import "SOSMonitor.h"
+    #import "SOSSDKKeyUtils.h"
+
+    #import "BaseTableViewCellProtocol.h"
+    #import "BaseCollectionViewCellProtocol.h"
+    #import "BaseViewProtocol.h"
+ #endif
+
+//控制DebugLog函数是否输出到控制台，主要是控制控制台网络请求是否输出。
+
+#if DEBUG
+#define DebugLog(format, ...) NSLog((@"" format), ##__VA_ARGS__)
+#else
+#define DebugLog(...) do { } while (0)
+#endif
+
+
+#if DEBUG || TEST
+//#define NSLog(...) NSLog(__VA_ARGS__)
+//#define NSLog(...)      printf("%s\n",[[NSString stringWithFormat:__VA_ARGS__] UTF8String]);
+
+
+#define SOSLogDate [NSString stringWithFormat:@"%s", __FILE__].lastPathComponent
+#define NSLog(FORMAT, ...) fprintf(stderr, "[%s] %s 第%d行: %s\n\n", [[Util SOS_stringDate] UTF8String] , [SOSLogDate UTF8String] ,__LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+
+#else
+#define NSLog(...) {}
+#endif
+//#define NSLocalizedString(key, comment) [[LocalizableController bundle] localizedStringForKey:(key) value:@"" table:nil]
+
+//#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
+#if UNIT_TEST
+#define NSLog(...) {}
+#endif
+
+

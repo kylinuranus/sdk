@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>destinationId</key>
+	<string>-2</string>
+	<key>destination</key>
+	<dict>
+		<key>title</key>
+		<string>Vehicle Location</string>
+		<key>location</key>
+		<dict>
+			<key>latitude</key>
+			<string>0</string>
+			<key>longitude</key>
+			<string>0</string>
+		</dict>
+		<key>address</key>
+		<string></string>
+		<key>phoneNumber</key>
+		<string></string>
+		<key>city</key>
+		<string></string>
+	</dict>
+	<key>alias</key>
+	<string>Vehicle Location</string>
+</dict>
+</plist>

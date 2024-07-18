@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NetworkErrorVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请设置你的网络" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1K-KX-XNQ">
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. 打开设备的&quot;系统设置&quot;&gt;&quot;无线和网络&quot;&gt;&quot;移动网络&quot;。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8DK-cQ-g9H">
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. 打开设备的&quot;系统设置&quot;&gt;&quot;WLAN&quot;&gt;&quot;启动WLAN&quot;，从中选择一个可用热点连接。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfV-Dz-vU0">
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="如果你已经连接WIFI网络" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvA-Sk-re3">
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请确认你所连接的WIFI网络已经连入互联网，并且你的设备已被允许访问该热点。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJJ-x0-Ltb">
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="l1K-KX-XNQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="0IC-09-1W6"/>
+                <constraint firstAttribute="trailing" secondItem="TJJ-x0-Ltb" secondAttribute="trailing" constant="20" id="ARe-Bx-9BS"/>
+                <constraint firstItem="TJJ-x0-Ltb" firstAttribute="top" secondItem="yvA-Sk-re3" secondAttribute="bottom" constant="20" id="Bq8-hA-wCy"/>
+                <constraint firstItem="WfV-Dz-vU0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="C5I-4t-1eO"/>
+                <constraint firstItem="yvA-Sk-re3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="HGa-MA-89i"/>
+                <constraint firstAttribute="trailing" secondItem="WfV-Dz-vU0" secondAttribute="trailing" constant="20" id="JUN-0M-OnY"/>
+                <constraint firstItem="l1K-KX-XNQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="SVk-Sm-gCe"/>
+                <constraint firstItem="WfV-Dz-vU0" firstAttribute="top" secondItem="8DK-cQ-g9H" secondAttribute="bottom" constant="10" id="TAw-Rq-oNc"/>
+                <constraint firstItem="8DK-cQ-g9H" firstAttribute="top" secondItem="l1K-KX-XNQ" secondAttribute="bottom" constant="20" id="XAw-bx-mWb"/>
+                <constraint firstItem="yvA-Sk-re3" firstAttribute="top" secondItem="WfV-Dz-vU0" secondAttribute="bottom" constant="20" id="XZf-Mz-st5"/>
+                <constraint firstAttribute="trailing" secondItem="8DK-cQ-g9H" secondAttribute="trailing" constant="20" id="lXT-px-bOa"/>
+                <constraint firstItem="TJJ-x0-Ltb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="mXe-oN-Mv8"/>
+                <constraint firstItem="8DK-cQ-g9H" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="yTK-pl-eA3"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

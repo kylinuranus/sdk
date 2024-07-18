@@ -1,0 +1,306 @@
+{
+    "智能互联": {
+        "resource": {
+            "unReleated": true
+        },
+        "generation": {
+            "unReleated": true
+        },
+        "role": {
+            "unReleated": false,
+            "owner": true,
+            "driver": true,
+            "proxy": true,
+            "visitor": true,
+            "unlogged": true
+        }
+    },
+    "车主俱乐部-雪佛兰": {
+        "resource": {
+            "unReleated": true
+        },
+        "generation": {
+            "unReleated": true
+        },
+        "role": {
+            "unReleated": false,
+            "owner": true,
+            "driver": false,
+            "proxy": false,
+            "visitor": false,
+            "unlogged": false
+        }
+    },
+    "车主俱乐部-凯迪拉克": {
+        "resource": {
+            "unReleated": true
+        },
+        "generation": {
+            "unReleated": true
+        },
+        "role": {
+            "unReleated": false,
+            "owner": true,
+            "driver": false,
+            "proxy": false,
+            "visitor": false,
+            "unlogged": false
+        }
+    },
+    "违章查办": {
+        "resource": {
+            "unReleated": true
+        },
+        "generation": {
+            "unReleated": true
+        },
+        "role": {
+            "unReleated": false,
+            "owner": true,
+            "driver": true,
+            "proxy": true,
+            "visitor": true,
+            "unlogged": true
+        }
+    },
+    "险贷检提醒": {
+        "resource": {
+            "unReleated": true
+        },
+        "generation": {
+            "unReleated": true
+        },
+        "role": {
+            "unReleated": false,
+            "owner": true,
+            "driver": false,
+            "proxy": false,
+            "visitor": true,
+            "unlogged": true
+        }
+    },
+    "随星听": {
+        "resource": {
+            "unReleated": true
+        },
+        "generation": {
+            "unReleated": true
+        },
+        "role": {
+            "unReleated": false,
+            "owner": true,
+            "driver": false,
+            "proxy": false,
+            "visitor": true,
+            "unlogged": true
+        }
+    },
+    "出行保障": {
+        "resource": {
+            "unReleated": true
+        },
+        "generation": {
+            "unReleated": true
+        },
+        "role": {
+            "unReleated": false,
+            "owner": true,
+            "driver": false,
+            "proxy": false,
+            "visitor": true,
+            "unlogged": true
+        }
+    },
+    "车检": {
+        "resource": {
+            "unReleated": true
+        },
+        "generation": {
+            "unReleated": true
+        },
+        "role": {
+            "unReleated": false,
+            "owner": true,
+            "driver": false,
+            "proxy": false,
+            "visitor": true,
+            "unlogged": true
+        }
+    },
+    "有声书": {
+        "resource": {
+            "unReleated": true
+        },
+        "generation": {
+            "unReleated": true
+        },
+        "role": {
+            "unReleated": true
+        }
+    },
+    "保养建议": {
+        "resource": {
+            "unReleated": true
+        },
+        "generation": {
+            "unReleated": true
+        },
+        "role": {
+            "unReleated": false,
+            "owner": true,
+            "driver": true,
+            "proxy": true,
+            "visitor": false,
+            "unlogged": false
+        }
+    },
+    "安悦扫码充电": {
+        "resource": {
+            "unReleated": false,
+            "PHEV": true,
+            "FV": false,
+            "BEV": true
+        },
+        "generation": {
+            "unReleated": true
+        },
+        "role": {
+            "unReleated": false,
+            "owner": true,
+            "driver": true,
+            "proxy": true,
+            "visitor": false,
+            "unlogged": false
+        }
+    },
+    "安吉星公益": {
+        "resource": {
+            "unReleated": true
+        },
+        "generation": {
+            "unReleated": true
+        },
+        "role": {
+            "unReleated": true
+        }
+    },
+    "爱车评估": {
+        "resource": {
+            "unReleated": true
+        },
+        "generation": {
+            "unReleated": true
+        },
+        "role": {
+            "unReleated": true
+        }
+    },
+    "星推荐": {
+        "resource": {
+            "unReleated": true
+        },
+        "generation": {
+            "unReleated": true
+        },
+        "role": {
+            "unReleated": false,
+            "owner": true,
+            "driver": false,
+            "proxy": false,
+            "visitor": true,
+            "unlogged": true
+        }
+    },
+    "换证": {
+        "resource": {
+            "unReleated": true
+        },
+        "generation": {
+            "unReleated": true
+        },
+        "role": {
+            "unReleated": false,
+            "owner": true,
+            "driver": false,
+            "proxy": false,
+            "visitor": true,
+            "unlogged": true
+        }
+    },
+    "车联保险": {
+        "resource": {
+            "unReleated": true
+        },
+        "generation": {
+            "unReleated": true
+        },
+        "role": {
+            "unReleated": false,
+            "owner": true,
+            "driver": false,
+            "proxy": false,
+            "visitor": false,
+            "unlogged": false
+        }
+    },
+    "蓝牙钥匙": {
+        "resource": {
+            "unReleated": true
+        },
+        "generation": {
+            "unReleated": true
+        },
+        "role": {
+            "unReleated": true
+        }
+    },
+    "共享蓝牙钥匙": {
+        "resource": {
+            "unReleated": true
+        },
+        "generation": {
+            "unReleated": true
+        },
+        "role": {
+            "unReleated": false,
+            "owner": true,
+            "driver": false,
+            "proxy": false,
+            "visitor": false,
+            "unlogged": true
+        }
+    },
+    "优惠加油": {
+        "resource": {
+            "unReleated": true
+        },
+        "generation": {
+            "unReleated": true
+        },
+        "role": {
+            "unReleated": true,
+        }
+    },
+    "分秒律师": {
+        "resource": {
+            "unReleated": true
+        },
+        "generation": {
+            "unReleated": true
+        },
+        "role": {
+            "unReleated": true,
+        }
+    },
+    "e代驾": {
+        "resource": {
+            "unReleated": true
+        },
+        "generation": {
+            "unReleated": true
+        },
+        "role": {
+            "unReleated": true,
+        }
+    }
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--钥匙列表-->
+        <scene sceneID="22e-vJ-jRY">
+            <objects>
+                <tableViewController storyboardIdentifier="KeyListViewController" id="NQo-5d-VBq" customClass="KeyListViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9l7-UV-T6i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellid" id="RY7-Rd-2Ch">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RY7-Rd-2Ch" id="bre-51-ThW">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="NQo-5d-VBq" id="14h-63-j8e"/>
+                            <outlet property="delegate" destination="NQo-5d-VBq" id="n2Z-oW-UqB"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="钥匙列表" id="5HX-TZ-0rD"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jCd-bu-hC8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2969" y="904"/>
+        </scene>
+        <!--Keyinfo View Controller-->
+        <scene sceneID="Dpq-5b-5JL">
+            <objects>
+                <viewController storyboardIdentifier="keyinfo" id="eMF-FP-gJs" customClass="KeyinfoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eBy-OI-Cgi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FKa-SL-k76">
+                                <rect key="frame" x="0.0" y="20" width="375" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="OPS-kK-Ybh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FKa-SL-k76" firstAttribute="leading" secondItem="gC1-lZ-1KZ" secondAttribute="leading" id="N70-q5-a3d"/>
+                            <constraint firstItem="FKa-SL-k76" firstAttribute="top" secondItem="gC1-lZ-1KZ" secondAttribute="top" id="aXX-88-1o3"/>
+                            <constraint firstItem="gC1-lZ-1KZ" firstAttribute="trailing" secondItem="FKa-SL-k76" secondAttribute="trailing" id="ymn-6g-cWV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gC1-lZ-1KZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="FKa-SL-k76" id="dJ6-Ht-gf6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aTP-4r-aIU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3956" y="526"/>
+        </scene>
+    </scenes>
+</document>

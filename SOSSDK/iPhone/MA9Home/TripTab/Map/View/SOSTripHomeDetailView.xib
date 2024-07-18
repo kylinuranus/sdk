@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="YOA-u4-NFT" customClass="SOSTripHomeDetailView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWC-zI-Hcc">
+                    <rect key="frame" x="270" y="12" width="34" height="34"/>
+                    <state key="normal" image="Trip_User_Location_Card_Share"/>
+                    <connections>
+                        <action selector="shareButtonTapped" destination="YOA-u4-NFT" eventType="touchUpInside" id="lGY-x3-cak"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Trip_User_Location_Card_Icon_Loading" translatesAutoresizingMaskIntoConstraints="NO" id="TqP-0B-TbS">
+                    <rect key="frame" x="14" y="50" width="22" height="22"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQB-fD-ALX">
+                    <rect key="frame" x="244" y="110" width="60" height="34"/>
+                    <color key="backgroundColor" red="0.40784313729999999" green="0.58823529409999997" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="8cX-e5-wgl"/>
+                        <constraint firstAttribute="height" constant="34" id="DfK-KC-LBf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                    <state key="normal" title="去这里"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="routeButtonTapped" destination="YOA-u4-NFT" eventType="touchUpInside" id="JZU-za-sVQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cN8-FS-2h6">
+                    <rect key="frame" x="166" y="110" width="72" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="72" id="qn0-2c-8ds"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                    <state key="normal" title="发送到车">
+                        <color key="titleColor" red="0.40784313729999999" green="0.58823529409999997" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.40784313729999999" green="0.58823529409999997" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="sendToCarButtonTapped" destination="YOA-u4-NFT" eventType="touchUpInside" id="YAY-rY-zmI"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpL-hE-9QP">
+                    <rect key="frame" x="42" y="53.5" width="46.5" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.30588235289999999" green="0.31372549020000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="住家" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XkP-hb-sOF">
+                    <rect key="frame" x="14" y="22" width="30" height="16"/>
+                    <color key="backgroundColor" red="0.18823529411764706" green="0.30196078431372547" blue="0.5607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="JnA-Jt-QK4"/>
+                        <constraint firstAttribute="height" constant="16" id="cdD-ON-jAz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUc-6B-ur2">
+                    <rect key="frame" x="50" y="18" width="35.5" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="wUi-12-PAD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <color key="textColor" red="0.15686274510000001" green="0.16078431369999999" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K1Q-e2-kSw">
+                    <rect key="frame" x="14" y="110" width="70" height="34"/>
+                    <subviews>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="Trip_User_Location_Card_Search" translatesAutoresizingMaskIntoConstraints="NO" id="JFR-mP-5JA">
+                            <rect key="frame" x="4" y="0.0" width="34" height="34"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="周边" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaq-g2-95O">
+                            <rect key="frame" x="38" y="10" width="22.5" height="14"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="0.50980392159999999" green="0.51372549020000002" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNK-ZS-MKl">
+                            <rect key="frame" x="0.0" y="0.0" width="70" height="34"/>
+                            <connections>
+                                <action selector="aroundSerachButtonTapped" destination="YOA-u4-NFT" eventType="touchUpInside" id="dLI-EQ-p8V"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.97254901959999995" green="0.98039215690000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="JFR-mP-5JA" firstAttribute="leading" secondItem="K1Q-e2-kSw" secondAttribute="leading" constant="4" id="7sY-hw-2ok"/>
+                        <constraint firstAttribute="bottom" secondItem="LNK-ZS-MKl" secondAttribute="bottom" id="AnR-zZ-AxV"/>
+                        <constraint firstItem="JFR-mP-5JA" firstAttribute="centerY" secondItem="K1Q-e2-kSw" secondAttribute="centerY" id="HZa-1K-RmB"/>
+                        <constraint firstItem="vaq-g2-95O" firstAttribute="leading" secondItem="JFR-mP-5JA" secondAttribute="trailing" id="KU0-Gc-kWg"/>
+                        <constraint firstAttribute="height" constant="34" id="Nae-vn-b2e"/>
+                        <constraint firstAttribute="width" constant="70" id="Neb-7y-Riu"/>
+                        <constraint firstItem="LNK-ZS-MKl" firstAttribute="leading" secondItem="K1Q-e2-kSw" secondAttribute="leading" id="dCt-R8-VGU"/>
+                        <constraint firstItem="LNK-ZS-MKl" firstAttribute="top" secondItem="K1Q-e2-kSw" secondAttribute="top" id="rmh-Cc-uZG"/>
+                        <constraint firstAttribute="trailing" secondItem="LNK-ZS-MKl" secondAttribute="trailing" id="roo-mo-M4H"/>
+                        <constraint firstItem="vaq-g2-95O" firstAttribute="centerY" secondItem="K1Q-e2-kSw" secondAttribute="centerY" id="rpF-0o-bcb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XkP-hb-sOF" firstAttribute="top" secondItem="YOA-u4-NFT" secondAttribute="top" constant="22" id="5lB-Q4-eIk"/>
+                <constraint firstItem="DQB-fD-ALX" firstAttribute="leading" secondItem="cN8-FS-2h6" secondAttribute="trailing" constant="6" id="7Kx-fg-5oC"/>
+                <constraint firstItem="DQB-fD-ALX" firstAttribute="height" secondItem="cN8-FS-2h6" secondAttribute="height" id="8em-x5-SEa"/>
+                <constraint firstItem="aWC-zI-Hcc" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QpL-hE-9QP" secondAttribute="trailing" id="9Qo-d6-TqM"/>
+                <constraint firstItem="BUc-6B-ur2" firstAttribute="leading" secondItem="XkP-hb-sOF" secondAttribute="trailing" constant="6" id="D62-aU-LG2"/>
+                <constraint firstItem="K1Q-e2-kSw" firstAttribute="leading" secondItem="XkP-hb-sOF" secondAttribute="leading" id="Gxy-Bm-NUA"/>
+                <constraint firstItem="cN8-FS-2h6" firstAttribute="centerY" secondItem="K1Q-e2-kSw" secondAttribute="centerY" id="Juk-xY-kht"/>
+                <constraint firstItem="TqP-0B-TbS" firstAttribute="leading" secondItem="XkP-hb-sOF" secondAttribute="leading" id="LJb-vo-XXD"/>
+                <constraint firstItem="DQB-fD-ALX" firstAttribute="centerY" secondItem="K1Q-e2-kSw" secondAttribute="centerY" id="MrW-fZ-7Oz"/>
+                <constraint firstItem="XkP-hb-sOF" firstAttribute="leading" secondItem="YOA-u4-NFT" secondAttribute="leading" constant="14" id="OMW-d5-tZC"/>
+                <constraint firstAttribute="bottom" secondItem="K1Q-e2-kSw" secondAttribute="bottom" constant="16" id="R4d-Sv-3TI"/>
+                <constraint firstAttribute="trailing" secondItem="aWC-zI-Hcc" secondAttribute="trailing" constant="16" id="Vtm-dW-8Mx"/>
+                <constraint firstItem="aWC-zI-Hcc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BUc-6B-ur2" secondAttribute="trailing" constant="10" id="WqY-wU-Vn4"/>
+                <constraint firstItem="BUc-6B-ur2" firstAttribute="centerY" secondItem="XkP-hb-sOF" secondAttribute="centerY" id="aY4-Ff-dWo"/>
+                <constraint firstItem="aWC-zI-Hcc" firstAttribute="top" secondItem="YOA-u4-NFT" secondAttribute="top" constant="12" id="pZP-8X-fgU"/>
+                <constraint firstItem="TqP-0B-TbS" firstAttribute="top" secondItem="XkP-hb-sOF" secondAttribute="bottom" constant="12" id="q2A-16-VnB"/>
+                <constraint firstItem="DQB-fD-ALX" firstAttribute="trailing" secondItem="aWC-zI-Hcc" secondAttribute="trailing" id="q7G-S1-XcW"/>
+                <constraint firstItem="QpL-hE-9QP" firstAttribute="centerY" secondItem="TqP-0B-TbS" secondAttribute="centerY" id="q93-SI-a9x"/>
+                <constraint firstItem="QpL-hE-9QP" firstAttribute="leading" secondItem="TqP-0B-TbS" secondAttribute="trailing" constant="6" id="rN2-HA-2nk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addressLabel" destination="QpL-hE-9QP" id="3RW-D6-P8E"/>
+                <outlet property="flagLabel" destination="XkP-hb-sOF" id="iNq-kJ-hJv"/>
+                <outlet property="shareButton" destination="aWC-zI-Hcc" id="EV4-Zb-DXY"/>
+                <outlet property="titleLabel" destination="BUc-6B-ur2" id="RJQ-vP-f5G"/>
+            </connections>
+            <point key="canvasLocation" x="-31.884057971014496" y="261.83035714285711"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Trip_User_Location_Card_Icon_Loading" width="22" height="22"/>
+        <image name="Trip_User_Location_Card_Search" width="34" height="34"/>
+        <image name="Trip_User_Location_Card_Share" width="34" height="34"/>
+    </resources>
+</document>

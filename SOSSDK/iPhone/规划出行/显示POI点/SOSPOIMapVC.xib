@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SOSPOIMapVC">
+            <connections>
+                <outlet property="LBSLocationButtonBGView" destination="emR-rK-t9Y" id="zwH-Qi-qBV"/>
+                <outlet property="actionNavHeightGuide" destination="pSA-XZ-TXL" id="iBy-cn-9vf"/>
+                <outlet property="actionNavigation" destination="YOK-Cj-yOB" id="vYv-da-APP"/>
+                <outlet property="bottomButtomBGViewHeightGuide" destination="1Kx-OI-dc8" id="9F6-Ri-Z8G"/>
+                <outlet property="contentMapView" destination="2RQ-pu-3mh" id="EsS-Mg-IY8"/>
+                <outlet property="infoTableView" destination="5Xn-uN-lTP" id="MeD-4T-aAH"/>
+                <outlet property="infoTableViewHeightGuide" destination="ihL-Qm-kZG" id="v9s-Vv-OZA"/>
+                <outlet property="mapInfoViewButtomGuide" destination="L3k-Mn-39c" id="ogT-0P-2oo"/>
+                <outlet property="mapLocationInfoView" destination="nnf-il-gJK" id="uXy-bI-Exh"/>
+                <outlet property="mapLocationInfoViewHeightGuide" destination="hF5-ku-gFz" id="jIL-NY-bEv"/>
+                <outlet property="topButtonBGView" destination="CBh-E0-4SO" id="53u-Ae-eCe"/>
+                <outlet property="topButtonBGViewHeightGuide" destination="4z6-rw-GJO" id="JUi-IH-7Ux"/>
+                <outlet property="topButtonBGViewTopGuide" destination="vpE-Cl-JBX" id="Rmy-d3-IUh"/>
+                <outlet property="trafficButton" destination="AVh-47-WGu" id="WxD-w8-edH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="zoomButtonBGView" destination="wyA-64-Vzx" id="tsV-mW-SoI"/>
+                <outlet property="zoomButtonBGViewBottomGuide" destination="pI7-qZ-HzD" id="n2u-ug-nZG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2RQ-pu-3mh">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="582"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CBh-E0-4SO" customClass="SOSCustomView">
+                    <rect key="frame" x="270" y="100" width="40" height="120"/>
+                    <subviews>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0b-1k-Yb8" userLabel="Geo Button">
+                            <rect key="frame" x="0.0" y="40" width="40" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="1gM-Se-KkZ"/>
+                                <constraint firstAttribute="height" constant="40" id="4LU-Kp-5TG"/>
+                            </constraints>
+                            <state key="normal" image="icon_geofens"/>
+                            <connections>
+                                <action selector="buttonGeoFencingTapped:" destination="-1" eventType="touchUpInside" id="X6W-DJ-84C"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KlZ-Bx-MIw" userLabel="Vehicle Button">
+                            <rect key="frame" x="0.0" y="80" width="40" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Ubm-c7-CUc"/>
+                                <constraint firstAttribute="width" constant="40" id="V7Y-cd-Lq9"/>
+                            </constraints>
+                            <state key="normal" image="icon_travel_map_car_location_passion_blue_idle"/>
+                            <connections>
+                                <action selector="buttonVehicleLocationTapped" destination="-1" eventType="touchUpInside" id="VNm-1b-ikT"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVh-47-WGu">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="UXz-kN-gFk"/>
+                                <constraint firstAttribute="height" constant="40" id="YZG-3v-bQy"/>
+                            </constraints>
+                            <state key="normal" image="icon_light"/>
+                            <state key="selected" image="Navigate_Road_Conditions_Click"/>
+                            <connections>
+                                <action selector="trafficButtonTapped:" destination="-1" eventType="touchUpInside" id="YJs-Nd-Xhv"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="4z6-rw-GJO"/>
+                        <constraint firstAttribute="width" constant="40" id="Dmk-LS-SQp"/>
+                        <constraint firstItem="KlZ-Bx-MIw" firstAttribute="centerX" secondItem="CBh-E0-4SO" secondAttribute="centerX" id="OwI-Dc-aP1"/>
+                        <constraint firstAttribute="trailing" secondItem="f0b-1k-Yb8" secondAttribute="trailing" id="Ush-sa-VeU"/>
+                        <constraint firstAttribute="trailing" secondItem="KlZ-Bx-MIw" secondAttribute="trailing" id="cW5-5W-5kz"/>
+                        <constraint firstItem="KlZ-Bx-MIw" firstAttribute="leading" secondItem="CBh-E0-4SO" secondAttribute="leading" id="fEX-e8-gGu"/>
+                        <constraint firstItem="AVh-47-WGu" firstAttribute="centerX" secondItem="CBh-E0-4SO" secondAttribute="centerX" id="gag-ar-3qU"/>
+                        <constraint firstItem="f0b-1k-Yb8" firstAttribute="centerX" secondItem="CBh-E0-4SO" secondAttribute="centerX" id="ioK-Ub-NF0"/>
+                        <constraint firstAttribute="bottom" secondItem="KlZ-Bx-MIw" secondAttribute="bottom" id="kb7-rw-dRO"/>
+                        <constraint firstItem="f0b-1k-Yb8" firstAttribute="leading" secondItem="CBh-E0-4SO" secondAttribute="leading" id="qOB-z3-pek"/>
+                        <constraint firstItem="AVh-47-WGu" firstAttribute="leading" secondItem="CBh-E0-4SO" secondAttribute="leading" id="r21-BK-4or"/>
+                        <constraint firstAttribute="trailing" secondItem="AVh-47-WGu" secondAttribute="trailing" id="uxY-PE-tVr"/>
+                        <constraint firstItem="f0b-1k-Yb8" firstAttribute="top" secondItem="AVh-47-WGu" secondAttribute="bottom" id="wAQ-Vb-JLX"/>
+                        <constraint firstItem="AVh-47-WGu" firstAttribute="top" secondItem="CBh-E0-4SO" secondAttribute="top" id="yrl-gY-JCb"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.66274509800000003" green="0.91764705879999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="1" height="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="emR-rK-t9Y">
+                    <rect key="frame" x="10" y="522" width="40" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJC-CL-u9s" userLabel="Vehicle Button">
+                            <rect key="frame" x="0.0" y="-40" width="40" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Gbd-pb-Xgi"/>
+                                <constraint firstAttribute="width" constant="40" id="uHr-Pe-51D"/>
+                            </constraints>
+                            <state key="normal" image="icon_travel_map_car_location_passion_blue_idle"/>
+                            <connections>
+                                <action selector="buttonVehicleLocationTapped" destination="-1" eventType="touchUpInside" id="igV-jE-MnB"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBI-oR-aG3" userLabel="User Location Button">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="eHa-EY-msC"/>
+                                <constraint firstAttribute="width" secondItem="IBI-oR-aG3" secondAttribute="height" multiplier="1:1" id="jb6-Tv-D0Z"/>
+                            </constraints>
+                            <state key="normal" image="icon_location"/>
+                            <connections>
+                                <action selector="buttonLocationTapped" destination="-1" eventType="touchUpInside" id="doe-Yl-66f"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="1Kx-OI-dc8"/>
+                        <constraint firstItem="IBI-oR-aG3" firstAttribute="top" secondItem="CJC-CL-u9s" secondAttribute="bottom" id="9MY-nl-ivp"/>
+                        <constraint firstAttribute="trailing" secondItem="IBI-oR-aG3" secondAttribute="trailing" id="JBt-Nw-YZ5"/>
+                        <constraint firstAttribute="trailing" secondItem="CJC-CL-u9s" secondAttribute="trailing" id="jQe-g1-wd5"/>
+                        <constraint firstAttribute="bottom" secondItem="IBI-oR-aG3" secondAttribute="bottom" id="kjp-nP-0vA"/>
+                        <constraint firstItem="CJC-CL-u9s" firstAttribute="leading" secondItem="emR-rK-t9Y" secondAttribute="leading" id="sh7-bf-qNz"/>
+                        <constraint firstItem="IBI-oR-aG3" firstAttribute="leading" secondItem="emR-rK-t9Y" secondAttribute="leading" id="v8r-EZ-tp9"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.66274509800000003" green="0.91764705879999997" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="0.0" height="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wyA-64-Vzx" customClass="SOSCustomView">
+                    <rect key="frame" x="270" y="482" width="40" height="80"/>
+                    <subviews>
+                        <button opaque="NO" tag="2000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2e-tA-wol">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="M2e-tA-wol" secondAttribute="height" multiplier="1:1" id="Aaw-b5-ihd"/>
+                            </constraints>
+                            <state key="normal" image="icon_travel_map_zoom_in_passion"/>
+                            <connections>
+                                <action selector="zoomInAndZoomOut:" destination="-1" eventType="touchUpInside" id="kfp-Rg-dkn"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXZ-ZS-pY1">
+                            <rect key="frame" x="0.0" y="40" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="bXZ-ZS-pY1" secondAttribute="height" multiplier="1:1" id="pKB-ju-sQp"/>
+                            </constraints>
+                            <state key="normal" image="icon_travel_map_zoom_out_passion"/>
+                            <connections>
+                                <action selector="zoomInAndZoomOut:" destination="-1" eventType="touchUpInside" id="cPQ-v6-9GR"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="4nw-D4-gyf"/>
+                        <constraint firstAttribute="bottom" secondItem="bXZ-ZS-pY1" secondAttribute="bottom" id="Adq-gI-b5t"/>
+                        <constraint firstItem="bXZ-ZS-pY1" firstAttribute="leading" secondItem="wyA-64-Vzx" secondAttribute="leading" id="Ene-Us-1Af"/>
+                        <constraint firstAttribute="trailing" secondItem="M2e-tA-wol" secondAttribute="trailing" id="QSN-8q-Glb"/>
+                        <constraint firstAttribute="trailing" secondItem="bXZ-ZS-pY1" secondAttribute="trailing" id="hnn-gc-obL"/>
+                        <constraint firstItem="M2e-tA-wol" firstAttribute="leading" secondItem="wyA-64-Vzx" secondAttribute="leading" id="mLa-2f-Nm1"/>
+                        <constraint firstItem="M2e-tA-wol" firstAttribute="top" secondItem="wyA-64-Vzx" secondAttribute="top" id="uM6-95-6kr"/>
+                        <constraint firstAttribute="height" constant="80" id="yLe-BJ-oSL"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.66274509800000003" green="0.91764705879999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="1" height="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nnf-il-gJK" customClass="SOSTravelMapView">
+                    <rect key="frame" x="0.0" y="572" width="320" height="100"/>
+                    <color key="backgroundColor" red="0.60364451142131981" green="0.59080710927153568" blue="0.09458362201566127" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="hF5-ku-gFz"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Xn-uN-lTP" customClass="SOSInfoTableView">
+                    <rect key="frame" x="0.0" y="672" width="320" height="0.0"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="ihL-Qm-kZG"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YOK-Cj-yOB" customClass="SOSActionNavigation">
+                    <rect key="frame" x="0.0" y="672" width="320" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="pSA-XZ-TXL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="ICY-3b-e2c"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="emR-rK-t9Y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="03p-lf-zeg"/>
+                <constraint firstAttribute="trailing" secondItem="wyA-64-Vzx" secondAttribute="trailing" constant="10" id="19w-nz-VNQ"/>
+                <constraint firstAttribute="trailing" secondItem="CBh-E0-4SO" secondAttribute="trailing" constant="10" id="2fQ-dK-Kly"/>
+                <constraint firstItem="nnf-il-gJK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7GW-UK-nIe"/>
+                <constraint firstItem="YOK-Cj-yOB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8uL-Jt-hjP"/>
+                <constraint firstAttribute="trailing" secondItem="5Xn-uN-lTP" secondAttribute="trailing" id="96w-rZ-mx0"/>
+                <constraint firstItem="5Xn-uN-lTP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9gP-5y-SU4"/>
+                <constraint firstItem="2RQ-pu-3mh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="J7a-cR-tmo"/>
+                <constraint firstItem="YOK-Cj-yOB" firstAttribute="bottom" secondItem="ICY-3b-e2c" secondAttribute="bottom" constant="154" id="L3k-Mn-39c"/>
+                <constraint firstItem="YOK-Cj-yOB" firstAttribute="top" secondItem="5Xn-uN-lTP" secondAttribute="bottom" id="RzB-WS-p1K"/>
+                <constraint firstItem="2RQ-pu-3mh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SnY-j2-NbH"/>
+                <constraint firstItem="2RQ-pu-3mh" firstAttribute="bottom" secondItem="nnf-il-gJK" secondAttribute="top" constant="10" id="THw-dQ-YNe"/>
+                <constraint firstItem="YOK-Cj-yOB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dQu-7G-8a4"/>
+                <constraint firstItem="nnf-il-gJK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eDL-7e-2aB"/>
+                <constraint firstItem="emR-rK-t9Y" firstAttribute="bottom" secondItem="wyA-64-Vzx" secondAttribute="bottom" priority="998" id="mac-ge-6aS"/>
+                <constraint firstItem="nnf-il-gJK" firstAttribute="bottom" secondItem="5Xn-uN-lTP" secondAttribute="top" id="osx-GM-opA"/>
+                <constraint firstItem="ICY-3b-e2c" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="wyA-64-Vzx" secondAttribute="bottom" constant="250" id="pI7-qZ-HzD"/>
+                <constraint firstItem="CBh-E0-4SO" firstAttribute="top" secondItem="ICY-3b-e2c" secondAttribute="top" constant="80" id="vpE-Cl-JBX"/>
+                <constraint firstItem="emR-rK-t9Y" firstAttribute="top" relation="greaterThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="vx6-tx-pbl"/>
+                <constraint firstAttribute="trailing" secondItem="2RQ-pu-3mh" secondAttribute="trailing" id="x6S-Za-RTv"/>
+                <constraint firstAttribute="trailing" secondItem="YOK-Cj-yOB" secondAttribute="trailing" id="xHC-Wv-Y75"/>
+                <constraint firstItem="nnf-il-gJK" firstAttribute="top" secondItem="emR-rK-t9Y" secondAttribute="bottom" priority="999" constant="10" id="ykA-5B-nA1"/>
+                <constraint firstItem="5Xn-uN-lTP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yqJ-Fl-Vgt"/>
+            </constraints>
+            <point key="canvasLocation" x="194" y="49"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Navigate_Road_Conditions_Click" width="25" height="25"/>
+        <image name="icon_geofens" width="25" height="25"/>
+        <image name="icon_light" width="25" height="25"/>
+        <image name="icon_location" width="25" height="25"/>
+        <image name="icon_travel_map_car_location_passion_blue_idle" width="25" height="25"/>
+        <image name="icon_travel_map_zoom_in_passion" width="25" height="25"/>
+        <image name="icon_travel_map_zoom_out_passion" width="25" height="25"/>
+    </resources>
+</document>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SOSAYChargeListVC">
+            <connections>
+                <outlet property="dataTableView" destination="TYr-0V-X0K" id="zeK-hw-CNG"/>
+                <outlet property="view" destination="euV-TU-QDB" id="kWD-fP-ycN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="euV-TU-QDB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="150" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="TYr-0V-X0K">
+                    <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                    <color key="backgroundColor" red="0.95294117647058818" green="0.96078431372549022" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="77k-yq-Q31"/>
+                        <outlet property="delegate" destination="-1" id="9bh-ho-qxe"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TYr-0V-X0K" secondAttribute="trailing" id="D91-Dr-sQi"/>
+                <constraint firstItem="TYr-0V-X0K" firstAttribute="leading" secondItem="euV-TU-QDB" secondAttribute="leading" id="DZN-Nm-Ar7"/>
+                <constraint firstItem="TYr-0V-X0K" firstAttribute="top" secondItem="UJN-PK-ncx" secondAttribute="top" id="QD4-Co-ClR"/>
+                <constraint firstItem="UJN-PK-ncx" firstAttribute="bottom" secondItem="TYr-0V-X0K" secondAttribute="bottom" id="njJ-CX-ZRF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="UJN-PK-ncx"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="njJ-CX-ZRF"/>
+                    <exclude reference="D91-Dr-sQi"/>
+                    <exclude reference="DZN-Nm-Ar7"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="njJ-CX-ZRF"/>
+                    <include reference="D91-Dr-sQi"/>
+                    <include reference="DZN-Nm-Ar7"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="261.5" y="241.5"/>
+        </view>
+    </objects>
+</document>

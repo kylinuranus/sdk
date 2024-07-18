@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SOSFanSliderView">
+            <connections>
+                <outlet property="fanImgView" destination="OkK-Ls-mPA" id="8P7-hp-3bT"/>
+                <outlet property="fanSlider" destination="8Wv-h9-HpI" id="PSO-hN-wZP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="359" height="31"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <slider clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="1" maxValue="15" translatesAutoresizingMaskIntoConstraints="NO" id="8Wv-h9-HpI">
+                    <rect key="frame" x="-2" y="0.0" width="363" height="32"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="fanSliderValueChanged:" destination="-1" eventType="valueChanged" id="HAz-eF-MFZ"/>
+                        <action selector="sliderTouchDown:" destination="-1" eventType="touchDown" id="hk8-gr-40v"/>
+                        <action selector="sliderTouchUp:" destination="-1" eventType="touchUpInside" id="fj5-yC-PUg"/>
+                    </connections>
+                </slider>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_wind speed_4_216x22" translatesAutoresizingMaskIntoConstraints="NO" id="OkK-Ls-mPA">
+                    <rect key="frame" x="0.0" y="0.0" width="359" height="31"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OkK-Ls-mPA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="D0G-hC-kAx"/>
+                <constraint firstItem="OkK-Ls-mPA" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="UEn-G7-pmg"/>
+                <constraint firstItem="8Wv-h9-HpI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="aO0-0A-uNb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8Wv-h9-HpI" secondAttribute="trailing" id="ba5-76-clA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="8Wv-h9-HpI" secondAttribute="bottom" id="hzb-Yj-xyG"/>
+                <constraint firstItem="8Wv-h9-HpI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="p5H-3t-V0j"/>
+                <constraint firstItem="OkK-Ls-mPA" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="sfz-6x-kv4"/>
+                <constraint firstItem="OkK-Ls-mPA" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="yGO-XO-mEC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="167.5" y="-207.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_wind speed_4_216x22" width="216" height="22"/>
+    </resources>
+</document>

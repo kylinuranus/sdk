@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SOSSocialRecoverViewController">
+            <connections>
+                <outlet property="addressLabel" destination="giq-1o-jRL" id="69i-VF-eeB"/>
+                <outlet property="cancelButton" destination="B06-Tv-KvE" id="Jzr-8B-kFr"/>
+                <outlet property="changeWayButton" destination="MUv-Zs-gOU" id="rmo-Wd-Fyh"/>
+                <outlet property="locationLabel" destination="giq-1o-jRL" id="V9S-Hs-Zki"/>
+                <outlet property="recorverButton" destination="uD9-6j-8bp" id="6bn-JA-iUy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Loading／loading_404_340x280-2" translatesAutoresizingMaskIntoConstraints="NO" id="8Dy-Oa-gRt">
+                    <rect key="frame" x="37" y="74" width="340" height="220"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUv-Zs-gOU">
+                    <rect key="frame" x="112" y="718" width="190" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="ffw-y9-lyx"/>
+                        <constraint firstAttribute="width" constant="190" id="tjl-0m-NAn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="发送地点到车">
+                        <color key="titleColor" red="0.40784313729999999" green="0.58823529409999997" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="borderHexColor" value="#6896ED"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="changeWayTap:" destination="-1" eventType="touchUpInside" id="1H3-AL-u8l"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B06-Tv-KvE">
+                    <rect key="frame" x="112" y="795" width="190" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="190" id="bZU-ns-z2w"/>
+                        <constraint firstAttribute="height" constant="37" id="wAg-7L-19G"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="取消接送">
+                        <color key="titleColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelTap:" destination="-1" eventType="touchUpInside" id="2iH-C3-DBk"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="接送行程进行中" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4v-E8-6mL">
+                    <rect key="frame" x="150" y="320" width="114.5" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.30588235294117649" green="0.31372549019607843" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uD9-6j-8bp">
+                    <rect key="frame" x="112" y="671" width="190" height="37"/>
+                    <color key="backgroundColor" red="0.40784313729999999" green="0.58823529409999997" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="lLi-Vi-i2m"/>
+                        <constraint firstAttribute="width" constant="190" id="mvJ-qD-uxc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <state key="normal" title="恢复导航"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="recorverTap:" destination="-1" eventType="touchUpInside" id="Pdj-EJ-lOu"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#上海中心大厦" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giq-1o-jRL">
+                    <rect key="frame" x="146" y="351.5" width="122" height="22"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <color key="textColor" red="0.15686274509803921" green="0.16078431372549018" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4Q-pT-nOv">
+                    <rect key="frame" x="128.5" y="385.5" width="157.5" height="26.5"/>
+                    <string key="text">您的手机位置将实时同步给对方
+请保持安吉星APP开启</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.50980392156862742" green="0.51372549019607838" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="MUv-Zs-gOU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1k2-ga-xSu"/>
+                <constraint firstItem="r4Q-pT-nOv" firstAttribute="top" secondItem="giq-1o-jRL" secondAttribute="bottom" constant="12" id="A1f-2Q-xE9"/>
+                <constraint firstItem="i4v-E8-6mL" firstAttribute="top" secondItem="8Dy-Oa-gRt" secondAttribute="bottom" constant="26" id="EG9-Zs-M8z"/>
+                <constraint firstItem="MUv-Zs-gOU" firstAttribute="top" secondItem="uD9-6j-8bp" secondAttribute="bottom" constant="10" id="T6w-BB-q1Y"/>
+                <constraint firstItem="giq-1o-jRL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="V8D-a7-bvi"/>
+                <constraint firstItem="8Dy-Oa-gRt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XKT-n9-12w"/>
+                <constraint firstItem="B06-Tv-KvE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cs7-c9-4WV"/>
+                <constraint firstItem="i4v-E8-6mL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fXi-QP-iLd"/>
+                <constraint firstItem="8Dy-Oa-gRt" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="30" id="ggz-l9-ROl"/>
+                <constraint firstItem="uD9-6j-8bp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kbd-Kb-kaa"/>
+                <constraint firstItem="B06-Tv-KvE" firstAttribute="top" secondItem="MUv-Zs-gOU" secondAttribute="bottom" constant="40" id="mat-co-Ybe"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="B06-Tv-KvE" secondAttribute="bottom" constant="30" id="r3C-Uy-vK6"/>
+                <constraint firstItem="giq-1o-jRL" firstAttribute="top" secondItem="i4v-E8-6mL" secondAttribute="bottom" constant="12" id="sr5-t7-f9r"/>
+                <constraint firstItem="r4Q-pT-nOv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vh1-2y-cog"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Loading／loading_404_340x280-2" width="340" height="220"/>
+    </resources>
+</document>

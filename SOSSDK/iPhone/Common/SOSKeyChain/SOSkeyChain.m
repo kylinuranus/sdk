@@ -1,0 +1,69 @@
+//
+//  SOSkeyChain.m
+//  keyChain
+//
+//  Created by Gennie Sun on 15/6/30.
+//  Copyright (c) 2015年 Gennie Sun. All rights reserved.
+//
+
+#import "SOSkeyChain.h"
+static NSString * const sos_keychain_service = @"com.shanghaionstar.onstar";
+
+@implementation SOSkeyChain
+
+//+ (NSMutableDictionary *)getKeychainQuery:(NSString *)service {
+//    return [NSMutableDictionary dictionaryWithObjectsAndKeys:
+//            (__bridge_transfer id)kSecClassGenericPassword,(__bridge_transfer id)kSecClass,
+//            service, (__bridge_transfer id)kSecAttrService,
+//            service, (__bridge_transfer id)kSecAttrAccount,
+//            (__bridge_transfer id)kSecAttrAccessibleAfterFirstUnlock,(__bridge_transfer id)kSecAttrAccessible,
+//            nil];
+//}
+
++ (void)save:(NSString *)account data:(NSObject *)data {
+//    //Get search dictionary
+//    NSMutableDictionary *keychainQuery = [self getKeychainQuery:service];
+//    //Delete old item before add new item
+//    SecItemDelete((__bridge_retained CFDictionaryRef)keychainQuery);
+//    //Add new object to search dictionary(Attention:the data format)
+//    [keychainQuery setObject:[NSKeyedArchiver archivedDataWithRootObject:data] forKey:(__bridge_transfer id)kSecValueData];
+//    //Add item to keychain with the search dictionary
+//    SecItemAdd((__bridge_retained CFDictionaryRef)keychainQuery, NULL);
+    
+    [YYKeychain setPassword:data.mj_JSONString forService:sos_keychain_service account:account];
+    
+}
+
++ (id)load:(NSString *)service {
+//    id ret = nil;
+//    NSMutableDictionary *keychainQuery = [self getKeychainQuery:service];
+//    //Configure the search setting
+//    [keychainQuery setObject:(id)kCFBooleanTrue forKey:(__bridge_transfer id)kSecReturnData];
+//    [keychainQuery setObject:(__bridge_transfer id)kSecMatchLimitOne forKey:(__bridge_transfer id)kSecMatchLimit];
+//    CFDataRef keyData = NULL;
+//    if (SecItemCopyMatching((__bridge_retained CFDictionaryRef)keychainQuery, (CFTypeRef *)&keyData) == noErr) {
+//        @try {
+//            ret = [NSKeyedUnarchiver unarchiveObjectWithData:(__bridge_transfer NSData *)keyData];
+//        } @catch (NSException *e) {
+//            NSLog(@"Unarchive of %@ failed: %@", service, e);
+//        } @finally {
+//        }
+//    }
+    NSString *ret = [YYKeychain getPasswordForService:sos_keychain_service account:service];
+    return ret.mj_JSONObject;
+}
+
+//返回最初解析的值 用于aes加密过的数据
++ (id)loadOriginalObject:(NSString *)service {
+    NSString *ret = [YYKeychain getPasswordForService:sos_keychain_service account:service];
+    return ret;
+}
+
++ (void)delete:(NSString *)service {
+    [YYKeychain deletePasswordForService:sos_keychain_service account:service];
+//    NSMutableDictionary *keychainQuery = [self getKeychainQuery:service];
+//    SecItemDelete((__bridge_retained CFDictionaryRef)keychainQuery);
+}
+
+@end
+

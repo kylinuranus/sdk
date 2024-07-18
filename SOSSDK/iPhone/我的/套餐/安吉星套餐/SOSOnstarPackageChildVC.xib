@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SOSOnstarPackageChildVC">
+            <connections>
+                <outlet property="noPackageBGView" destination="fHx-96-6NA" id="k8s-zd-D7w"/>
+                <outlet property="packageTableView" destination="yab-XE-hca" id="3Jl-Xp-uxk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="408"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yab-XE-hca">
+                    <rect key="frame" x="0.0" y="0.0" width="355" height="358"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="NgF-w3-Tfa"/>
+                        <outlet property="delegate" destination="-1" id="yZj-Un-xgM"/>
+                    </connections>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHx-96-6NA">
+                    <rect key="frame" x="-0.5" y="25" width="355" height="358"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="安吉星包" translatesAutoresizingMaskIntoConstraints="NO" id="FWC-FP-xC0">
+                            <rect key="frame" x="148.5" y="104" width="58" height="58"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您还没有安吉星包哦～" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y77-MU-JP0">
+                            <rect key="frame" x="116.5" y="172" width="123" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Y77-MU-JP0" firstAttribute="centerX" secondItem="fHx-96-6NA" secondAttribute="centerX" id="9YY-lQ-X1d"/>
+                        <constraint firstItem="FWC-FP-xC0" firstAttribute="centerX" secondItem="fHx-96-6NA" secondAttribute="centerX" id="M2T-z4-pXN"/>
+                        <constraint firstItem="Y77-MU-JP0" firstAttribute="top" secondItem="FWC-FP-xC0" secondAttribute="bottom" constant="10" id="bEX-pU-c7g"/>
+                        <constraint firstItem="Y77-MU-JP0" firstAttribute="centerY" secondItem="fHx-96-6NA" secondAttribute="centerY" id="nzy-xL-WCN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.91021394729614258" green="0.92126786708831787" blue="0.93726038932800293" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="yab-XE-hca" secondAttribute="bottom" constant="50" id="0u1-iz-4hB"/>
+                <constraint firstItem="fHx-96-6NA" firstAttribute="width" secondItem="yab-XE-hca" secondAttribute="width" id="78k-sh-ptA"/>
+                <constraint firstItem="fHx-96-6NA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9D8-Hj-KXb"/>
+                <constraint firstAttribute="trailing" secondItem="yab-XE-hca" secondAttribute="trailing" id="CQP-Bf-KRs"/>
+                <constraint firstItem="yab-XE-hca" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lHX-8c-aFd"/>
+                <constraint firstItem="yab-XE-hca" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="oyd-34-Sj5"/>
+                <constraint firstItem="fHx-96-6NA" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="von-To-pn6"/>
+                <constraint firstItem="fHx-96-6NA" firstAttribute="height" secondItem="yab-XE-hca" secondAttribute="height" id="wX1-tA-4rC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="23.5" y="-76"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="安吉星包" width="58" height="58"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

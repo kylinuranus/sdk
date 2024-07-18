@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SOSICMVehicleStatusCCell">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="344"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="130" height="344"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="车门" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYI-Wi-9SQ">
+                        <rect key="frame" x="52.5" y="180" width="25" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.50980392159999999" green="0.51372549020000002" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="highlightedColor" red="0.50980392159999999" green="0.51372549020000002" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon_22x22_OnStar_icon_car-parts-closing_22x221" translatesAutoresizingMaskIntoConstraints="NO" id="DDy-ce-OPO">
+                        <rect key="frame" x="54" y="151" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="RQb-fD-TsY"/>
+                            <constraint firstAttribute="width" constant="22" id="XKC-Se-9wX"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="jYI-Wi-9SQ" firstAttribute="top" secondItem="DDy-ce-OPO" secondAttribute="bottom" constant="7" id="LUi-fV-lUI"/>
+                <constraint firstItem="jYI-Wi-9SQ" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Me0-hC-gTr"/>
+                <constraint firstItem="DDy-ce-OPO" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-10" id="Tu4-ad-51b"/>
+                <constraint firstItem="DDy-ce-OPO" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Y2y-Ye-zhx"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="130" height="344"/>
+            <connections>
+                <outlet property="statusImageView" destination="DDy-ce-OPO" id="v9F-8h-lg2"/>
+                <outlet property="titleLabel" destination="jYI-Wi-9SQ" id="QbJ-EL-4B2"/>
+            </connections>
+            <point key="canvasLocation" x="64" y="95.352323838080963"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Icon_22x22_OnStar_icon_car-parts-closing_22x221" width="22" height="22"/>
+    </resources>
+</document>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="YOA-u4-NFT" customClass="SOSTripHomeModifyDetailView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWC-zI-Hcc">
+                    <rect key="frame" x="270" y="12" width="34" height="34"/>
+                    <state key="normal" image="Trip_User_Location_Card_Share"/>
+                    <connections>
+                        <action selector="shareButtonTapped" destination="YOA-u4-NFT" eventType="touchUpInside" id="lGY-x3-cak"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Trip_User_Location_Card_Icon_Loading" translatesAutoresizingMaskIntoConstraints="NO" id="TqP-0B-TbS">
+                    <rect key="frame" x="14" y="50" width="22" height="22"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpL-hE-9QP">
+                    <rect key="frame" x="42" y="53.5" width="46.5" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.30588235289999999" green="0.31372549020000001" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUc-6B-ur2">
+                    <rect key="frame" x="14" y="17" width="35.5" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="wUi-12-PAD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <color key="textColor" red="0.15686274510000001" green="0.16078431369999999" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NaD-Z3-db4">
+                    <rect key="frame" x="244" y="77" width="60" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="Dz7-e2-2kx"/>
+                        <constraint firstAttribute="width" constant="60" id="JbF-h8-dws"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                    <state key="normal" title="选定">
+                        <color key="titleColor" red="0.40784313729999999" green="0.58823529409999997" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.40784313729999999" green="0.58823529409999997" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="selectButtonTapped" destination="YOA-u4-NFT" eventType="touchUpInside" id="ajb-sk-329"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMx-3d-6en">
+                    <rect key="frame" x="-1" y="124" width="322" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="q9p-sL-Nyz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <state key="normal" title="查看更多结果">
+                        <color key="titleColor" red="0.50980392159999999" green="0.51372549020000002" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.95294117647058818" green="0.95294117647058818" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="showMoreButtonTapped" destination="YOA-u4-NFT" eventType="touchUpInside" id="iK8-dd-TsP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="VMx-3d-6en" firstAttribute="leading" secondItem="YOA-u4-NFT" secondAttribute="leading" constant="-1" id="7Yz-cQ-dXV"/>
+                <constraint firstItem="aWC-zI-Hcc" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QpL-hE-9QP" secondAttribute="trailing" id="9Qo-d6-TqM"/>
+                <constraint firstItem="aWC-zI-Hcc" firstAttribute="trailing" secondItem="NaD-Z3-db4" secondAttribute="trailing" id="D3y-pZ-qax"/>
+                <constraint firstItem="BUc-6B-ur2" firstAttribute="top" secondItem="YOA-u4-NFT" secondAttribute="top" constant="17" id="Hbh-qe-VI4"/>
+                <constraint firstItem="NaD-Z3-db4" firstAttribute="top" secondItem="TqP-0B-TbS" secondAttribute="bottom" constant="5" id="UHb-gn-GQu"/>
+                <constraint firstItem="BUc-6B-ur2" firstAttribute="leading" secondItem="YOA-u4-NFT" secondAttribute="leading" constant="14" id="UrF-E7-8gK"/>
+                <constraint firstItem="TqP-0B-TbS" firstAttribute="leading" secondItem="BUc-6B-ur2" secondAttribute="leading" id="UsY-I5-ICi"/>
+                <constraint firstAttribute="trailing" secondItem="aWC-zI-Hcc" secondAttribute="trailing" constant="16" id="Vtm-dW-8Mx"/>
+                <constraint firstItem="aWC-zI-Hcc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BUc-6B-ur2" secondAttribute="trailing" constant="10" id="WqY-wU-Vn4"/>
+                <constraint firstItem="TqP-0B-TbS" firstAttribute="top" secondItem="BUc-6B-ur2" secondAttribute="bottom" constant="9" id="jI9-z3-mgS"/>
+                <constraint firstItem="aWC-zI-Hcc" firstAttribute="top" secondItem="YOA-u4-NFT" secondAttribute="top" constant="12" id="pZP-8X-fgU"/>
+                <constraint firstItem="QpL-hE-9QP" firstAttribute="centerY" secondItem="TqP-0B-TbS" secondAttribute="centerY" id="q93-SI-a9x"/>
+                <constraint firstItem="QpL-hE-9QP" firstAttribute="leading" secondItem="TqP-0B-TbS" secondAttribute="trailing" constant="6" id="rN2-HA-2nk"/>
+                <constraint firstAttribute="trailing" secondItem="VMx-3d-6en" secondAttribute="trailing" constant="-1" id="vJf-cC-kiH"/>
+                <constraint firstItem="VMx-3d-6en" firstAttribute="top" secondItem="NaD-Z3-db4" secondAttribute="bottom" constant="13" id="wcJ-Pe-48c"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addressLabel" destination="QpL-hE-9QP" id="3RW-D6-P8E"/>
+                <outlet property="selectButton" destination="NaD-Z3-db4" id="yl3-HL-LyD"/>
+                <outlet property="shareButton" destination="aWC-zI-Hcc" id="EV4-Zb-DXY"/>
+                <outlet property="showMoreButtonHeightGuide" destination="q9p-sL-Nyz" id="hSF-p3-BdD"/>
+                <outlet property="titleLabel" destination="BUc-6B-ur2" id="RJQ-vP-f5G"/>
+            </connections>
+            <point key="canvasLocation" x="-30" y="265"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Trip_User_Location_Card_Icon_Loading" width="22" height="22"/>
+        <image name="Trip_User_Location_Card_Share" width="34" height="34"/>
+    </resources>
+</document>

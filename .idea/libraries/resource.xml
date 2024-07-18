@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="resource">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Pods/AMapNavi/AMapNaviKit.framework/AMapNavi.bundle/eyrie/resource/navi_speed_view.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Pods/AMapNavi/AMapNaviKit.framework/AMapNavi.bundle/eyrie/resource/lottie_overspeed_pulse.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Pods/AMapNavi/AMapNaviKit.framework/AMapNavi.bundle/eyrie/resource/lottie_traffic_light.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

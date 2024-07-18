@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SOSICMRemoteView">
+            <connections>
+                <outlet property="authorizedDetailLabel" destination="xVd-kf-RB2" id="vNF-C2-Q5p"/>
+                <outlet property="closeRoofWindowButton" destination="MF1-7g-Pi8" id="Lqg-pb-q2Q"/>
+                <outlet property="closeWindowButton" destination="mqI-Ug-baQ" id="hn5-8c-8l2"/>
+                <outlet property="instructionButton" destination="ydw-tX-vY0" id="LtU-VO-2qE"/>
+                <outlet property="lastOperationLabel" destination="ZOy-TW-ynC" id="vwn-A9-dqy"/>
+                <outlet property="openRoofWindowButton" destination="KQz-bY-JS7" id="8Fa-v9-ASt"/>
+                <outlet property="openTrunkButton" destination="Ht7-xi-eEg" id="f0h-VV-EqF"/>
+                <outlet property="openWindowButton" destination="7DM-Ta-NwA" id="StQ-hv-Ljq"/>
+                <outlet property="roofWindowBGView" destination="Wbs-wr-6NA" id="luV-cy-chp"/>
+                <outlet property="sideWindowBGView" destination="vnd-pK-rOW" id="cAR-3M-6Je"/>
+                <outlet property="sideWindowIconImgView" destination="Uma-th-CsM" id="dRm-qO-uIt"/>
+                <outlet property="sunroofIconImgView" destination="a1e-5x-9UE" id="7aR-Lk-1Ai"/>
+                <outlet property="trunkBGView" destination="ZuF-uF-G9X" id="qk5-AF-EEe"/>
+                <outlet property="trunkIconImgView" destination="v3l-ds-SwA" id="iFB-Dk-Ey0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ADAFDWFEWFGEWRG" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xVd-kf-RB2">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.34901960784313724" green="0.4392156862745098" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" id="Wbs-wr-6NA">
+                    <rect key="frame" x="10" y="10" width="355" height="111"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_tianchuang_90x90" id="a1e-5x-9UE">
+                            <rect key="frame" x="137" y="10" width="82" height="90"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="KQz-bY-JS7">
+                            <rect key="frame" x="10" y="27" width="119" height="57"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="16"/>
+                            <state key="normal" title="打开天窗" backgroundImage="btn_car_contral_defult_one_116x50">
+                                <color key="titleColor" red="0.34901960780000002" green="0.43921568630000002" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="btn_car_contral_down_one_116x50">
+                                <color key="titleColor" red="0.49803921569999998" green="0.50980392159999999" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="operationButtonTapped:" destination="-1" eventType="touchUpInside" id="sDI-RU-tB5"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MF1-7g-Pi8">
+                            <rect key="frame" x="227" y="27" width="118" height="56"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="16"/>
+                            <state key="normal" title="关闭天窗" backgroundImage="btn_car_contral_defult_one_116x50">
+                                <color key="titleColor" red="0.34901960780000002" green="0.43921568630000002" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="btn_car_contral_down_one_116x50">
+                                <color key="titleColor" red="0.49803921569999998" green="0.50980392159999999" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="operationButtonTapped:" destination="-1" eventType="touchUpInside" id="FUx-3r-hD2"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" id="vnd-pK-rOW">
+                    <rect key="frame" x="10" y="161" width="355" height="112"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_control_windows_90x90" id="Uma-th-CsM">
+                            <rect key="frame" x="137" y="10" width="82" height="91"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7DM-Ta-NwA">
+                            <rect key="frame" x="10" y="28" width="119" height="56"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="16"/>
+                            <state key="normal" title="打开车窗" backgroundImage="btn_car_contral_defult_one_116x50">
+                                <color key="titleColor" red="0.34901960780000002" green="0.43921568630000002" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="btn_car_contral_down_one_116x50">
+                                <color key="titleColor" red="0.49803921569999998" green="0.50980392159999999" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="operationButtonTapped:" destination="-1" eventType="touchUpInside" id="rX6-8L-9HN"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mqI-Ug-baQ">
+                            <rect key="frame" x="227" y="27" width="118" height="57"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="16"/>
+                            <state key="normal" title="关闭车窗" backgroundImage="btn_car_contral_defult_one_116x50">
+                                <color key="titleColor" red="0.34901960780000002" green="0.43921568630000002" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="btn_car_contral_down_one_116x50">
+                                <color key="titleColor" red="0.49803921569999998" green="0.50980392159999999" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="operationButtonTapped:" destination="-1" eventType="touchUpInside" id="jR4-ch-Ncd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" id="ZuF-uF-G9X">
+                    <rect key="frame" x="120" y="313" width="136" height="175"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_houbeixiang_control_90x90" id="v3l-ds-SwA">
+                            <rect key="frame" x="23" y="10" width="90" height="90"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ht7-xi-eEg">
+                            <rect key="frame" x="10" y="115" width="116" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="16"/>
+                            <state key="normal" title="打开后备箱" backgroundImage="btn_car_contral_defult_one_116x50">
+                                <color key="titleColor" red="0.34901960780000002" green="0.43921568630000002" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="btn_car_contral_down_one_116x50">
+                                <color key="titleColor" red="0.49803921569999998" green="0.50980392159999999" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="operationButtonTapped:" destination="-1" eventType="touchUpInside" id="CZq-Sf-gpR"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" text="上次操作:车门解锁 9:42AM" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZOy-TW-ynC">
+                    <rect key="frame" x="10" y="593" width="356" height="20"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.062745098040000002" green="0.49803921569999998" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ydw-tX-vY0">
+                    <rect key="frame" x="168" y="623" width="41" height="24"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <state key="normal" title="使用说明">
+                        <color key="titleColor" red="0.062745098040000002" green="0.49803921569999998" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="instructionButtonTapped:" destination="-1" eventType="touchUpInside" id="3et-Yf-yXO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.90980392156862744" green="0.92156862745098034" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <point key="canvasLocation" x="67.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_car_contral_defult_one_116x50" width="116" height="50"/>
+        <image name="btn_car_contral_down_one_116x50" width="116" height="50"/>
+        <image name="icon_control_windows_90x90" width="90" height="91"/>
+        <image name="icon_houbeixiang_control_90x90" width="90" height="90"/>
+        <image name="icon_tianchuang_90x90" width="90" height="90"/>
+    </resources>
+</document>

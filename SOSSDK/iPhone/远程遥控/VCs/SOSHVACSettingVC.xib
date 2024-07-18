@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SOSHVACSettingVC">
+            <connections>
+                <outlet property="autoButton" destination="Ror-Se-WNe" id="Oba-Jq-isn"/>
+                <outlet property="downButton" destination="NaZ-8c-J2F" id="Zgy-pF-EBD"/>
+                <outlet property="fanBGView" destination="Dc9-S7-5Z5" id="JoT-ie-uB4"/>
+                <outlet property="fanDownButton" destination="bWF-8V-fY7" id="aqd-Ou-1Bq"/>
+                <outlet property="fanSliderView" destination="eVf-hX-cwS" id="7PU-UK-LZ1"/>
+                <outlet property="fanUpButton" destination="4ca-IL-1Xv" id="2wc-ah-ANU"/>
+                <outlet property="footButton" destination="Yir-w6-wRp" id="yNk-N1-voP"/>
+                <outlet property="frontWindowAndFootButton" destination="Nnp-wp-hKK" id="MPh-ua-kkH"/>
+                <outlet property="frontWindowDefrostButton" destination="WSl-zC-TmE" id="Rzt-5k-rtr"/>
+                <outlet property="headAndFootButton" destination="Tf4-tq-sCX" id="dTb-Y9-iFw"/>
+                <outlet property="headButton" destination="ZNT-Ps-EtU" id="Sjz-zk-wYE"/>
+                <outlet property="hvacSwitch" destination="wRi-ii-v7G" id="6B3-C2-eoD"/>
+                <outlet property="hvavSettingButtonBGView" destination="tKz-cb-ane" id="MCj-VJ-YSa"/>
+                <outlet property="loopButton" destination="QUy-Hy-IGr" id="hd7-Yc-x3s"/>
+                <outlet property="rearWindowDefogButton" destination="XND-8c-8um" id="Qi8-4a-RkI"/>
+                <outlet property="sendButton" destination="Wey-OO-nyM" id="j0I-YC-HyT"/>
+                <outlet property="switchLabel" destination="qa7-8a-1fi" id="xPW-c5-bAt"/>
+                <outlet property="temperatureFlagLabel" destination="dFT-5r-klT" id="1k4-yy-oct"/>
+                <outlet property="temperatureLabel" destination="nJn-gv-J2N" id="Zpe-8S-ynk"/>
+                <outlet property="upButton" destination="rsC-46-IPI" id="JEG-iy-mvf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Fz-gj-GHk">
+                    <rect key="frame" x="57.666666666666657" y="178.66666666666663" width="260" height="455"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="空调操控" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1Y-8J-ohw">
+                            <rect key="frame" x="16.000000000000007" y="18" width="63.999999999999993" height="22.666666666666671"/>
+                            <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="16"/>
+                            <color key="textColor" red="0.15686274509803921" green="0.16078431372549018" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0eS-A1-zkY">
+                            <rect key="frame" x="210.00000000000003" y="12.333333333333343" width="34" height="34"/>
+                            <state key="normal" image="Icon／34x34／life_StarTribune_icon_del_34x34"/>
+                            <connections>
+                                <action selector="cancelButtonTapped" destination="-1" eventType="touchUpInside" id="lnb-fB-M6l"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="空调开启" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qa7-8a-1fi">
+                            <rect key="frame" x="194.66666666666669" y="66.333333333333343" width="49.333333333333343" height="14.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wRi-ii-v7G">
+                            <rect key="frame" x="16.000000000000007" y="58" width="50.999999999999993" height="31"/>
+                            <color key="onTintColor" red="0.062745098040000002" green="0.49803921569999998" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="hvacSwitchTapped:" destination="-1" eventType="valueChanged" id="PbM-ta-Uky"/>
+                            </connections>
+                        </switch>
+                        <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b6t-kW-tT1" userLabel="Line View 3">
+                            <rect key="frame" x="25" y="168" width="325" height="0.0"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.90980392160000001" green="0.92156862750000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tKz-cb-ane">
+                            <rect key="frame" x="22" y="106.00000000000003" width="216" height="104"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ror-Se-WNe">
+                                    <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="DTI-UM-cUm"/>
+                                        <constraint firstAttribute="width" constant="48" id="G5o-op-Qo0"/>
+                                    </constraints>
+                                    <state key="normal" image="icon_air_auto_close_48x48">
+                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <state key="selected" image="icon_air_auto_open_48x48">
+                                        <color key="titleColor" red="0.2277342379" green="0.49195224050000003" blue="0.85104757549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="hvacSettingButtonTapped:" destination="-1" eventType="touchUpInside" id="qmp-AF-zhd"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSl-zC-TmE">
+                                    <rect key="frame" x="55.999999999999986" y="0.0" width="48" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="48" id="jNj-aS-xZR"/>
+                                        <constraint firstAttribute="height" constant="48" id="rlU-Uc-aTc"/>
+                                    </constraints>
+                                    <state key="normal" image="icon_air_max_close_48x48">
+                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <state key="selected" image="icon_air_max_open_48x48">
+                                        <color key="titleColor" red="0.2277342379" green="0.49195224050000003" blue="0.85104757549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="hvacSettingButtonTapped:" destination="-1" eventType="touchUpInside" id="Ckl-xs-l5M"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tf4-tq-sCX">
+                                    <rect key="frame" x="112" y="56" width="48" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="fgh-5y-2lS"/>
+                                        <constraint firstAttribute="width" constant="48" id="oPY-Gu-bzC"/>
+                                    </constraints>
+                                    <state key="normal" image="icon_air_move_close_48x48">
+                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <state key="selected" image="icon_air_move_open_48x48">
+                                        <color key="titleColor" red="0.2277342379" green="0.49195224050000003" blue="0.85104757549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="hvacSettingButtonTapped:" destination="-1" eventType="touchUpInside" id="ncH-Zr-QBM"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yir-w6-wRp">
+                                    <rect key="frame" x="55.999999999999986" y="56" width="48" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="48" id="AeP-VF-Icv"/>
+                                        <constraint firstAttribute="height" constant="48" id="tJ1-dG-Q8B"/>
+                                    </constraints>
+                                    <state key="normal" image="icon_air_move-seat_close_48x48">
+                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <state key="selected" image="icon_air_move-seat_open_48x48">
+                                        <color key="titleColor" red="0.2277342379" green="0.49195224050000003" blue="0.85104757549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="hvacSettingButtonTapped:" destination="-1" eventType="touchUpInside" id="4rU-a1-eAA"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNT-Ps-EtU">
+                                    <rect key="frame" x="0.0" y="56" width="48" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="48" id="tAu-wR-Bfb"/>
+                                        <constraint firstAttribute="height" constant="48" id="xy8-vq-S9Z"/>
+                                    </constraints>
+                                    <state key="normal" image="icon_air_move-back_close_48x48">
+                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <state key="selected" image="icon_air_move-back_open_48x48">
+                                        <color key="titleColor" red="0.2277342379" green="0.49195224050000003" blue="0.85104757549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="hvacSettingButtonTapped:" destination="-1" eventType="touchUpInside" id="N3U-0r-g4G"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nnp-wp-hKK">
+                                    <rect key="frame" x="168" y="56" width="48" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="BMN-51-N6l"/>
+                                        <constraint firstAttribute="width" constant="48" id="vfY-fI-9Te"/>
+                                    </constraints>
+                                    <state key="normal" image="icon_air_seat-wind_close_48x48">
+                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <state key="selected" image="icon_air_seat-wind_open_48x48">
+                                        <color key="titleColor" red="0.2277342379" green="0.49195224050000003" blue="0.85104757549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="hvacSettingButtonTapped:" destination="-1" eventType="touchUpInside" id="dyd-l5-PjS"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XND-8c-8um">
+                                    <rect key="frame" x="112" y="0.0" width="48" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="2fX-Xs-htc"/>
+                                        <constraint firstAttribute="width" constant="48" id="j4J-NU-dvC"/>
+                                    </constraints>
+                                    <state key="normal" image="icon_air_rear_close_48x48">
+                                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <state key="selected" image="icon_air_rear_open_48x48">
+                                        <color key="titleColor" red="0.2277342379" green="0.49195224050000003" blue="0.85104757549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="hvacSettingButtonTapped:" destination="-1" eventType="touchUpInside" id="llb-sx-v5P"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUy-Hy-IGr">
+                                    <rect key="frame" x="168" y="0.0" width="48" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="48" id="bgI-8c-fpR"/>
+                                        <constraint firstAttribute="height" constant="48" id="mNe-M0-EVE"/>
+                                    </constraints>
+                                    <state key="normal" image="icon_air_loop_close_48x48">
+                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <state key="selected" image="icon_air_loop_open_48x48">
+                                        <color key="titleColor" red="0.2277342379" green="0.49195224050000003" blue="0.85104757549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="hvacSettingButtonTapped:" destination="-1" eventType="touchUpInside" id="haz-7Z-TrV"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="QUy-Hy-IGr" firstAttribute="top" secondItem="tKz-cb-ane" secondAttribute="top" id="3xj-gV-2e6"/>
+                                <constraint firstItem="Tf4-tq-sCX" firstAttribute="top" secondItem="QUy-Hy-IGr" secondAttribute="bottom" constant="8" id="5de-YM-qKA"/>
+                                <constraint firstItem="Tf4-tq-sCX" firstAttribute="leading" secondItem="Yir-w6-wRp" secondAttribute="trailing" constant="8" id="7kc-P6-f58"/>
+                                <constraint firstItem="Nnp-wp-hKK" firstAttribute="leading" secondItem="Tf4-tq-sCX" secondAttribute="trailing" constant="8" id="86I-32-nxD"/>
+                                <constraint firstItem="ZNT-Ps-EtU" firstAttribute="leading" secondItem="tKz-cb-ane" secondAttribute="leading" id="M27-WC-rEF"/>
+                                <constraint firstItem="WSl-zC-TmE" firstAttribute="leading" secondItem="Ror-Se-WNe" secondAttribute="trailing" constant="8" id="QyF-PD-TWV"/>
+                                <constraint firstItem="QUy-Hy-IGr" firstAttribute="leading" secondItem="XND-8c-8um" secondAttribute="trailing" constant="8" id="UFn-VL-nbD"/>
+                                <constraint firstItem="WSl-zC-TmE" firstAttribute="top" secondItem="tKz-cb-ane" secondAttribute="top" id="Udr-3B-qHa"/>
+                                <constraint firstAttribute="bottom" secondItem="ZNT-Ps-EtU" secondAttribute="bottom" id="Zvx-0F-qFN"/>
+                                <constraint firstItem="Yir-w6-wRp" firstAttribute="top" secondItem="WSl-zC-TmE" secondAttribute="bottom" constant="8" id="aWX-tC-iZS"/>
+                                <constraint firstItem="XND-8c-8um" firstAttribute="top" secondItem="tKz-cb-ane" secondAttribute="top" id="ddz-YU-eRI"/>
+                                <constraint firstAttribute="trailing" secondItem="QUy-Hy-IGr" secondAttribute="trailing" id="eUs-cf-Vb8"/>
+                                <constraint firstAttribute="bottom" secondItem="Nnp-wp-hKK" secondAttribute="bottom" id="f71-H6-mOo"/>
+                                <constraint firstItem="ZNT-Ps-EtU" firstAttribute="top" secondItem="Ror-Se-WNe" secondAttribute="bottom" constant="8" id="hCy-vH-cT1"/>
+                                <constraint firstItem="XND-8c-8um" firstAttribute="leading" secondItem="WSl-zC-TmE" secondAttribute="trailing" constant="8" id="kga-1s-QDB"/>
+                                <constraint firstItem="Ror-Se-WNe" firstAttribute="top" secondItem="tKz-cb-ane" secondAttribute="top" id="l2Q-Js-ANK"/>
+                                <constraint firstAttribute="trailing" secondItem="Nnp-wp-hKK" secondAttribute="trailing" id="mL5-qk-fDb"/>
+                                <constraint firstItem="Yir-w6-wRp" firstAttribute="leading" secondItem="ZNT-Ps-EtU" secondAttribute="trailing" constant="8" id="pTh-qL-PeE"/>
+                                <constraint firstItem="Ror-Se-WNe" firstAttribute="leading" secondItem="tKz-cb-ane" secondAttribute="leading" id="tiw-hg-X2T"/>
+                                <constraint firstItem="Tf4-tq-sCX" firstAttribute="top" secondItem="XND-8c-8um" secondAttribute="bottom" constant="8" id="w6W-jI-ZK7"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NG4-yl-BzG" userLabel="Temperature BG View">
+                            <rect key="frame" x="16" y="290" width="228" height="76"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NaZ-8c-J2F">
+                                    <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="48" id="RM9-te-WwM"/>
+                                        <constraint firstAttribute="height" constant="48" id="TYN-bl-XfZ"/>
+                                    </constraints>
+                                    <state key="normal" backgroundImage="air-left"/>
+                                    <state key="disabled" backgroundImage="icon_air_temperature_reduce_fall_48x48"/>
+                                    <state key="selected" backgroundImage="btn_air-conditioner_cooling_70x70"/>
+                                    <connections>
+                                        <action selector="temperatureButtonTapped:" destination="-1" eventType="touchUpInside" id="JbG-qL-ntw"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJn-gv-J2N">
+                                    <rect key="frame" x="85.666666666666671" y="0.0" width="36.666666666666671" height="48"/>
+                                    <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="38"/>
+                                    <color key="textColor" red="0.30588235294117649" green="0.31372549019607843" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="空调温度" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tfp-xm-D4k">
+                                    <rect key="frame" x="85.333333333333329" y="55.999999999999943" width="57.333333333333329" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="ukn-Am-PFT"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsC-46-IPI">
+                                    <rect key="frame" x="180" y="0.0" width="48" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="48" id="0NS-Xz-H6G"/>
+                                        <constraint firstAttribute="height" constant="48" id="ATD-Ta-u2j"/>
+                                    </constraints>
+                                    <state key="normal" backgroundImage="air-right"/>
+                                    <state key="disabled" backgroundImage="icon_air_temperature_raise_raise_48x48"/>
+                                    <state key="selected" backgroundImage="btn_air-conditioner_warming_70x70"/>
+                                    <connections>
+                                        <action selector="temperatureButtonTapped:" destination="-1" eventType="touchUpInside" id="ShE-6Q-bQJ"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="℃" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFT-5r-klT">
+                                    <rect key="frame" x="122.33333333333333" y="1.6666666666666288" width="35.333333333333329" height="44.333333333333336"/>
+                                    <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="38"/>
+                                    <color key="textColor" red="0.30588235294117649" green="0.31372549019607843" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Tfp-xm-D4k" firstAttribute="centerX" secondItem="NG4-yl-BzG" secondAttribute="centerX" id="4ge-OI-1Gv"/>
+                                <constraint firstItem="dFT-5r-klT" firstAttribute="leading" secondItem="nJn-gv-J2N" secondAttribute="trailing" id="93I-KP-y5d"/>
+                                <constraint firstItem="nJn-gv-J2N" firstAttribute="centerX" secondItem="NG4-yl-BzG" secondAttribute="centerX" constant="-10" id="FUv-Me-KOu"/>
+                                <constraint firstItem="Tfp-xm-D4k" firstAttribute="top" secondItem="nJn-gv-J2N" secondAttribute="bottom" constant="8" id="Fd1-vN-IfE"/>
+                                <constraint firstItem="rsC-46-IPI" firstAttribute="centerY" secondItem="NaZ-8c-J2F" secondAttribute="centerY" id="HUt-X5-9f7"/>
+                                <constraint firstItem="NaZ-8c-J2F" firstAttribute="leading" secondItem="NG4-yl-BzG" secondAttribute="leading" id="JT7-HJ-nxb"/>
+                                <constraint firstItem="nJn-gv-J2N" firstAttribute="centerY" secondItem="dFT-5r-klT" secondAttribute="centerY" id="Q0C-Gp-ZGa"/>
+                                <constraint firstItem="NaZ-8c-J2F" firstAttribute="top" secondItem="NG4-yl-BzG" secondAttribute="top" id="V87-0K-37J"/>
+                                <constraint firstItem="nJn-gv-J2N" firstAttribute="top" secondItem="NG4-yl-BzG" secondAttribute="top" id="mE0-Pe-b4v"/>
+                                <constraint firstAttribute="trailing" secondItem="rsC-46-IPI" secondAttribute="trailing" id="ra5-2U-Qya"/>
+                                <constraint firstAttribute="bottom" secondItem="Tfp-xm-D4k" secondAttribute="bottom" id="thC-y2-TPZ"/>
+                                <constraint firstItem="nJn-gv-J2N" firstAttribute="centerY" secondItem="NaZ-8c-J2F" secondAttribute="centerY" id="x1w-lD-S0n"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* 开启空调将启动车辆" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tr-ou-4Lc">
+                            <rect key="frame" x="75" y="382" width="109.66666666666669" height="13.333333333333314"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dc9-S7-5Z5" userLabel="Fan Slider BG View">
+                            <rect key="frame" x="16" y="226.00000000000003" width="228" height="47.999999999999972"/>
+                            <subviews>
+                                <button opaque="NO" tag="1001" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWF-8V-fY7">
+                                    <rect key="frame" x="0.0" y="10" width="48" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="8hu-kv-o1Y"/>
+                                        <constraint firstAttribute="width" constant="48" id="gsc-pD-uyq"/>
+                                    </constraints>
+                                    <state key="normal" backgroundImage="Group-1"/>
+                                    <state key="selected" image="icon_air_wind_fall_48x48" backgroundImage="Group-1"/>
+                                    <connections>
+                                        <action selector="fanbuttonTapped:" destination="-1" eventType="touchUpInside" id="OMA-ob-2eF"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="1002" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ca-IL-1Xv">
+                                    <rect key="frame" x="180" y="0.0" width="48" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="5EG-Bb-iUj"/>
+                                        <constraint firstAttribute="width" constant="48" id="ew2-En-Ghg"/>
+                                    </constraints>
+                                    <state key="normal" backgroundImage="Group-2"/>
+                                    <state key="selected" backgroundImage="icon_air_wind_raise_48x48"/>
+                                    <connections>
+                                        <action selector="fanbuttonTapped:" destination="-1" eventType="touchUpInside" id="yAH-NC-4Vl"/>
+                                    </connections>
+                                </button>
+                                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eVf-hX-cwS" customClass="SOSFanSliderView">
+                                    <rect key="frame" x="50" y="11.333333333333314" width="128" height="25"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="3R9-HA-ktb"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="6kW-qR-h1p"/>
+                                <constraint firstItem="eVf-hX-cwS" firstAttribute="centerY" secondItem="Dc9-S7-5Z5" secondAttribute="centerY" id="CtS-LI-BMl"/>
+                                <constraint firstItem="bWF-8V-fY7" firstAttribute="leading" secondItem="Dc9-S7-5Z5" secondAttribute="leading" id="ISe-Qt-HbJ"/>
+                                <constraint firstItem="4ca-IL-1Xv" firstAttribute="bottom" secondItem="bWF-8V-fY7" secondAttribute="bottom" constant="-10" id="ZdK-Pw-RND"/>
+                                <constraint firstItem="eVf-hX-cwS" firstAttribute="leading" secondItem="bWF-8V-fY7" secondAttribute="trailing" constant="2" id="Zi9-XA-ja4"/>
+                                <constraint firstAttribute="trailing" secondItem="4ca-IL-1Xv" secondAttribute="trailing" id="ifs-ZL-V2E"/>
+                                <constraint firstItem="4ca-IL-1Xv" firstAttribute="leading" secondItem="eVf-hX-cwS" secondAttribute="trailing" constant="2" id="oVh-bK-zmw"/>
+                                <constraint firstItem="4ca-IL-1Xv" firstAttribute="centerY" secondItem="Dc9-S7-5Z5" secondAttribute="centerY" id="rzd-Iu-KVT"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wey-OO-nyM">
+                            <rect key="frame" x="0.0" y="405" width="260" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Bo5-Fo-580"/>
+                            </constraints>
+                            <state key="normal" title="发送到车" image="Icon／34x34／life_StarTribune_icon_list_std_34x34">
+                                <color key="titleColor" red="0.40784313725490196" green="0.58823529411764708" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="sendToCarButtonTapped:" destination="-1" eventType="touchUpInside" id="YZU-Yb-StW"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="R1Y-8J-ohw" firstAttribute="top" secondItem="9Fz-gj-GHk" secondAttribute="top" constant="18" id="B8f-Py-xjg"/>
+                        <constraint firstAttribute="trailing" secondItem="Dc9-S7-5Z5" secondAttribute="trailing" constant="16" id="DUw-J3-reW"/>
+                        <constraint firstItem="qa7-8a-1fi" firstAttribute="trailing" secondItem="0eS-A1-zkY" secondAttribute="trailing" id="H5A-ac-fvy"/>
+                        <constraint firstAttribute="trailing" secondItem="NG4-yl-BzG" secondAttribute="trailing" constant="16" id="KX2-qK-uyn"/>
+                        <constraint firstItem="qa7-8a-1fi" firstAttribute="centerY" secondItem="wRi-ii-v7G" secondAttribute="centerY" id="M5Y-6c-elM"/>
+                        <constraint firstItem="wRi-ii-v7G" firstAttribute="leading" secondItem="R1Y-8J-ohw" secondAttribute="leading" id="MyA-3h-YFO"/>
+                        <constraint firstItem="R1Y-8J-ohw" firstAttribute="leading" secondItem="9Fz-gj-GHk" secondAttribute="leading" constant="16" id="NgE-1o-atV"/>
+                        <constraint firstItem="tKz-cb-ane" firstAttribute="top" secondItem="9Fz-gj-GHk" secondAttribute="top" constant="106" id="PI5-Cl-ugw"/>
+                        <constraint firstAttribute="width" constant="260" id="PlI-v8-xwX"/>
+                        <constraint firstItem="Dc9-S7-5Z5" firstAttribute="top" secondItem="tKz-cb-ane" secondAttribute="bottom" constant="16" id="Q73-So-nDO"/>
+                        <constraint firstAttribute="bottom" secondItem="Wey-OO-nyM" secondAttribute="bottom" id="WaB-d9-eHi"/>
+                        <constraint firstItem="NG4-yl-BzG" firstAttribute="leading" secondItem="9Fz-gj-GHk" secondAttribute="leading" constant="16" id="bDc-Pj-LO2"/>
+                        <constraint firstItem="Wey-OO-nyM" firstAttribute="leading" secondItem="9Fz-gj-GHk" secondAttribute="leading" id="eky-oR-exm"/>
+                        <constraint firstItem="0eS-A1-zkY" firstAttribute="centerY" secondItem="R1Y-8J-ohw" secondAttribute="centerY" id="fsM-09-ovW"/>
+                        <constraint firstAttribute="trailing" secondItem="qa7-8a-1fi" secondAttribute="trailing" constant="16" id="hfB-CJ-Kjr"/>
+                        <constraint firstItem="wRi-ii-v7G" firstAttribute="top" secondItem="9Fz-gj-GHk" secondAttribute="top" constant="58" id="ive-VT-foZ"/>
+                        <constraint firstItem="Dc9-S7-5Z5" firstAttribute="leading" secondItem="9Fz-gj-GHk" secondAttribute="leading" constant="16" id="kCT-KD-CMJ"/>
+                        <constraint firstItem="NG4-yl-BzG" firstAttribute="top" secondItem="Dc9-S7-5Z5" secondAttribute="bottom" constant="16" id="l8M-O9-npS"/>
+                        <constraint firstAttribute="trailing" secondItem="Wey-OO-nyM" secondAttribute="trailing" id="mf0-i9-74h"/>
+                        <constraint firstItem="tKz-cb-ane" firstAttribute="centerX" secondItem="9Fz-gj-GHk" secondAttribute="centerX" id="qed-sT-SWb"/>
+                        <constraint firstAttribute="height" constant="455" id="s5r-ju-SJt"/>
+                        <constraint firstItem="2tr-ou-4Lc" firstAttribute="centerX" secondItem="9Fz-gj-GHk" secondAttribute="centerX" id="vFZ-BS-1qi"/>
+                        <constraint firstItem="2tr-ou-4Lc" firstAttribute="top" secondItem="NG4-yl-BzG" secondAttribute="bottom" constant="16" id="zKP-4B-fUE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69616866438356162" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9Fz-gj-GHk" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="cJJ-0B-lQF"/>
+                <constraint firstItem="9Fz-gj-GHk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ttI-uf-TzJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="18.399999999999999" y="-53.201970443349758"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Group-1" width="48" height="48"/>
+        <image name="Group-2" width="48" height="48"/>
+        <image name="Icon／34x34／life_StarTribune_icon_del_34x34" width="34" height="34"/>
+        <image name="Icon／34x34／life_StarTribune_icon_list_std_34x34" width="34" height="34"/>
+        <image name="air-left" width="48" height="48"/>
+        <image name="air-right" width="144" height="144"/>
+        <image name="btn_air-conditioner_cooling_70x70" width="70" height="70"/>
+        <image name="btn_air-conditioner_warming_70x70" width="70" height="70"/>
+        <image name="icon_air_auto_close_48x48" width="144" height="144"/>
+        <image name="icon_air_auto_open_48x48" width="144" height="144"/>
+        <image name="icon_air_loop_close_48x48" width="144" height="144"/>
+        <image name="icon_air_loop_open_48x48" width="144" height="144"/>
+        <image name="icon_air_max_close_48x48" width="144" height="144"/>
+        <image name="icon_air_max_open_48x48" width="144" height="144"/>
+        <image name="icon_air_move-back_close_48x48" width="144" height="144"/>
+        <image name="icon_air_move-back_open_48x48" width="144" height="144"/>
+        <image name="icon_air_move-seat_close_48x48" width="144" height="144"/>
+        <image name="icon_air_move-seat_open_48x48" width="144" height="144"/>
+        <image name="icon_air_move_close_48x48" width="144" height="144"/>
+        <image name="icon_air_move_open_48x48" width="144" height="144"/>
+        <image name="icon_air_rear_close_48x48" width="144" height="144"/>
+        <image name="icon_air_rear_open_48x48" width="144" height="144"/>
+        <image name="icon_air_seat-wind_close_48x48" width="144" height="144"/>
+        <image name="icon_air_seat-wind_open_48x48" width="144" height="144"/>
+        <image name="icon_air_temperature_raise_raise_48x48" width="144" height="144"/>
+        <image name="icon_air_temperature_reduce_fall_48x48" width="144" height="144"/>
+        <image name="icon_air_wind_fall_48x48" width="144" height="144"/>
+        <image name="icon_air_wind_raise_48x48" width="144" height="144"/>
+    </resources>
+</document>

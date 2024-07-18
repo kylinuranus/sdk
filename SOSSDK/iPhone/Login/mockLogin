@@ -1,0 +1,200 @@
+{
+"idpUserId": "ONSTARAPP308565151",
+"idmUser": {
+"idpUserId": "ONSTARAPP308565151",
+"remoteUserId": "",
+"partyId": "",
+"userName": "ONSTARAPP308565151",
+"nickName": "我的小可爱1",
+"firstName": "andy",
+"middleName": "",
+"lastName": "yang",
+"businessName": "",
+"gender": "M",
+"birthDate": "",
+"jobTitle": "",
+"emailAddress": "qqq@qq.com",
+"mobilePhoneNumber": "18217768494",
+"cellPhoneNumber": "",
+"workPhoneNumber": "",
+"faxNumber": "",
+"country": "CN",
+"stateProvince": "GD",
+"city": "广州市",
+"address1": "a",
+"address2": "NA",
+"address3": "NA",
+"postalCode": "200000",
+"msn": "",
+"qq": "",
+"applications": "Covisint (required ONS Realm)",
+"status": "Active",
+"tcps": "",
+"tcpsAccepttime": "",
+"registerSource": "",
+"languagePreference": "ZH",
+"fixedQuestion1ld": "0",
+"fixedQuestion2ld": "0",
+"fixedQuestion1Answer": "",
+"fixedQuestion2Answer": "",
+"remoteCommandOptld": "",
+"govid": "2018010801",
+"guid": "101a202f093b4d0289",
+"onstar_guid": "101a202f093b4d0289",
+"accountNumber": "",
+"vin": "LSGZG5378GS026406",
+"verification_status": "Yes",
+"gmsync_status": "",
+"fromonstar": "onstar",
+"i3_status": ""
+},
+"subscriber": {
+"subscriberId": "00000000000108603582_00000001515402322367_00003",
+"guid": null,
+"governmentId": "2018010801",
+"givenName": "andy",
+"familyName": "yang",
+"title": null,
+"gender": "M",
+"mobilePhone": "18217768494",
+"emailAddress": "qqq@qq.com",
+"status": null,
+"subscriberSinceDate": 1515340800000,
+"subscriberPasswordIndicator": true,
+"iceOptInDate": 1520352000000,
+"iceOptInIndicator": true,
+"emergencyContact": {
+"contact": {
+"givenName": "zz",
+"familyName": "aa",
+"mobile": "1366436",
+"email": null,
+"preferenceLanguage": "zh_CN"
+},
+"priorityRankingNumeric": 1
+},
+"preference": {
+"preferenceLanguage": null,
+"avatarUrl": null,
+"autoRefreshData": null,
+"defaultVin": "LSGZG5378GS026406",
+"fmvOpt": true,
+"remoteControlOpt": true,
+"ecContactDisplay": true
+}
+},
+"currentSuite": {
+"account": {
+"accountId": "1201769788",
+"startDate": null,
+"createDate": null,
+"accountType": "个人",
+"accoutStatus": "打开",
+"country": "CN",
+"province": "GD",
+"city": "广州市",
+"address1": "a",
+"address2": "mocktest",
+"postCode": "NA"
+},
+"vehicle": {
+"vin": "LSGZG5378GS026406",
+"stationId": null,
+"manufacturerName": "G",
+"manufacturerDesc": "通用汽车公司",
+"make": "L",
+"makeDesc": "上汽通用",
+"model": "Z3",
+"modelDesc": "迈锐宝 XL",
+"year": "2016",
+"generationId": null,
+"generation": "10",
+"generationDescription": "China Gen 10 Global A",
+"mdn": null,
+"brand": "CHEVY",
+"vehiclePhone": null,
+"vehicleUnitFeatures": {
+"ALERT_SUPPORTED": {
+"featureName": "ALERT_SUPPORTED",
+"value": "YES",
+"valueType": "BOOLEAN",
+"featureSettings": null
+},
+"BUS_COMMAND_SUPPORTED": {
+"featureName": "BUS_COMMAND_SUPPORTED",
+"value": "YES",
+"valueType": "BOOLEAN",
+"featureSettings": null
+},
+"TBT_SUPPORTED": {
+"featureName": "TBT_SUPPORTED",
+"value": "YES",
+"valueType": "BOOLEAN",
+"featureSettings": null
+},
+"WIFI_SUPPORTED": {
+"featureName": "WIFI_SUPPORTED",
+"value": "YES",
+"valueType": "BOOLEAN",
+"featureSettings": null
+},
+"LOCK_UNLOCK_SUPPORTED": {
+"featureName": "LOCK_UNLOCK_SUPPORTED",
+"value": "YES",
+"valueType": "BOOLEAN",
+"featureSettings": null
+},
+"ODD_SUPPORTED": {
+"featureName": "ODD_SUPPORTED",
+"value": "YES",
+"valueType": "BOOLEAN",
+"featureSettings": null
+},
+"LOCATION_HISTORY_SUPPORTED": {
+"featureName": "LOCATION_HISTORY_SUPPORTED",
+"value": "YES",
+"valueType": "BOOLEAN",
+"featureSettings": null
+},
+"REMOTE_START_SUPPORTED": {
+"featureName": "REMOTE_START_SUPPORTED",
+"value": "YES",
+"valueType": "BOOLEAN",
+"featureSettings": null
+},
+"INFOTAINMENT_CAPABLE": {
+"featureName": "INFOTAINMENT_CAPABLE",
+"value": "NO",
+"valueType": "BOOLEAN",
+"featureSettings": null
+},
+"REMOTE_DIAGNOSTICS_SUPPORTED": {
+"featureName": "REMOTE_DIAGNOSTICS_SUPPORTED",
+"value": "YES",
+"valueType": "BOOLEAN",
+"featureSettings": null
+},
+"TRAFFIC_PROBE_SUPPORTED": {
+"featureName": "TRAFFIC_PROBE_SUPPORTED",
+"value": "YES",
+"valueType": "BOOLEAN",
+"featureSettings": null
+}
+},
+"supportedVehicleElements": null,
+"directWifi": true,
+"gen8": false,
+"gen10": true,
+"phev": false,
+"d2jbi": false,
+"info3": false,
+"info34": false,
+"icm": false,
+"superCruise": false,
+"supportDAOVDTAN": null,
+"bbwc": true
+},
+"role": "OWNER",
+"avaliableServices": null
+}
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SOSLoginPopView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iapGuidePlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="8x0-DI-C0O">
+                    <rect key="frame" x="22" y="153.5" width="330" height="360"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOT-ja-DNY">
+                    <rect key="frame" x="331" y="111.5" width="21" height="22"/>
+                    <state key="normal" image="icon_nav_clear_idle"/>
+                    <connections>
+                        <action selector="buttonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="kNr-gS-JE4"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j6Q-gy-KIZ">
+                    <rect key="frame" x="341.5" y="133.5" width="0.5" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="0.5" id="UMT-sf-kMW"/>
+                        <constraint firstAttribute="height" constant="20" id="UZ7-aN-nNf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="j6Q-gy-KIZ" firstAttribute="centerX" secondItem="JOT-ja-DNY" secondAttribute="centerX" id="256-tC-9v2"/>
+                <constraint firstItem="JOT-ja-DNY" firstAttribute="trailing" secondItem="8x0-DI-C0O" secondAttribute="trailing" id="4Cx-3k-FFT"/>
+                <constraint firstItem="8x0-DI-C0O" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="PNj-KF-NmN"/>
+                <constraint firstItem="8x0-DI-C0O" firstAttribute="top" secondItem="j6Q-gy-KIZ" secondAttribute="bottom" id="SJm-oT-gNH"/>
+                <constraint firstItem="8x0-DI-C0O" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="top" constant="100" id="fuH-bV-mJz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8x0-DI-C0O" secondAttribute="trailing" constant="20" id="inx-WY-oCY"/>
+                <constraint firstItem="8x0-DI-C0O" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jtc-fv-47z"/>
+                <constraint firstItem="j6Q-gy-KIZ" firstAttribute="top" secondItem="JOT-ja-DNY" secondAttribute="bottom" id="lwW-4X-6Ad"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="98.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iapGuidePlaceholder" width="330" height="360"/>
+        <image name="icon_nav_clear_idle" width="21" height="21"/>
+    </resources>
+</document>

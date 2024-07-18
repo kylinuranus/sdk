@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SOSOnstarPackageVC">
+            <connections>
+                <outlet property="buyBtn" destination="kHo-1I-cIq" id="9KM-Mi-PLm"/>
+                <outlet property="headerBGView" destination="sRJ-NQ-MOV" id="Nmt-uf-evO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sRJ-NQ-MOV">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="174"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHo-1I-cIq">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <color key="backgroundColor" red="0.062745098039215685" green="0.49803921568627452" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="jQ8-MM-qH0"/>
+                    </constraints>
+                    <state key="normal" title="购买更多套餐">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buyPackageButtonTapped" destination="-1" eventType="touchUpInside" id="AUz-zq-RAq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.91021394729614258" green="0.92126786708831787" blue="0.93726038932800293" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="kHo-1I-cIq" firstAttribute="trailing" secondItem="3rz-nH-P3W" secondAttribute="trailing" id="BP4-IK-oRx"/>
+                <constraint firstItem="kHo-1I-cIq" firstAttribute="bottom" secondItem="3rz-nH-P3W" secondAttribute="bottom" id="CWY-N4-k6i"/>
+                <constraint firstItem="kHo-1I-cIq" firstAttribute="leading" secondItem="3rz-nH-P3W" secondAttribute="leading" id="fQz-VS-bj2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="3rz-nH-P3W"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

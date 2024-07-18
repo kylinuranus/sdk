@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SOSCarLogoTableViewCell" id="KGk-i7-Jjw" customClass="SOSCarLogoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="284"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="284"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="AQ1-oc-SbC">
+                        <rect key="frame" x="80" y="26" width="18.5" height="21"/>
+                        <fontDescription key="fontDescription" name="PingFangSC-Medium" family="PingFang SC" pointSize="15"/>
+                        <color key="textColor" red="0.30588235294117649" green="0.31372549019607843" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_placeholder_Empty" translatesAutoresizingMaskIntoConstraints="NO" id="QCY-SH-vSU">
+                        <rect key="frame" x="10" y="10" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="cKz-Ib-Vc9"/>
+                            <constraint firstAttribute="height" constant="70" id="t1v-Vr-AAW"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="hY2-Df-HXN">
+                        <rect key="frame" x="80" y="52" width="16" height="18.5"/>
+                        <fontDescription key="fontDescription" name="PingFangSC-Medium" family="PingFang SC" pointSize="13"/>
+                        <color key="textColor" red="0.50980392156862742" green="0.51372549019607838" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ame-Zg-pAy">
+                        <rect key="frame" x="75" y="218" width="170" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="170" id="C5F-br-mMX"/>
+                            <constraint firstAttribute="height" constant="36" id="Gmq-h5-ZOb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" backgroundImage="btn_setting_car_switch_174x42"/>
+                        <connections>
+                            <action selector="toSwitchCar:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="SNN-bd-QCk"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon／22x22／icon_guide_22x22" translatesAutoresizingMaskIntoConstraints="NO" id="fMX-Oz-i3E">
+                        <rect key="frame" x="290" y="25" width="22" height="22"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hH-o3-3rB">
+                        <rect key="frame" x="213" y="25" width="77" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="车载Wi-Fi" image="Icon／22x22／icon_wifi_def_22x22">
+                            <color key="titleColor" red="0.30588235294117649" green="0.31372549019607843" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="toWifi:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="nTY-Rg-xEy"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QCY-SH-vSU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="0XW-kB-8eg"/>
+                    <constraint firstItem="ame-Zg-pAy" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="57H-Nq-wZT"/>
+                    <constraint firstItem="hY2-Df-HXN" firstAttribute="top" secondItem="AQ1-oc-SbC" secondAttribute="bottom" constant="5" id="Aoe-rm-TNl"/>
+                    <constraint firstItem="1hH-o3-3rB" firstAttribute="centerY" secondItem="fMX-Oz-i3E" secondAttribute="centerY" id="Eg3-vN-ahs"/>
+                    <constraint firstItem="fMX-Oz-i3E" firstAttribute="leading" secondItem="1hH-o3-3rB" secondAttribute="trailing" id="LaP-hA-OKM"/>
+                    <constraint firstItem="AQ1-oc-SbC" firstAttribute="leading" secondItem="QCY-SH-vSU" secondAttribute="trailing" id="MzV-nO-bO5"/>
+                    <constraint firstItem="QCY-SH-vSU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="PDb-ex-QKh"/>
+                    <constraint firstItem="fMX-Oz-i3E" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="TFn-Hv-cq0"/>
+                    <constraint firstItem="hY2-Df-HXN" firstAttribute="leading" secondItem="AQ1-oc-SbC" secondAttribute="leading" id="TXq-G3-RO8"/>
+                    <constraint firstItem="AQ1-oc-SbC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="26" id="e8k-s2-xru"/>
+                    <constraint firstAttribute="trailing" secondItem="fMX-Oz-i3E" secondAttribute="trailing" constant="8" id="ffl-5X-UaJ"/>
+                    <constraint firstAttribute="bottom" secondItem="ame-Zg-pAy" secondAttribute="bottom" constant="30" id="ygP-03-wuc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="zx9-7N-IhW"/>
+            <connections>
+                <outlet property="carLogoImageView" destination="QCY-SH-vSU" id="R9S-cJ-o4F"/>
+                <outlet property="infoLb" destination="hY2-Df-HXN" id="2Zz-nc-1Uy"/>
+                <outlet property="switchBtn" destination="ame-Zg-pAy" id="ree-x6-jsv"/>
+                <outlet property="title" destination="AQ1-oc-SbC" id="NE1-7W-CxV"/>
+                <outlet property="wifiArraw" destination="fMX-Oz-i3E" id="76t-w6-4ba"/>
+                <outlet property="wifiBtn" destination="1hH-o3-3rB" id="IfJ-7V-2l0"/>
+            </connections>
+            <point key="canvasLocation" x="-136" y="68"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Icon／22x22／icon_guide_22x22" width="22" height="22"/>
+        <image name="Icon／22x22／icon_wifi_def_22x22" width="22" height="22"/>
+        <image name="btn_setting_car_switch_174x42" width="174" height="42"/>
+        <image name="icon_placeholder_Empty" width="60" height="60"/>
+    </resources>
+</document>

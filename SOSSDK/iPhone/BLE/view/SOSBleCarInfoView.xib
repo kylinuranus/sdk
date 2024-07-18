@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="SOSBleCarInfoView">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brand_car_80x80" translatesAutoresizingMaskIntoConstraints="NO" id="zNE-J0-XLq">
+                    <rect key="frame" x="15" y="8" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="zNE-J0-XLq" secondAttribute="height" multiplier="1:1" id="aJf-qO-cPx"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0A-mx-4Vt">
+                    <rect key="frame" x="67" y="34" width="31" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.56470588239999997" green="0.62352941179999999" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bi2-AX-VA3">
+                    <rect key="frame" x="67" y="8" width="39.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.56470588235294117" green="0.62352941176470589" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="X0A-mx-4Vt" firstAttribute="leading" secondItem="bi2-AX-VA3" secondAttribute="leading" id="48z-2C-Nxq"/>
+                <constraint firstItem="X0A-mx-4Vt" firstAttribute="height" secondItem="bi2-AX-VA3" secondAttribute="height" id="L6T-AV-ubc"/>
+                <constraint firstItem="bi2-AX-VA3" firstAttribute="top" secondItem="zNE-J0-XLq" secondAttribute="top" id="Q2Y-Yd-OA5"/>
+                <constraint firstItem="X0A-mx-4Vt" firstAttribute="leading" secondItem="zNE-J0-XLq" secondAttribute="trailing" constant="8" id="RJL-15-G6h"/>
+                <constraint firstItem="zNE-J0-XLq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="YSo-a0-nOn"/>
+                <constraint firstItem="X0A-mx-4Vt" firstAttribute="top" secondItem="bi2-AX-VA3" secondAttribute="bottom" constant="8" id="ePv-ct-fZ4"/>
+                <constraint firstItem="zNE-J0-XLq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="ktr-d0-qsu"/>
+                <constraint firstItem="X0A-mx-4Vt" firstAttribute="bottom" secondItem="zNE-J0-XLq" secondAttribute="bottom" id="m9P-CL-7LV"/>
+                <constraint firstItem="zNE-J0-XLq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="x9W-HM-UVt"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="carLogoImageView" destination="zNE-J0-XLq" id="yGX-b4-E0h"/>
+                <outlet property="carTypeLabel" destination="X0A-mx-4Vt" id="NdS-p5-kvv"/>
+                <outlet property="vinLabel" destination="bi2-AX-VA3" id="PqF-MR-gFf"/>
+            </connections>
+            <point key="canvasLocation" x="-27.199999999999999" y="94.902548725637189"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="brand_car_80x80" width="80" height="80"/>
+    </resources>
+</document>

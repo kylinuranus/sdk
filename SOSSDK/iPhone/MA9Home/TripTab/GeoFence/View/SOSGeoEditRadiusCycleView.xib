@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view userInteractionEnabled="NO" contentMode="scaleToFill" id="eNO-BK-n0H" customClass="SOSGeoEditRadiusCycleView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eg8-OW-6lb">
+                    <rect key="frame" x="60" y="184" width="200" height="200"/>
+                    <color key="backgroundColor" red="0.40784313729999999" green="0.58823529409999997" blue="0.92941176469999998" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="eg8-OW-6lb" secondAttribute="height" multiplier="1:1" id="E0r-VK-CjG"/>
+                        <constraint firstAttribute="width" constant="200" id="VL8-1J-o12"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.40784313729999999" green="0.58823529409999997" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                            <real key="value" value="100"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LBS_GEO_Point" translatesAutoresizingMaskIntoConstraints="NO" id="0mv-OT-PvW">
+                    <rect key="frame" x="136" y="260" width="48" height="48"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kjw-wp-r8k">
+                    <rect key="frame" x="90" y="198" width="140" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="围栏中心 (拖拽或点击搜索)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWl-fM-p4U">
+                            <rect key="frame" x="8.5" y="6" width="123.5" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="14" id="AR0-aZ-qwQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POI Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdK-4c-wBv">
+                            <rect key="frame" x="5" y="23" width="130" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="OAp-od-cNh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="dWl-fM-p4U" firstAttribute="centerX" secondItem="kjw-wp-r8k" secondAttribute="centerX" id="1nG-KW-CZI"/>
+                        <constraint firstAttribute="height" constant="44" id="8pR-yG-y9O"/>
+                        <constraint firstAttribute="width" constant="140" id="A1n-AX-Xe7"/>
+                        <constraint firstItem="UdK-4c-wBv" firstAttribute="top" secondItem="dWl-fM-p4U" secondAttribute="bottom" constant="3" id="F2k-PV-doN"/>
+                        <constraint firstItem="dWl-fM-p4U" firstAttribute="top" secondItem="kjw-wp-r8k" secondAttribute="top" constant="6" id="WKM-Oz-ktC"/>
+                        <constraint firstItem="UdK-4c-wBv" firstAttribute="centerX" secondItem="kjw-wp-r8k" secondAttribute="centerX" id="hYW-Fe-DbG"/>
+                        <constraint firstItem="UdK-4c-wBv" firstAttribute="leading" secondItem="kjw-wp-r8k" secondAttribute="leading" constant="5" id="pFn-3n-Prb"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="0mv-OT-PvW" firstAttribute="top" secondItem="kjw-wp-r8k" secondAttribute="bottom" constant="18" id="7d7-v9-ngq"/>
+                <constraint firstItem="eg8-OW-6lb" firstAttribute="centerY" secondItem="eNO-BK-n0H" secondAttribute="centerY" id="HVm-Ah-tun"/>
+                <constraint firstItem="0mv-OT-PvW" firstAttribute="centerX" secondItem="eNO-BK-n0H" secondAttribute="centerX" id="MLJ-2b-zQH"/>
+                <constraint firstItem="eg8-OW-6lb" firstAttribute="centerX" secondItem="eNO-BK-n0H" secondAttribute="centerX" id="db3-3j-mH1"/>
+                <constraint firstItem="0mv-OT-PvW" firstAttribute="centerY" secondItem="eNO-BK-n0H" secondAttribute="centerY" id="rYF-zr-ylr"/>
+                <constraint firstItem="kjw-wp-r8k" firstAttribute="centerX" secondItem="eNO-BK-n0H" secondAttribute="centerX" id="v6O-MP-lbV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q3A-er-jgR"/>
+            <connections>
+                <outlet property="cycleView" destination="eg8-OW-6lb" id="68V-P3-NZR"/>
+                <outlet property="cycleViewWidthGuide" destination="VL8-1J-o12" id="Dew-52-eWw"/>
+                <outlet property="poiNameLabel" destination="UdK-4c-wBv" id="ndY-MG-bKv"/>
+            </connections>
+            <point key="canvasLocation" x="382.5" y="538.73239436619724"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="LBS_GEO_Point" width="48" height="48"/>
+    </resources>
+</document>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SOSDateSlider">
+            <rect key="frame" x="0.0" y="0.0" width="333" height="79"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uWU-bW-fjd" userLabel="Slider BG View">
+                    <rect key="frame" x="18" y="7" width="297" height="4"/>
+                    <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="4" id="ndk-pn-SeX"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SOS_Slider_Start" translatesAutoresizingMaskIntoConstraints="NO" id="MYi-qc-Kfv">
+                    <rect key="frame" x="1" y="7" width="34" height="34"/>
+                </imageView>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SOS_Slider_End" translatesAutoresizingMaskIntoConstraints="NO" id="dTa-br-hiQ">
+                    <rect key="frame" x="298" y="7" width="34" height="34"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="MYi-qc-Kfv" firstAttribute="top" secondItem="uWU-bW-fjd" secondAttribute="top" id="2TQ-hg-NEw"/>
+                <constraint firstItem="uWU-bW-fjd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9gD-B0-sPl"/>
+                <constraint firstItem="uWU-bW-fjd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="BpU-7g-gwv"/>
+                <constraint firstItem="dTa-br-hiQ" firstAttribute="top" secondItem="uWU-bW-fjd" secondAttribute="top" id="MXl-4d-8Ab"/>
+                <constraint firstItem="uWU-bW-fjd" firstAttribute="trailing" secondItem="dTa-br-hiQ" secondAttribute="centerX" id="Sh6-aY-W9v"/>
+                <constraint firstItem="MYi-qc-Kfv" firstAttribute="centerX" secondItem="uWU-bW-fjd" secondAttribute="leading" id="TXe-yX-M90"/>
+                <constraint firstItem="uWU-bW-fjd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7" id="mYU-Mf-GEv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="endImgTrailingGuide" destination="Sh6-aY-W9v" id="BN8-yp-vpg"/>
+                <outlet property="endImgView" destination="dTa-br-hiQ" id="LKt-e1-MNj"/>
+                <outlet property="sliderBGView" destination="uWU-bW-fjd" id="G94-gQ-mqb"/>
+                <outlet property="startImgLeadingGuide" destination="TXe-yX-M90" id="AHC-ZQ-e9Q"/>
+                <outlet property="startImgView" destination="MYi-qc-Kfv" id="aq4-qN-gY9"/>
+            </connections>
+            <point key="canvasLocation" x="-106" y="-134"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="SOS_Slider_End" width="34" height="34"/>
+        <image name="SOS_Slider_Start" width="34" height="34"/>
+    </resources>
+</document>

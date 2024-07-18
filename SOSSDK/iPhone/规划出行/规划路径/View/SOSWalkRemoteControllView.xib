@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="SOSWalkRemoteControllView">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7c-53-0qj">
+                    <rect key="frame" x="0.0" y="0.0" width="182" height="80"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="45" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="闪灯鸣笛">
+                        <color key="titleColor" red="0.34901960784313724" green="0.4392156862745098" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="lightAndHornButtonTapped" destination="iN0-l3-epB" eventType="touchUpInside" id="bYR-AX-P01"/>
+                    </connections>
+                </button>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="icon_car_horn" translatesAutoresizingMaskIntoConstraints="NO" id="P2I-Rd-s8f">
+                    <rect key="frame" x="76" y="15" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="OIK-Rd-UhS"/>
+                        <constraint firstAttribute="width" secondItem="P2I-Rd-s8f" secondAttribute="height" multiplier="1:1" id="eaf-3o-4C5"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1e-Qu-Wdb">
+                    <rect key="frame" x="182" y="0.0" width="182" height="80"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="45" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="车门解锁">
+                        <color key="titleColor" red="0.34901960780000002" green="0.43921568630000002" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="unlockDoorButtonTapped" destination="iN0-l3-epB" eventType="touchUpInside" id="G94-lt-T6S"/>
+                    </connections>
+                </button>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="icon_car_unlock" translatesAutoresizingMaskIntoConstraints="NO" id="7qT-tL-Vn0">
+                    <rect key="frame" x="257.5" y="15" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="63j-iv-aok"/>
+                        <constraint firstAttribute="width" secondItem="7qT-tL-Vn0" secondAttribute="height" multiplier="1:1" id="IfT-4v-1QC"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1px-yu-wIs" userLabel="Line View">
+                    <rect key="frame" x="0.0" y="0.0" width="364" height="0.5"/>
+                    <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="O9P-dy-Uja"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="j7c-53-0qj" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="2dX-gw-ZaQ"/>
+                <constraint firstItem="y1e-Qu-Wdb" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="2ot-XG-yO8"/>
+                <constraint firstItem="y1e-Qu-Wdb" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="4Bi-Pa-ooD"/>
+                <constraint firstItem="1px-yu-wIs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="7lH-OE-Jlt"/>
+                <constraint firstItem="P2I-Rd-s8f" firstAttribute="centerX" secondItem="j7c-53-0qj" secondAttribute="centerX" id="Anr-1S-bZK"/>
+                <constraint firstItem="j7c-53-0qj" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="BBJ-cR-tb1"/>
+                <constraint firstItem="y1e-Qu-Wdb" firstAttribute="leading" secondItem="j7c-53-0qj" secondAttribute="trailing" id="F5x-sb-lNs"/>
+                <constraint firstItem="7qT-tL-Vn0" firstAttribute="centerX" secondItem="y1e-Qu-Wdb" secondAttribute="centerX" id="N7a-qF-T8b"/>
+                <constraint firstItem="j7c-53-0qj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="T5s-Do-r4h"/>
+                <constraint firstItem="y1e-Qu-Wdb" firstAttribute="width" secondItem="j7c-53-0qj" secondAttribute="width" id="XaF-M1-YcJ"/>
+                <constraint firstItem="1px-yu-wIs" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="bJt-j2-Ckc"/>
+                <constraint firstItem="j7c-53-0qj" firstAttribute="centerY" secondItem="P2I-Rd-s8f" secondAttribute="centerY" constant="10" id="d1x-bD-Drq"/>
+                <constraint firstItem="1px-yu-wIs" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="f4G-lv-S5o"/>
+                <constraint firstItem="y1e-Qu-Wdb" firstAttribute="centerY" secondItem="7qT-tL-Vn0" secondAttribute="centerY" constant="10" id="hfd-Z8-Yyy"/>
+                <constraint firstItem="y1e-Qu-Wdb" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="hyM-9F-XzF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="29" y="-227"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_car_horn" width="50" height="50"/>
+        <image name="icon_car_unlock" width="50" height="50"/>
+    </resources>
+</document>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINNextLTPro-BoldCondensed.otf">
+            <string>DINNextLTPro-BoldCondensed</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SOSLBSMapInfoView">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="deK-Uu-WGn" userLabel="Guide View">
+                    <rect key="frame" x="112.5" y="0.0" width="166.5" height="0.0"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="h5Q-Y1-6uI"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234567890" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBx-VR-vNl">
+                    <rect key="frame" x="112.5" y="10" width="116.5" height="28"/>
+                    <fontDescription key="fontDescription" name="DINNextLTPro-BoldCondensed" family="DIN Next LT Pro" pointSize="28"/>
+                    <color key="textColor" red="0.56470588235294117" green="0.62352941176470589" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Orw-T9-YMK">
+                    <rect key="frame" x="234" y="16.5" width="45" height="15"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="10"/>
+                    <state key="normal" title="在线" backgroundImage="LBS_label_在线">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" title="不在线" backgroundImage="LBS_label_不在线"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HCa-Ft-Yxf" userLabel="Guide View">
+                    <rect key="frame" x="0.0" y="120" width="60.5" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="lI9-Mu-uSa"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLn-6Z-OVj">
+                    <rect key="frame" x="73.5" y="61.5" width="23.5" height="28"/>
+                    <fontDescription key="fontDescription" name="DINNextLTPro-BoldCondensed" family="DIN Next LT Pro" pointSize="28"/>
+                    <color key="textColor" red="0.062745098039215685" green="0.49803921568627452" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jb-FC-cOg">
+                    <rect key="frame" x="102" y="66.5" width="9.5" height="12"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="10"/>
+                    <color key="textColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设备电量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKC-89-LF9">
+                    <rect key="frame" x="60.5" y="94.5" width="50" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                    <color key="textColor" red="0.53725490196078429" green="0.53725490196078429" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qhb-Jt-0NO" userLabel="Guide View">
+                    <rect key="frame" x="110.5" y="120" width="60.5" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="Nes-FZ-7Am"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="59:59" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0l3-YS-oF5">
+                    <rect key="frame" x="176.5" y="65.5" width="38" height="20"/>
+                    <fontDescription key="fontDescription" name="DINNextLTPro-BoldCondensed" family="DIN Next LT Pro" pointSize="20"/>
+                    <color key="textColor" red="0.062745098040000002" green="0.49803921569999998" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="停留时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zj-bd-Hf3">
+                    <rect key="frame" x="171" y="90.5" width="49.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                    <color key="textColor" red="0.53725490200000003" green="0.53725490200000003" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yia-1s-6Jh" userLabel="Guide View">
+                    <rect key="frame" x="220.5" y="120" width="60" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="s4K-nF-ZDx"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23:23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDF-zW-Svc">
+                    <rect key="frame" x="279" y="61.5" width="53" height="28"/>
+                    <fontDescription key="fontDescription" name="DINNextLTPro-BoldCondensed" family="DIN Next LT Pro" pointSize="28"/>
+                    <color key="textColor" red="0.062745098040000002" green="0.49803921569999998" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="刷新时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWS-wY-nUg">
+                    <rect key="frame" x="280.5" y="94.5" width="50" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                    <color key="textColor" red="0.53725490200000003" green="0.53725490200000003" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ffd-nu-Fk8" userLabel="Guide View">
+                    <rect key="frame" x="330.5" y="120" width="60.5" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="Y8m-J7-sb0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fKC-89-LF9" firstAttribute="top" secondItem="MLn-6Z-OVj" secondAttribute="bottom" constant="5" id="3iK-CX-GTe"/>
+                <constraint firstItem="Orw-T9-YMK" firstAttribute="trailing" secondItem="deK-Uu-WGn" secondAttribute="trailing" id="6fS-3m-MlN"/>
+                <constraint firstItem="deK-Uu-WGn" firstAttribute="leading" secondItem="rBx-VR-vNl" secondAttribute="leading" id="8Cu-Td-KEV"/>
+                <constraint firstItem="2Jb-FC-cOg" firstAttribute="leading" secondItem="MLn-6Z-OVj" secondAttribute="trailing" constant="5" id="F4J-hM-IgE"/>
+                <constraint firstItem="4zj-bd-Hf3" firstAttribute="leading" secondItem="qhb-Jt-0NO" secondAttribute="trailing" id="FUl-OC-eEg"/>
+                <constraint firstAttribute="bottom" secondItem="HCa-Ft-Yxf" secondAttribute="bottom" id="H2I-Xn-WQo"/>
+                <constraint firstItem="0l3-YS-oF5" firstAttribute="centerY" secondItem="MLn-6Z-OVj" secondAttribute="centerY" id="HeZ-cm-wCv"/>
+                <constraint firstItem="4zj-bd-Hf3" firstAttribute="centerX" secondItem="0l3-YS-oF5" secondAttribute="centerX" id="I8G-yg-ziP"/>
+                <constraint firstItem="yia-1s-6Jh" firstAttribute="width" secondItem="HCa-Ft-Yxf" secondAttribute="width" id="Ll3-m3-Tca"/>
+                <constraint firstItem="ZDF-zW-Svc" firstAttribute="centerY" secondItem="MLn-6Z-OVj" secondAttribute="centerY" id="MdZ-wK-leH"/>
+                <constraint firstItem="VWS-wY-nUg" firstAttribute="top" secondItem="ZDF-zW-Svc" secondAttribute="bottom" constant="5" id="NF8-zw-9jd"/>
+                <constraint firstItem="fKC-89-LF9" firstAttribute="centerX" secondItem="MLn-6Z-OVj" secondAttribute="centerX" id="Nbd-ZZ-tSg"/>
+                <constraint firstItem="2Jb-FC-cOg" firstAttribute="top" secondItem="MLn-6Z-OVj" secondAttribute="top" constant="5" id="PeE-Pg-TSy"/>
+                <constraint firstItem="deK-Uu-WGn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QXm-jn-Uky"/>
+                <constraint firstItem="0l3-YS-oF5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Rav-bA-5wU"/>
+                <constraint firstAttribute="bottom" secondItem="yia-1s-6Jh" secondAttribute="bottom" id="S7f-kq-jT6"/>
+                <constraint firstItem="deK-Uu-WGn" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="SWb-kw-NIu"/>
+                <constraint firstAttribute="bottom" secondItem="qhb-Jt-0NO" secondAttribute="bottom" id="VEQ-dK-Yc0"/>
+                <constraint firstItem="Orw-T9-YMK" firstAttribute="centerY" secondItem="rBx-VR-vNl" secondAttribute="centerY" id="VZI-nk-JpD"/>
+                <constraint firstItem="4zj-bd-Hf3" firstAttribute="top" secondItem="0l3-YS-oF5" secondAttribute="bottom" constant="5" id="YAn-Y8-brk"/>
+                <constraint firstItem="qhb-Jt-0NO" firstAttribute="width" secondItem="HCa-Ft-Yxf" secondAttribute="width" id="YJ7-eV-2ho"/>
+                <constraint firstAttribute="trailing" secondItem="ffd-nu-Fk8" secondAttribute="trailing" id="aVy-1J-P1H"/>
+                <constraint firstItem="Orw-T9-YMK" firstAttribute="leading" secondItem="rBx-VR-vNl" secondAttribute="trailing" constant="5" id="cq7-oe-5Kk"/>
+                <constraint firstItem="rBx-VR-vNl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="djn-WX-GZY"/>
+                <constraint firstItem="ffd-nu-Fk8" firstAttribute="width" secondItem="HCa-Ft-Yxf" secondAttribute="width" id="hb3-ru-Xer"/>
+                <constraint firstAttribute="bottom" secondItem="ffd-nu-Fk8" secondAttribute="bottom" id="ikn-m8-7Gq"/>
+                <constraint firstItem="qhb-Jt-0NO" firstAttribute="leading" secondItem="fKC-89-LF9" secondAttribute="trailing" id="lNi-u4-sdT"/>
+                <constraint firstAttribute="bottom" secondItem="4zj-bd-Hf3" secondAttribute="bottom" constant="15" id="pII-WT-oFU"/>
+                <constraint firstItem="VWS-wY-nUg" firstAttribute="leading" secondItem="yia-1s-6Jh" secondAttribute="trailing" id="sgo-ym-aFa"/>
+                <constraint firstItem="VWS-wY-nUg" firstAttribute="centerX" secondItem="ZDF-zW-Svc" secondAttribute="centerX" id="vfa-lf-vaO"/>
+                <constraint firstItem="fKC-89-LF9" firstAttribute="leading" secondItem="HCa-Ft-Yxf" secondAttribute="trailing" id="yG1-R9-Ptd"/>
+                <constraint firstItem="yia-1s-6Jh" firstAttribute="leading" secondItem="4zj-bd-Hf3" secondAttribute="trailing" id="z1x-bg-8qy"/>
+                <constraint firstItem="HCa-Ft-Yxf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zsW-5f-tIO"/>
+                <constraint firstItem="ffd-nu-Fk8" firstAttribute="leading" secondItem="VWS-wY-nUg" secondAttribute="trailing" id="ztM-Wp-KQ4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="IMEILabel" destination="rBx-VR-vNl" id="7xI-bD-t0f"/>
+                <outlet property="lbsStateButton" destination="Orw-T9-YMK" id="bJM-79-YOM"/>
+                <outlet property="powerLabl" destination="MLn-6Z-OVj" id="ocp-DM-8Ba"/>
+                <outlet property="powerUnitLabel" destination="2Jb-FC-cOg" id="GJc-Pt-5DI"/>
+                <outlet property="stayTimeLabel" destination="0l3-YS-oF5" id="8LF-Bq-OhB"/>
+                <outlet property="updateTimeLabel" destination="ZDF-zW-Svc" id="Y3Y-ui-rbn"/>
+            </connections>
+            <point key="canvasLocation" x="20.5" y="-122"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="LBS_label_不在线" width="45" height="15"/>
+        <image name="LBS_label_在线" width="45" height="15"/>
+    </resources>
+</document>

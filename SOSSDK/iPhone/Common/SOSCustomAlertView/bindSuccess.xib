@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="bindSuccess">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您已经成功绑定安吉星智能后视镜" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7E-jN-h9D">
+                    <rect key="frame" x="0.0" y="30" width="375" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您可以在车内开启后视镜通过语音指令" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ma5-vP-AL3">
+                    <rect key="frame" x="0.0" y="45.5" width="375" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;小O小O&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5At-GG-vfX">
+                    <rect key="frame" x="0.0" y="64" width="375" height="32.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                    <color key="textColor" red="0.17674069419999999" green="0.54856172530000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="唤醒后视镜以体验更多功能" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpZ-4U-NfH">
+                    <rect key="frame" x="0.0" y="97.5" width="375" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="如需帮助,请通过后视镜&quot;蓝键&quot;联系我们" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0K-np-CsL">
+                    <rect key="frame" x="0.0" y="113" width="375" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5At-GG-vfX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="7c6-GY-tlv"/>
+                <constraint firstItem="L7E-jN-h9D" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="9ql-Yl-x8m"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="L7E-jN-h9D" secondAttribute="trailing" id="Bv6-Ae-9ho"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="z0K-np-CsL" secondAttribute="trailing" id="Icp-uB-dGk"/>
+                <constraint firstItem="jpZ-4U-NfH" firstAttribute="leading" secondItem="5At-GG-vfX" secondAttribute="leading" id="Orn-fV-Lsm"/>
+                <constraint firstItem="Ma5-vP-AL3" firstAttribute="top" secondItem="L7E-jN-h9D" secondAttribute="bottom" constant="1" id="T8J-c8-o4S"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5At-GG-vfX" secondAttribute="trailing" id="ak9-Gf-27u"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jpZ-4U-NfH" secondAttribute="trailing" id="cmc-mr-f1t"/>
+                <constraint firstItem="Ma5-vP-AL3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="hKS-b3-iS3"/>
+                <constraint firstItem="jpZ-4U-NfH" firstAttribute="top" secondItem="5At-GG-vfX" secondAttribute="bottom" constant="1" id="oFL-zY-HNr"/>
+                <constraint firstItem="5At-GG-vfX" firstAttribute="top" secondItem="Ma5-vP-AL3" secondAttribute="bottom" constant="4" id="oRl-0T-20e"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ma5-vP-AL3" secondAttribute="trailing" id="rYq-lr-LWg"/>
+                <constraint firstItem="L7E-jN-h9D" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ua3-lB-EDH"/>
+                <constraint firstItem="z0K-np-CsL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="wcB-Kv-abK"/>
+                <constraint firstItem="z0K-np-CsL" firstAttribute="top" secondItem="jpZ-4U-NfH" secondAttribute="bottom" constant="1" id="zcA-De-DgK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="21" y="99"/>
+        </view>
+    </objects>
+</document>

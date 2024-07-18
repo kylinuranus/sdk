@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINNextLTPro-BoldCondensed.otf">
+            <string>DINNextLTPro-BoldCondensed</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SOSPackageInfoView">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="175"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o8d-zH-NEd">
+                    <rect key="frame" x="0.0" y="55" width="393" height="120"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="tfn-xO-wLq"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="套餐_packag_bg" translatesAutoresizingMaskIntoConstraints="NO" id="pK4-Hf-Bdh">
+                    <rect key="frame" x="10" y="10" width="373" height="155"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="套餐_icon_car_package_onstar" translatesAutoresizingMaskIntoConstraints="NO" id="zXu-0Q-Qeo">
+                    <rect key="frame" x="45" y="75.5" width="71" height="64"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="随星买一送一" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6W-Yr-wPL">
+                    <rect key="frame" x="45" y="25" width="98" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="生效日期 2888年8月8日 至 2999年9月9日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5be-rm-aDZ">
+                    <rect key="frame" x="45" y="44.5" width="199" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="省" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QzI-Yg-rHT">
+                    <rect key="frame" x="281" y="143" width="12.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4c-8a-ZM1">
+                    <rect key="frame" x="206" y="86" width="12" height="28"/>
+                    <fontDescription key="fontDescription" name="DINNextLTPro-BoldCondensed" family="DIN Next LT Pro" pointSize="28"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3333.33" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fs5-Pk-R8J">
+                    <rect key="frame" x="223" y="80" width="130" height="48"/>
+                    <fontDescription key="fontDescription" name="DINNextLTPro-BoldCondensed" family="DIN Next LT Pro" pointSize="48"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥9999.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lde-ie-wSc">
+                    <rect key="frame" x="296.5" y="123" width="56.5" height="18"/>
+                    <fontDescription key="fontDescription" name="DINNextLTPro-BoldCondensed" family="DIN Next LT Pro" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥6666.66" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzT-kR-Bb6">
+                    <rect key="frame" x="296.5" y="141" width="56.5" height="18"/>
+                    <fontDescription key="fontDescription" name="DINNextLTPro-BoldCondensed" family="DIN Next LT Pro" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="原价" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGT-YA-l23">
+                    <rect key="frame" x="268.5" y="125" width="25" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="5be-rm-aDZ" firstAttribute="top" secondItem="E6W-Yr-wPL" secondAttribute="bottom" id="1Uc-9d-D4a"/>
+                <constraint firstItem="pK4-Hf-Bdh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="3Zz-TH-zhL"/>
+                <constraint firstItem="o8d-zH-NEd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3sr-sc-Gvm"/>
+                <constraint firstItem="lde-ie-wSc" firstAttribute="leading" secondItem="PGT-YA-l23" secondAttribute="trailing" constant="3" id="3vR-WL-Njf"/>
+                <constraint firstAttribute="bottom" secondItem="pK4-Hf-Bdh" secondAttribute="bottom" constant="10" id="4rV-kH-51O"/>
+                <constraint firstItem="5be-rm-aDZ" firstAttribute="leading" secondItem="E6W-Yr-wPL" secondAttribute="leading" id="BpV-L8-jvA"/>
+                <constraint firstItem="zzT-kR-Bb6" firstAttribute="trailing" secondItem="Fs5-Pk-R8J" secondAttribute="trailing" id="HuD-F6-EbD"/>
+                <constraint firstItem="pK4-Hf-Bdh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="J69-6p-kSL"/>
+                <constraint firstAttribute="trailing" secondItem="o8d-zH-NEd" secondAttribute="trailing" id="P8N-2s-N9g"/>
+                <constraint firstItem="zXu-0Q-Qeo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="45" id="Pj8-ad-41x"/>
+                <constraint firstItem="E6W-Yr-wPL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="T26-nc-J8Y"/>
+                <constraint firstItem="C4c-8a-ZM1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zXu-0Q-Qeo" secondAttribute="trailing" constant="10" id="awJ-eZ-oJw"/>
+                <constraint firstAttribute="bottom" secondItem="o8d-zH-NEd" secondAttribute="bottom" id="cEe-0w-lM1"/>
+                <constraint firstAttribute="bottom" secondItem="zzT-kR-Bb6" secondAttribute="bottom" constant="16" id="dZ6-1w-awD"/>
+                <constraint firstItem="lde-ie-wSc" firstAttribute="top" secondItem="Fs5-Pk-R8J" secondAttribute="bottom" constant="-5" id="e8M-Gr-Y14"/>
+                <constraint firstItem="lde-ie-wSc" firstAttribute="centerY" secondItem="PGT-YA-l23" secondAttribute="centerY" id="fVA-rs-85W"/>
+                <constraint firstItem="zzT-kR-Bb6" firstAttribute="top" secondItem="lde-ie-wSc" secondAttribute="bottom" id="gbP-Zj-PgR"/>
+                <constraint firstItem="zXu-0Q-Qeo" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="20" id="ge7-jR-Wcu"/>
+                <constraint firstItem="Fs5-Pk-R8J" firstAttribute="leading" secondItem="C4c-8a-ZM1" secondAttribute="trailing" constant="5" id="gnv-Md-1oc"/>
+                <constraint firstItem="C4c-8a-ZM1" firstAttribute="top" secondItem="Fs5-Pk-R8J" secondAttribute="top" constant="6" id="hUs-4k-763"/>
+                <constraint firstAttribute="trailing" secondItem="zzT-kR-Bb6" secondAttribute="trailing" priority="999" constant="40" id="jVG-w4-zhF"/>
+                <constraint firstItem="zXu-0Q-Qeo" firstAttribute="leading" secondItem="E6W-Yr-wPL" secondAttribute="leading" id="kDW-XK-GsL"/>
+                <constraint firstItem="lde-ie-wSc" firstAttribute="trailing" secondItem="Fs5-Pk-R8J" secondAttribute="trailing" id="xPj-Ol-PEC"/>
+                <constraint firstAttribute="trailing" secondItem="pK4-Hf-Bdh" secondAttribute="trailing" constant="10" id="xeI-tX-Oh1"/>
+                <constraint firstItem="zzT-kR-Bb6" firstAttribute="centerY" secondItem="QzI-Yg-rHT" secondAttribute="centerY" id="ykC-QM-Hk9"/>
+                <constraint firstItem="zzT-kR-Bb6" firstAttribute="leading" secondItem="QzI-Yg-rHT" secondAttribute="trailing" constant="3" id="zcG-f2-bTe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cutOffPriceLabel" destination="zzT-kR-Bb6" id="k8R-zv-mDR"/>
+                <outlet property="cutoffPriceTitleLabel" destination="QzI-Yg-rHT" id="bxG-Np-K7b"/>
+                <outlet property="originPriceLabel" destination="lde-ie-wSc" id="zQl-w2-Nu7"/>
+                <outlet property="originPriceTieleLabel" destination="PGT-YA-l23" id="kaW-b5-Hdb"/>
+                <outlet property="packageDateLabel" destination="5be-rm-aDZ" id="BRE-QP-WPN"/>
+                <outlet property="packageNameLabel" destination="E6W-Yr-wPL" id="wgC-pm-VNM"/>
+                <outlet property="packagePriceLabel" destination="Fs5-Pk-R8J" id="MXK-OR-qXS"/>
+            </connections>
+            <point key="canvasLocation" x="42.5" y="-20.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="套餐_icon_car_package_onstar" width="71" height="64"/>
+        <image name="套餐_packag_bg" width="355" height="150"/>
+    </resources>
+</document>

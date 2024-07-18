@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SOSAlertRemindSet">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="保存设置失败！您还没有在微信上绑定过车辆！欢迎关注公众号“安吉星服务”来接收提醒，或扫下方二维码进行关注" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMT-05-yfT">
+                    <rect key="frame" x="15" y="15" width="220" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="K40-Qb-iKr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTQ-qs-ai7">
+                    <rect key="frame" x="15" y="200" width="220" height="35"/>
+                    <color key="backgroundColor" red="0.1137254902" green="0.50588235290000005" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="n6p-Xf-aaa"/>
+                    </constraints>
+                    <state key="normal" title="取消"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="dismiss:" destination="iN0-l3-epB" eventType="touchUpInside" id="SY1-1n-FBP"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="安吉星服务号" translatesAutoresizingMaskIntoConstraints="NO" id="VqI-Mv-Dm8">
+                    <rect key="frame" x="85" y="93" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="GoP-r6-f55"/>
+                        <constraint firstAttribute="width" constant="80" id="ewT-2f-CY0"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hTQ-qs-ai7" secondAttribute="trailing" constant="15" id="2oL-Dy-Efc"/>
+                <constraint firstItem="rMT-05-yfT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="38Y-V5-Pzu"/>
+                <constraint firstItem="rMT-05-yfT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="Eta-IN-iwj"/>
+                <constraint firstAttribute="trailing" secondItem="rMT-05-yfT" secondAttribute="trailing" constant="15" id="Iot-EK-XOW"/>
+                <constraint firstItem="VqI-Mv-Dm8" firstAttribute="top" secondItem="rMT-05-yfT" secondAttribute="bottom" constant="8" id="OAt-5W-qGb"/>
+                <constraint firstItem="hTQ-qs-ai7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="TS8-az-tmx"/>
+                <constraint firstItem="hTQ-qs-ai7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="XI1-kc-gee"/>
+                <constraint firstAttribute="bottom" secondItem="hTQ-qs-ai7" secondAttribute="bottom" constant="15" id="dRJ-5K-1DT"/>
+                <constraint firstItem="VqI-Mv-Dm8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="es1-bD-B8L"/>
+                <constraint firstItem="rMT-05-yfT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="n8x-bf-9k4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                    <real key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="29" y="114"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="安吉星服务号" width="125" height="125"/>
+    </resources>
+</document>

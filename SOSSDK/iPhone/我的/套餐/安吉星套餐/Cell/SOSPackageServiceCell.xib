@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINNextLTPro-BoldCondensed.otf">
+            <string>DINNextLTPro-BoldCondensed</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SOSPackageServiceCell" rowHeight="216" id="KGk-i7-Jjw" customClass="SOSPackageServiceCell">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="216"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="409" height="216"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="套餐_package" translatesAutoresizingMaskIntoConstraints="NO" id="1CL-y3-zu0">
+                        <rect key="frame" x="10" y="10" width="389" height="196"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRedius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="套餐_icon_car_package_onstar" translatesAutoresizingMaskIntoConstraints="NO" id="pCL-GT-baL">
+                        <rect key="frame" x="110" y="76" width="71" height="64"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="可用服务天数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gV-gf-Bjd">
+                        <rect key="frame" x="201" y="125" width="67.5" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="可用安吉星服务" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRh-ED-6Mk">
+                        <rect key="frame" x="154.5" y="15" width="100" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N93-af-QN9">
+                        <rect key="frame" x="191" y="66" width="27" height="64"/>
+                        <fontDescription key="fontDescription" name="DINNextLTPro-BoldCondensed" family="DIN Next LT Pro" pointSize="64"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="天" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xup-c3-NDr">
+                        <rect key="frame" x="218" y="81" width="17.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="9gV-gf-Bjd" firstAttribute="leading" secondItem="N93-af-QN9" secondAttribute="leading" constant="10" id="0tQ-Ig-u4s"/>
+                    <constraint firstAttribute="centerY" secondItem="N93-af-QN9" secondAttribute="centerY" constant="10" id="3jh-aQ-bxR"/>
+                    <constraint firstItem="xup-c3-NDr" firstAttribute="leading" secondItem="N93-af-QN9" secondAttribute="trailing" id="Cjm-Oh-jpf"/>
+                    <constraint firstItem="9gV-gf-Bjd" firstAttribute="top" secondItem="N93-af-QN9" secondAttribute="bottom" constant="-5" id="GkB-JY-AJ0"/>
+                    <constraint firstItem="N93-af-QN9" firstAttribute="leading" secondItem="pCL-GT-baL" secondAttribute="trailing" constant="10" id="HKn-yP-g3P"/>
+                    <constraint firstItem="xup-c3-NDr" firstAttribute="top" secondItem="N93-af-QN9" secondAttribute="top" constant="15" id="I3b-kI-JTO"/>
+                    <constraint firstItem="1CL-y3-zu0" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="OcR-1O-VBH"/>
+                    <constraint firstItem="KRh-ED-6Mk" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="SIl-mh-1LH"/>
+                    <constraint firstItem="pCL-GT-baL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="UE0-24-I2I"/>
+                    <constraint firstItem="N93-af-QN9" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="lEq-pr-p4s"/>
+                    <constraint firstItem="KRh-ED-6Mk" firstAttribute="top" secondItem="1CL-y3-zu0" secondAttribute="top" constant="5" id="p0q-I8-QlZ"/>
+                    <constraint firstItem="1CL-y3-zu0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rB0-za-nwL"/>
+                    <constraint firstItem="1CL-y3-zu0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="wao-gH-HWQ"/>
+                    <constraint firstItem="1CL-y3-zu0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="wwl-Hj-4we"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="BGImgView" destination="1CL-y3-zu0" id="hCX-kj-K2e"/>
+                <outlet property="currentServiceDaysCountLabel" destination="N93-af-QN9" id="C9X-8e-2CD"/>
+            </connections>
+            <point key="canvasLocation" x="7.2000000000000002" y="25.187406296851577"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="套餐_icon_car_package_onstar" width="71" height="64"/>
+        <image name="套餐_package" width="355" height="150"/>
+    </resources>
+</document>
